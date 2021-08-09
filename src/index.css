@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+
+
+@font-face {
+  font-family: 'BestermindRegular';
+  src: url('./assets/fonts/Bestermind/BestermindRegular.ttf'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/Bestermind/BestermindRegular.ttf') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/Bestermind/BestermindRegular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
 * {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
