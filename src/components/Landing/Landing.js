@@ -16,8 +16,10 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: '30px',
         textTransform: 'inherit',
         textDecoration: 'none',
-        width: '146px',
-        height: '45px',
+        width: '150px',
+        fontSize: '1rem',
+        fontWeight: '500',
+        height: '50px',
         fontFamily: 'Poppins',
         border: '3px solid #459446'
     },
@@ -27,10 +29,11 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: '30px',
         textTransform: 'inherit',
         textDecoration: 'none',
-        width: '146px',
-        height: '45px',
+        width: '150px',
+        height: '50px',
+        fontSize: '1rem',
+        fontWeight: '500',
         fontFamily: 'Poppins',
-        marginLeft: '2.5rem',
         "&:hover": {
             backgroundColor: "#459446"
         }
