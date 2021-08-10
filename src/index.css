@@ -16,3 +16,18 @@
 a {
   text-decoration: none;
 }
+
+/* scrollBar */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #459446;
+}
+::-webkit-scrollbar-thumb {
+    background: hsl(121, 56%, 63%);
+  border-radius: 10px;
+  transition: 0.3s;
+}
