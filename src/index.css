@@ -13,6 +13,16 @@
   margin: 0;
 }
 
+:root{
+  --primary-1: #459446;
+  --primary-1-45: #45944675;
+  --primary-2: #EAEAEA;
+  --secondary-1: #343434;
+  --secondary-1-80: #343434cc;
+  --secondary-1-70: #343434b3;
+  --secondary-2: #343434b3;
+}
+
 a {
   text-decoration: none;
 }
@@ -24,10 +34,10 @@ a {
     height: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #459446;
+    background: var(--primary-2);
 }
 ::-webkit-scrollbar-thumb {
-    background: hsl(121, 56%, 63%);
+    background: var(--primary-1);
   border-radius: 10px;
   transition: 0.3s;
 }

@@ -12,7 +12,7 @@ import linkedin from '../../assets/svg/social/linkedin.svg'
 
 const useStyles = makeStyles((theme) => ({
     resumeBtn : {
-        color: '#459446',
+        color: 'var(--primary-1)',
         borderRadius: '30px',
         textTransform: 'inherit',
         textDecoration: 'none',
@@ -21,11 +21,11 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: '500',
         height: '50px',
         fontFamily: 'Poppins',
-        border: '3px solid #459446'
+        border: '3px solid var(--primary-1)'
     },
     contactBtn : {
-        backgroundColor: '#459446',
-        color: '#EAEAEA',
+        backgroundColor: 'var(--primary-1)',
+        color: 'var(--primary-2)',
         borderRadius: '30px',
         textTransform: 'inherit',
         textDecoration: 'none',
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: '500',
         fontFamily: 'Poppins',
         "&:hover": {
-            backgroundColor: "#459446"
+            backgroundColor: "var(--primary-1)"
         }
     }
 }));

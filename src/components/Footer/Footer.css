@@ -2,7 +2,7 @@
     font-family: 'Poppins', sans-serif;
     height: 50px;
     width: 100%;
-    background-color: #45944675;
+    background-color: var(--primary-1-45);
     display: flex;
     justify-content: center;
     align-items: center;
