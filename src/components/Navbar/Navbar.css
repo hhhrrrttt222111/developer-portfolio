@@ -22,10 +22,41 @@
     font-family: 'BestermindRegular';
     color: #EAEAEA;
     font-size: 2.5rem;
+    user-select: none;
 }
 
 .nav-menu {
     font-size: 2.5rem;
     color: #343434;
     cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-menu:hover{
+    color: #459446;
+}
+
+@media (max-width:1100px) {
+    .navbar--container{
+        padding: 0 2rem;
+    }
+    .navbar--container > h1{
+        font-size: 2.2rem;
+    }
+    .nav-menu{
+        font-size: 2.2rem;
+        margin-top: -1.5rem;
+    }
+}
+
+@media (max-width:600px) {
+    .nav-menu{
+        color: #eaeaea;
+    }
+    .navbar--container > h1{
+        font-size: 2rem;
+    }
+    .nav-menu:hover{
+        color: #eaeaea;
+    }
 }
