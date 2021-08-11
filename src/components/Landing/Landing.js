@@ -10,7 +10,7 @@ import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 
 function Landing() {
-    const { theme }  = useContext(ThemeContext)
+    const { theme, drawerOpen }  = useContext(ThemeContext)
 
     const useStyles = makeStyles(() => ({
         resumeBtn : {
@@ -62,7 +62,7 @@ function Landing() {
                         </a>
                     </div>
                 </div>
-                <img src={headerData.image} alt="" className="landing--img"/>
+                <img src={headerData.image} alt="" className="landing--img" style={{ display: `${drawerOpen ? 'none' : 'block'}`}}/>
                 <div className="landing--container-right" style={{backgroundColor: theme.primary2}}>
                     <div className="lcr--content" style={{color: theme.secondary}}>
                         <h6>{headerData.title}</h6>

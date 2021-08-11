@@ -25,6 +25,15 @@
     user-select: none;
 }
 
+.navLink--container {
+    margin-top: 5rem;
+}
+
+.drawer > .MuiBackdrop-root{
+    background: rgba(33, 33, 33, 0.15) !important;
+    backdrop-filter: blur(20px) !important;
+}
+
 
 @media (max-width:1100px) {
     .navbar--container{
