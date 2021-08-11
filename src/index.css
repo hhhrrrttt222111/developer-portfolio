@@ -24,10 +24,10 @@ a {
     height: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #459446;
+    background: #555;
 }
 ::-webkit-scrollbar-thumb {
-    background: hsl(121, 56%, 63%);
+    background: #555;
   border-radius: 10px;
   transition: 0.3s;
 }
