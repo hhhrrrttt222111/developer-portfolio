@@ -1,68 +1,70 @@
+import React, { useContext } from 'react'
 import { Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
-import React from 'react'
 
 import './Landing.css'
+import { ThemeContext } from '../../contexts/ThemeContext'
 import { headerData } from '../../data/headerData'
 
-import twitter from '../../assets/svg/social/twitter.svg'
-import github from '../../assets/svg/social/github.svg'
-import linkedin from '../../assets/svg/social/linkedin.svg'
+import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
-
-const useStyles = makeStyles((theme) => ({
-    resumeBtn : {
-        color: '#459446',
-        borderRadius: '30px',
-        textTransform: 'inherit',
-        textDecoration: 'none',
-        width: '150px',
-        fontSize: '1rem',
-        fontWeight: '500',
-        height: '50px',
-        fontFamily: 'Poppins',
-        border: '3px solid #459446'
-    },
-    contactBtn : {
-        backgroundColor: '#459446',
-        color: '#EAEAEA',
-        borderRadius: '30px',
-        textTransform: 'inherit',
-        textDecoration: 'none',
-        width: '150px',
-        height: '50px',
-        fontSize: '1rem',
-        fontWeight: '500',
-        fontFamily: 'Poppins',
-        "&:hover": {
-            backgroundColor: "#459446"
-        }
-    }
-}));
 
 function Landing() {
+    const { theme }  = useContext(ThemeContext)
+
+    const useStyles = makeStyles(() => ({
+        resumeBtn : {
+            color: theme.primary,
+            borderRadius: '30px',
+            textTransform: 'inherit',
+            textDecoration: 'none',
+            width: '150px',
+            fontSize: '1rem',
+            fontWeight: '500',
+            height: '50px',
+            fontFamily: 'Poppins',
+            border: `3px solid ${theme.primary}`
+        },
+        contactBtn : {
+            backgroundColor: theme.primary,
+            color: theme.primary2,
+            borderRadius: '30px',
+            textTransform: 'inherit',
+            textDecoration: 'none',
+            width: '150px',
+            height: '50px',
+            fontSize: '1rem',
+            fontWeight: '500',
+            fontFamily: 'Poppins',
+            "&:hover": {
+                backgroundColor: theme.primary
+            }
+        }
+    }));
 
     const classes = useStyles();
+
+    console.log(theme)
  
     return (
-        <div className="landing">
+        <div className="landing" >
             <div className="landing--container">
-                <div className="landing--container-left">
+                <div className="landing--container-left" style={{backgroundColor: theme.primary}}>
                     <div className="lcl--content">
                         <a href="/" target="_blank" rel="noreferrer">
-                            <img src={linkedin} alt="" className="landing--social"/>
+                            <FaLinkedin className="landing--social" style={{color: theme.primary2}}/>
                         </a>
                         <a href="/" target="_blank" rel="noreferrer">
-                            <img src={github} alt="" className="landing--social"/>
+                            <FaGithub className="landing--social" style={{color: theme.primary2}}/>
                         </a>
                         <a href="/" target="_blank" rel="noreferrer">
-                            <img src={twitter} alt="" className="landing--social"/>
+                            <FaTwitter className="landing--social" style={{color: theme.primary2}}/>
                         </a>
                     </div>
                 </div>
                 <img src={headerData.image} alt="" className="landing--img"/>
-                <div className="landing--container-right">
-                    <div className="lcr--content">
+                <div className="landing--container-right" style={{backgroundColor: theme.primary2}}>
+                    <div className="lcr--content" style={{color: theme.secondary2}}>
                         <h6>{headerData.title}</h6>
                         <h1>{headerData.name}</h1>
                         <p>{headerData.desciption}</p>
