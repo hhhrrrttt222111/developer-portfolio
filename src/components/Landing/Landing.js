@@ -64,7 +64,7 @@ function Landing() {
                 </div>
                 <img src={headerData.image} alt="" className="landing--img"/>
                 <div className="landing--container-right" style={{backgroundColor: theme.primary2}}>
-                    <div className="lcr--content" style={{color: theme.secondary2}}>
+                    <div className="lcr--content" style={{color: theme.secondary}}>
                         <h6>{headerData.title}</h6>
                         <h1>{headerData.name}</h1>
                         <p>{headerData.desciption}</p>

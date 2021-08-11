@@ -89,7 +89,7 @@
  
  .lcr-buttonContainer {
      margin-top: 2rem;
-     width: 330px;
+     width: 350px;
      display: flex;
      align-items: center;
      justify-content: space-between;
@@ -117,7 +117,6 @@
          margin-bottom: 1rem;
          font-weight: 500;
          font-size: 1rem;
-         color: rgba(52, 52, 52, 0.7);
          
      }
  
@@ -201,7 +200,6 @@
          text-align: center;
      }
      .lcr--content p{
-         /* background: #000; */
          font-size: 0.95rem;
          text-align: center;
          margin: 0 auto;
@@ -228,4 +226,3 @@
          margin-top: 60%;
      }    
  }
- 
