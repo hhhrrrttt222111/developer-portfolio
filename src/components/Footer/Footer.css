@@ -7,3 +7,7 @@
     justify-content: center;
     align-items: center;
 }
+
+.footer p {
+    font-weight: 600;
+}

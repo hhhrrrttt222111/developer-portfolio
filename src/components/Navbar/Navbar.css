@@ -25,16 +25,6 @@
     user-select: none;
 }
 
-.nav-menu {
-    font-size: 2.5rem;
-    color: #343434;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-.nav-menu:hover{
-    color: #459446;
-}
 
 @media (max-width:1100px) {
     .navbar--container{
