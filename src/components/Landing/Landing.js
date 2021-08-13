@@ -45,7 +45,7 @@ function Landing() {
     const classes = useStyles();
 
     console.log(theme)
- 
+
     return (
         <div className="landing" >
             <div className="landing--container">
@@ -62,7 +62,7 @@ function Landing() {
                         </a>
                     </div>
                 </div>
-                <img src={headerData.image} alt="" className="landing--img" style={{ display: `${drawerOpen ? 'none' : 'block'}`}}/>
+                <img src={headerData.image} alt="" className="landing--img" style={{ opacity: `${drawerOpen ? '0' : '1'}`,borderColor: theme.primary2}}/>
                 <div className="landing--container-right" style={{backgroundColor: theme.primary2}}>
                     <div className="lcr--content" style={{color: theme.secondary}}>
                         <h6>{headerData.title}</h6>

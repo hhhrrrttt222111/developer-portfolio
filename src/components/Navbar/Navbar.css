@@ -58,4 +58,8 @@
     .nav-menu:hover{
         color: var(--primary-2);
     }
+    .MuiDrawer-paper{
+      width: 12em !important;
+      border-radius: 0 !important;
+    }
 }

@@ -21,7 +21,7 @@ function Navbar() {
     const handleDrawerOpen = () => {
         setOpen(true);
         setHandleDrawer()
-        
+
     };
 
     const handleDrawerClose = () => {
@@ -34,6 +34,7 @@ function Navbar() {
             fontSize: '2.5rem',
             color: theme.secondary,
             cursor: 'pointer',
+            transform: 'translateY(-10px)',
             transition: 'color 0.3s',
             "&:hover": {
                 color: theme.primary,
@@ -52,31 +53,41 @@ function Navbar() {
             borderBottomRightRadius: '40px'
         },
         closebtnIcon: {
-            fontSize: '1.85rem',
+            fontSize: '2rem',
+            fontWeight: 'bold',
             cursor: 'pointer',
             color: theme.primary,
             position: 'absolute',
-            right: 20,
-            top: 20
+            right: 40,
+            top: 40
         },
         drawerItem: {
-            background: theme.primary,
             margin: '2rem auto',
             borderRadius: '78.8418px',
-            width: '70%',
-            height: '54px',
+            background: theme.primary2,
+            color: theme.primary,
+            width: '65%',
+            height: '60px',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center'
+            justifyContent: 'space-evenly',
+            padding: '0 35px',
+            boxSizing: 'border-box',
+            border: '2px solid',
+            borderColor: theme.primary,
+            transition: 'background-color 0.3s, color 0.3s',
+            "&:hover": {
+                background: theme.primary,
+                color: theme.primary2,
+            }
         },
         drawerLinks: {
             fontFamily: "Poppins",
-            color: theme.primary2,
+            width:'50%',
             fontSize: '1.3rem',
-            fontWeight: 700,
+            fontWeight: 600,
         },
         drawerIcon: {
-            color: theme.primary2,
             fontSize: '1.6rem',
         }
     }));
@@ -91,7 +102,7 @@ function Navbar() {
 
                 <IoMenuSharp className={classes.navMenu} onClick={handleDrawerOpen}/>
             </div>
-            <Drawer     
+            <Drawer
                 variant="temporary"
                 onBackdropClick={handleDrawerClose}
                 onEscapeKeyDown={handleDrawerClose}
@@ -105,7 +116,7 @@ function Navbar() {
                     <CloseIcon onClick={handleDrawerClose} className={classes.closebtnIcon}/>
                 </div><br/>
 
-                
+
                 <div onClick={handleDrawerClose}>
                     <div className="navLink--container">
                         <NavLink to="/" smooth={true} spy="true" duration={2000}>
