@@ -1,5 +1,29 @@
 .about {
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.about .line-styling{
+  position: relative;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  width: 85%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .line-styling .style-circle{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.about .line-styling .style-line{
+  width: 95%;
+  height: 5px;
+  border-radius: 10px;
 }
 
 .about-body {
@@ -23,7 +47,7 @@
 
 .about-description >h2 {
     margin-bottom: 40px;
-    font-size: 3.5rem; 
+    font-size: 3.5rem;
     font-family: Poppins;
 }
 
@@ -43,6 +67,11 @@
 }
 
 @media (min-width: 992px) and (max-width: 1380px) {
+
+  .about .line-styling{
+    top: 70px;
+  }
+
     .about-body {
         height: fit-content;
         padding-top: 4rem;
@@ -55,8 +84,13 @@
 }
 
 @media screen and (max-width: 992px){
+
+  .about .line-styling{
+    top: 70px;
+  }
+
     .about-body {
-        height: fit-content;
+        /* height: fit-content; */
         padding-top: 2rem;
         display: flex;
         flex-direction: column-reverse;
@@ -68,16 +102,16 @@
         flex: 0.6;
         box-sizing: border-box;
         padding: 1.25rem;
-        
+
     }
 
     .about-description > h2 {
-        font-size: 3.5rem;
+        font-size: 3.3rem;
         margin-bottom: 20px;
     }
 
     .about-description > p {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
     }
 
     .about-img > img {
@@ -98,6 +132,22 @@
 }
 
 @media screen and (max-width: 600px){
+
+  .about .line-styling{
+    top: 60px;
+  }
+
+  .about .line-styling .style-circle{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+  .about .line-styling .style-line{
+    width: 93%;
+    height: 3px;
+    border-radius: 10px;
+  }
+
     .about-description > p{
         font-size: 1rem;
     }

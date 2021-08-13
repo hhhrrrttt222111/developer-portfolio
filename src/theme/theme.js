@@ -16,9 +16,9 @@ import yellowThemeboy from '../assets/svg/about/yellowTheme-boy.svg'
 import yellowThemegirl from '../assets/svg/about/yellowTheme-girl.svg'
 
 
-export const theme1 = {
+export const greenThemeLight = {
     primary: '#3fc337',
-    primary1: '#3fc33775',
+    primary1: '#3fc337b3',
     primary2: '#EAEAEA',
     secondary: '#212121',
     secondary1: '#212121cc',
@@ -28,7 +28,7 @@ export const theme1 = {
     aboutimg2: greenThemegirl
 }
 
-export const theme2 = {
+export const greenThemeDark = {
     primary: '#3fc337',
     primary1: '#3fc337b3',
     primary2: '#212121',
@@ -39,30 +39,30 @@ export const theme2 = {
     aboutimg1: greenThemeboy,
     aboutimg2: greenThemegirl
 }
-export const theme3 = {
-    primary: '#459446',
-    primary1: '#459446b3',
+export const bwThemeLight = {
+    primary: '#000000',
+    primary1: '#000000b3',
     primary2: '#EAEAEA',
     secondary: '#212121',
     secondary1: '#212121cc',
     secondary2: '#212121b3',
     secondary3: '#212121b3',
-    aboutimg1: greenThemeboy,
-    aboutimg2: greenThemegirl
+    aboutimg1: bwThemeboy,
+    aboutimg2: bwThemegirl
 }
-export const theme4 = {
-    primary: '#52d553',
-    primary1: '#52d553b3',
+export const bwThemeDark = {
+    primary: '#B6B6B6',
+    primary1: '#B6B6B6b3',
     primary2: '#212121',
     secondary: '#eaeaea',
     secondary1: '#eaeaeacc',
     secondary2: '#eaeaeab3',
     secondary3: '#eaeaeab3',
-    aboutimg1: greenThemeboy,
-    aboutimg2: greenThemegirl
+    aboutimg1: bwThemeboy,
+    aboutimg2: bwThemegirl
 }
 
-export const theme5 = {
+export const blueThemeLight = {
     primary: '#545fc4',
     primary1: '#545fc4b3',
     primary2: '#eaeaea',
@@ -73,7 +73,7 @@ export const theme5 = {
     aboutimg1: blueThemeboy,
     aboutimg2: blueThemegirl
 }
-export const theme6 = {
+export const blueThemeDark = {
     primary: '#545fc4',
     primary1: '#545fc4b3',
     primary2: '#212121',
@@ -85,7 +85,7 @@ export const theme6 = {
     aboutimg2: blueThemegirl
 }
 
-export const theme7 = {
+export const redThemeLight = {
     primary: '#f03939',
     primary1: '#f03939b3',
     primary2: '#eaeaea',
@@ -96,7 +96,7 @@ export const theme7 = {
     aboutimg1: redThemeboy,
     aboutimg2: redThemegirl
 }
-export const theme8 = {
+export const redThemeDark = {
     primary: '#f03939',
     primary1: '#f03939b3',
     primary2: '#212121',
@@ -108,7 +108,7 @@ export const theme8 = {
     aboutimg2: redThemegirl
 }
 
-export const theme9 = {
+export const orangeThemeLight = {
     primary: '#f56539',
     primary1: '#f56539b3',
     primary2: '#eaeaea',
@@ -119,7 +119,7 @@ export const theme9 = {
     aboutimg1: orangeThemeboy,
     aboutimg2: orangeThemegirl
 }
-export const theme10 = {
+export const orangeThemeDark = {
     primary: '#f56539',
     primary1: '#f56539b3',
     primary2: '#212121',
@@ -131,7 +131,7 @@ export const theme10 = {
     aboutimg2: orangeThemegirl
 }
 
-export const theme11 = {
+export const purpleThemeLight = {
     primary: '#823ae0',
     primary1: '#823ae0b3',
     primary2: '#eaeaea',
@@ -142,7 +142,7 @@ export const theme11 = {
     aboutimg1: purpleThemeboy,
     aboutimg2: purpleThemegirl
 }
-export const theme12 = {
+export const purpleThemeDark = {
     primary: '#823ae0',
     primary1: '#823ae0b3',
     primary2: '#212121',
@@ -154,7 +154,7 @@ export const theme12 = {
     aboutimg2: purpleThemegirl
 }
 
-export const theme13 = {
+export const pinkThemeLight = {
     primary: '#ff4f93',
     primary1: '#ff4f93b3',
     primary2: '#eaeaea',
@@ -165,7 +165,7 @@ export const theme13 = {
     aboutimg1: pinkThemeboy,
     aboutimg2: pinkThemegirl
 }
-export const theme14 = {
+export const pinkThemeDark = {
     primary: '#ff4f93',
     primary1: '#ff4f93b3',
     primary2: '#212121',
@@ -177,9 +177,21 @@ export const theme14 = {
     aboutimg2: pinkThemegirl
 }
 
-export const theme15 = {
-    primary: '#e9e635',
-    primary1: '#e9e635b3',
+export const yellowThemeLight = {
+    primary: '#E9AD35',
+    primary1: '#E9AD35b3',
+    primary2: '#eaeaea',
+    secondary: '#212121',
+    secondary1: '#212121cc',
+    secondary2: '#212121b3',
+    secondary3: '#212121b3',
+    aboutimg1: yellowThemeboy,
+    aboutimg2: yellowThemegirl
+}
+
+export const yellowThemeDark = {
+    primary: '#E9AD35',
+    primary1: '#E9AD35b3',
     primary2: '#212121',
     secondary: '#eaeaea',
     secondary1: '#eaeaeacc',
@@ -189,10 +201,6 @@ export const theme15 = {
     aboutimg2: yellowThemegirl
 }
 
-export const theme16 = {
-    aboutimg1: bwThemeboy,
-    aboutimg2: bwThemegirl
-}
 
 // primary => color
 // primary1 => color 70% alpha
@@ -201,6 +209,3 @@ export const theme16 = {
 // secondary1 => text light/dark 80%
 // secondary2 => text light/dark 70%
 // secondary3 => text light/dark 70%
-
-//theme1,2 - L.Green
-//theme3,4 - Chankam.Green
