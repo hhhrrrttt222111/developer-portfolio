@@ -38,7 +38,7 @@
 }
 
 .about-img > img {
-    width: 550px;
+    width: 380px;
     flex: 0.5;
 }
 
@@ -50,7 +50,7 @@
 
 
     .about-img>img {
-        width: 450px;
+        width: 300px;
     }
 }
 
@@ -72,17 +72,37 @@
     }
 
     .about-description > h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
         margin-bottom: 20px;
     }
 
     .about-description > p {
+        font-size: 1.25rem;
+    }
+
+    .about-img > img {
+        width: 250px;
+        flex: 0.4;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .about-description > h2 {
+        font-size: 3rem;
+    }
+
+    .about-description > p {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .about-description > p{
         font-size: 1rem;
     }
 
     .about-img > img {
-        width: 300px;
-        flex: 0.4;
+        width: 200px;
     }
-
 }
