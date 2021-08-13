@@ -2,6 +2,7 @@ import React,{ useContext} from 'react';
 
 import './About.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
+import {aboutData} from '../../data/aboutData'
 
 
 
@@ -12,8 +13,8 @@ function About() {
         <div className="about" style={{backgroundColor: theme.primary2}}>
             <div className="about-body">
                 <div className="about-description">
-                    <h2 style={{color: theme.primary}}>Who I am</h2>
-                    <p style={{color:theme.secondary1}}><span style={{color: theme.secondary}}>My name's Jane.</span> I'm a web designer and developer based in Southampton, UK.<br/><br />During the day I’m the lead developer at a local agency. During the evenings I spend my time working on freelance projects and building my own products.During the evenings I spend my time working on freelance projects and building my own products.</p>
+                    <h2 style={{color: theme.primary}}>{aboutData.title}</h2>
+                    <p style={{color:theme.secondary1}}>{aboutData.description1}<br/><br/>{aboutData.description2}</p>
                 </div>
                 <div className="about-img">
                     <img src={theme.aboutimg2} alt="" />
