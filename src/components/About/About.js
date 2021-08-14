@@ -10,7 +10,7 @@ function About() {
 
     const { theme } = useContext(ThemeContext);
     return (
-        <div className="about" style={{backgroundColor: theme.primary2}}>
+        <div className="about" id="about" style={{backgroundColor: theme.primary2}}>
             <div className="line-styling">
               <div className="style-circle" style={{backgroundColor: theme.primary}}></div>
               <div className="style-circle" style={{backgroundColor: theme.primary}}></div>

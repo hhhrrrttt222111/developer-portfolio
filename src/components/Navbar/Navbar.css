@@ -29,7 +29,7 @@
     margin-top: 5rem;
 }
 
-.drawer > .MuiBackdrop-root{
+.drawer > .MuiBackdrop-root {
     background: rgba(33, 33, 33, 0.15) !important;
     backdrop-filter: blur(20px) !important;
 }
@@ -59,7 +59,6 @@
         color: var(--primary-2);
     }
     .MuiDrawer-paper{
-      width: 12em !important;
       border-radius: 0 !important;
     }
 }

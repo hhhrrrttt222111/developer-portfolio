@@ -70,9 +70,11 @@ function Landing() {
                         <p>{headerData.desciption}</p>
 
                         <div className="lcr-buttonContainer">
-                            <a href={headerData.resumePdf} download="resume">
-                                <Button className={classes.resumeBtn}>Download CV</Button>
-                            </a>
+                            {headerData.resumePdf && (
+                                <a href={headerData.resumePdf} download="resume">
+                                    <Button className={classes.resumeBtn}>Download CV</Button>
+                                </a>
+                            )}
                             <Button className={classes.contactBtn}>Contact</Button>
                         </div>
                     </div>

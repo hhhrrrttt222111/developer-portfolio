@@ -29,7 +29,7 @@ function Navbar() {
         setHandleDrawer()
     };
 
-    const useStyles = makeStyles(() => ({
+    const useStyles = makeStyles((t) => ({
         navMenu : {
             fontSize: '2.5rem',
             color: theme.secondary,
@@ -50,7 +50,10 @@ function Navbar() {
             background: theme.primary2,
             overflow: 'hidden',
             borderTopRightRadius: '40px',
-            borderBottomRightRadius: '40px'
+            borderBottomRightRadius: '40px',
+            [t.breakpoints.down('sm')]: {
+                width:'12em',
+            },
         },
         closebtnIcon: {
             fontSize: '2rem',
@@ -79,7 +82,10 @@ function Navbar() {
             "&:hover": {
                 background: theme.primary,
                 color: theme.primary2,
-            }
+            },
+            [t.breakpoints.down('sm')]: {
+                width:'85%',
+            },
         },
         drawerLinks: {
             fontFamily: "Poppins",
@@ -104,8 +110,13 @@ function Navbar() {
             </div>
             <Drawer
                 variant="temporary"
-                onBackdropClick={handleDrawerClose}
-                onEscapeKeyDown={handleDrawerClose}
+                onClose={(event, reason) => {
+                    if (reason !== 'backdropClick') {
+                        handleDrawerClose()
+                    } else if (reason !== 'escapeKeyDown') {
+                        handleDrawerClose()
+                    }
+                }}
                 anchor="left"
                 open={open}
                 classes={{ paper: classes.MuiDrawer }}
