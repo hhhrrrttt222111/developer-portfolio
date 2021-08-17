@@ -19,7 +19,6 @@
 
 <br /><br />
 
-<br />
 
 # Sections
 ◼ HOME <br />
