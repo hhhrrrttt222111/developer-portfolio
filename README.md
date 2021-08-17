@@ -43,7 +43,12 @@
 <br />
 
 # Themes
+## Blue
 
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/blueThemeLight.png" width="48%" alt="">
+    <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/blueThemeDark.png" width="48%" alt="">
+</div>
 
 <br />
 
