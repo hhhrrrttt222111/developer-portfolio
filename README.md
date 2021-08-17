@@ -7,6 +7,7 @@
 - [Sections](#sections)
 - [Demo](#demo)
 - [Themes](#themes)
+- [Installation](#installation)
 - [Getting Started](#getting-started)
 - [Folder Structure](#folder-structure)
 - [Usage](#usage)
@@ -38,7 +39,7 @@
 <br />
 
 # Demo
-
+## View live demo [here](https://developer-portfolio-template.netlify.app/).
 
 <br />
 
@@ -113,6 +114,22 @@
 
 <br /> <br />
 
+# Installation
+### You will need to download Git and Node to run this project
+
+- [Git](https://git-scm.com/downloads)
+- [Node](https://nodejs.org/en/download/)
+
+## Also check out [this](https://reactjs.org/docs/create-a-new-react-app.html) if you are new to react.
+
+#### Make sure you have the latest version of both Git and Node on your computer.
+
+```
+node --version
+git --version
+```
+
+<br />
 
 # Getting Started
 ### Fork and Clone the repo
@@ -127,7 +144,7 @@ npm install
 ```
 #### or
 ```
-yarn add
+yarn install
 ```
 ### Start the development server
 ```
@@ -160,11 +177,12 @@ yarn start
 | [Firebase](https://firebase.google.com/docs/hosting) | [Deploy a React App with Firebase](https://medium.com/swlh/how-to-deploy-a-react-app-with-firebase-hosting-98063c5bf425) | [Youtube](https://www.youtube.com/watch?v=1wZw7RvXPRU) |
 
 
+## Heroku
+| Site   | Docs  | Demo  |
+| :-------------: |:-------------: |:-------------: |
+| [Heroku](https://www.heroku.com/) | [Deploying React App on Heroku from GitHub](https://medium.com/make-it-heady/deploying-create-react-app-on-heroku-from-github-49447561f670) | [Youtube](https://www.youtube.com/watch?v=dn4mmfbletg) |
 
 ## Github Pages
-
-## Heroku
-
 
 <br />
 
