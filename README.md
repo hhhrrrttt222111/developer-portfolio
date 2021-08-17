@@ -1,70 +1,152 @@
-# Getting Started with Create React App
+# Developer Portfolio 👾
+## A responsive portfolio template for developers
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
 
-## Available Scripts
+## Table of Contents
+- [Sections](#sections)
+- [Demo](#demo)
+- [Themes](#themes)
+- [Getting Started](#getting-started)
+- [Folder Structure](#folder-structure)
+- [Usage](#usage)
+- [Hosting](#hosting)
+- [Packages Used](#packages-used)
+- [APIs Used](#apis-used)
+- [Fonts and Images](#fonts-and-images)
+- [Upcoming Features](#upcoming-features)
+- [Contributors](#contributors)
 
-In the project directory, you can run:
+<br /><br />
 
-### `yarn start`
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Sections
+◼ HOME <br />
+◼ ABOUT <br />
+◼ RESUME
+- EDUCATION
+- SKILLS
+- EXPERIENCE
+- PROJECTS <br />
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+◼ SERVICES 
+- TESTIMONIALS <br />
 
-### `yarn test`
+◼ BLOG <br />
+◼ CONTACTS <br />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br />
 
-### `yarn build`
+# Demo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Themes
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<br />
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Getting Started
+### Fork and Clone the repo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+git clone hhttps://github.com/hhhrrrttt222111/developer-portfolio.git
+cd developer-portfolio
+```
+### Install packages from the root directory
+```
+npm install
+```
+#### or
+```
+yarn add
+```
+### Start the development server
+```
+npm start
+```
+#### or
+```
+yarn start
+```
+<br />
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Folder Structure
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br />
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Usage
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br />
 
-### Analyzing the Bundle Size
+# Hosting
+## Netlify
+| Site   | Docs  | Demo  |
+| :-------------: |:-------------: |:-------------: |
+| [Netlify](https://www.netlify.com/) | [3 ways to deploy React apps to Netlify](https://blog.logrocket.com/3-ways-to-deploy-react-apps-to-netlify/) | [Youtube](https://www.youtube.com/watch?v=sGBdp9r2GSg) |
+## Firebase
+| Site   | Docs  | Demo  |
+| :-------------: |:-------------: |:-------------: |
+| [Firebase](https://firebase.google.com/docs/hosting) | [Deploy a React App with Firebase](https://medium.com/swlh/how-to-deploy-a-react-app-with-firebase-hosting-98063c5bf425) | [Youtube](https://www.youtube.com/watch?v=1wZw7RvXPRU) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Github Pages
 
-### Advanced Configuration
+## Heroku
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+<br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Packages Used
 
-### `yarn build` fails to minify
+| Client Side Packages  |
+| :-------------: |
+| @material-ui/core  |
+| @material-ui/icons  |
+| react-color |
+| react-helmet  |
+| react-hook-form |
+| react-icons  |
+| react-reveal |
+| react-router-dom  |
+| react-router-hash-link  |
+| react-slick  |
+| slick-carousel |
+| validator |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<br />
+
+# APIs Used
+
+
+
+<br />
+
+# Fonts and Images
+
+## Illustrations
+- [Icons8](https://icons8.com/illustrations/styles)
+
+## Icons
+- [Material Icons](https://material-ui.com/components/material-icons/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+## Fonts
+- [Poppins](https://fonts.google.com/specimen/Poppins)
+- [Bestermind](https://www.dafont.com/bestermind.font)
+
+<br />
+
+# Upcoming Features
+
+
+
+<br />
+
+# Contributors
