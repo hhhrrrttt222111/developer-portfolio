@@ -43,7 +43,23 @@
 <br />
 
 # Themes
-## Blue
+### Green
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/greenThemeLight.png" width="48%" alt="">
+    <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/greenThemeDark.png" width="48%" alt="">
+</div>
+<br />
+
+### Black & White
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/bwThemeLight.png" width="48%" alt="">
+    <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/bwThemeDark.png" width="48%" alt="">
+</div>
+<br />
+
+### Blue
 
 <div style="display: flex; justify-content: space-between;">
     <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/blueThemeLight.png" width="48%" alt="">
@@ -51,6 +67,52 @@
 </div>
 
 <br />
+
+### Red
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/redThemeLight.png" width="48%" alt="">
+    <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/redThemeDark.png" width="48%" alt="">
+</div>
+
+<br />
+
+### Orange
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/orangeThemeLight.png" width="48%" alt="">
+    <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/orangeThemeDark.png" width="48%" alt="">
+</div>
+
+<br />
+
+### Purple
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/purpleThemeLight.png" width="48%" alt="">
+    <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/purpleThemeDark.png" width="48%" alt="">
+</div>
+
+<br />
+
+### Pink
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/pinkThemeLight.png" width="48%" alt="">
+    <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/pinkThemeDark.png" width="48%" alt="">
+</div>
+
+<br />
+
+### Yellow
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/yellowThemeLight.png" width="48%" alt="">
+    <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/yellowThemeDark.png" width="48%" alt="">
+</div>
+
+<br /> <br />
+
 
 # Getting Started
 ### Fork and Clone the repo
