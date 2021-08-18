@@ -136,7 +136,7 @@ git --version
 ### Fork and Clone the repo
 
 ```
-git clone hhttps://github.com/--- YOUR TWITTER USERNAME ---/developer-portfolio.git
+git clone hhttps://github.com/hhhrrrttt222111/developer-portfolio.git
 cd developer-portfolio
 ```
 ### Install packages from the root directory
@@ -163,7 +163,34 @@ yarn start
 <br />
 
 # Usage
+### Customize your details for each component in `src/data` folder.
 
+Eg:
+```javascript
+export const headerData = {
+    name: '-- YOUR NAME --',
+    title: '-- YOUR TITLE --',
+    desciption:'-- DESCRIPTION --',
+    image: '-- IMAGE --',
+    resumePdf: ''
+}
+
+// You can also import image and PDF from assets as shown below
+
+import resume from '../assets/pdf/resume.pdf'
+import profileImg from '../assets/png/profileImg'
+
+export const headerData = {
+    name: '-- YOUR NAME --',
+    title: '-- YOUR TITLE --',
+    desciption:'-- DESCRIPTION --',
+    image: profileImg,
+    resumePdf: resume
+}
+```
+
+#### Data for each component is divided into respective files.
+#### Set website theme in `src/data/themeData.js` 
 
 <br />
 
@@ -265,9 +292,34 @@ yarn start
 <br />
 
 # Upcoming Features
+- Light/Dark theme toggle
+- More illustrations to choose from
+- Achievements and Awards
+- More fonts to choose from
+
+
+<br /><br />
+
+## Raise an issue for...
+- New theme
+- Can't find required skill in Skills section
+- Add new social media profile
+- Add another section
+
+
 
 
 
 <br />
 
 # Contributors
+
+<div>
+    <table>
+        <tr>
+            <td align="center"><a href="https://github.com/hhhrrrttt222111"><img src="https://hhhrrrttt222111.web.app/static/media/dp.5f7c380f.jpeg" width="135px;" height="135px;" alt=""/><br /><b>Hemanth R</b></a></td>
+            <td align="center"><a href="https://github.com/ShimilSAbraham"><img src="https://raw.githubusercontent.com/ShimilSAbraham/Blender_Works/main/IMG_20210403_084810_715.jpg" width="135px;" height="135px; alt=""/><br /><b>Shimil S Abraham</b></a></td>
+            <td align="center"><a href="https://github.com/Gayathry17"><img src="https://iamgayathrysuresh.web.app/static/media/gAvatar.37897d13.jpeg" width="135px;" height="135px; alt=""/><br /><b>Gayathry S</b></a></td>
+        </tr>
+    </table>
+</div>
