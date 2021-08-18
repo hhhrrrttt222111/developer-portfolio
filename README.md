@@ -12,6 +12,7 @@
 - [Folder Structure](#folder-structure)
 - [Usage](#usage)
 - [Hosting](#hosting)
+- [SEO](#seo)
 - [Packages Used](#packages-used)
 - [APIs Used](#apis-used)
 - [Fonts and Images](#fonts-and-images)
@@ -22,19 +23,19 @@
 
 
 # Sections
-◼ HOME <br />
-◼ ABOUT <br />
-◼ RESUME
-- EDUCATION
-- SKILLS
-- EXPERIENCE
-- PROJECTS <br />
+- HOME <br />
+- ABOUT <br />
+- RESUME
+    - EDUCATION
+    - SKILLS
+    - EXPERIENCE
+    - PROJECTS <br />
 
-◼ SERVICES 
-- TESTIMONIALS <br />
+- SERVICES 
+    - TESTIMONIALS <br />
 
-◼ BLOG <br />
-◼ CONTACTS <br />
+- BLOG <br />
+- CONTACTS <br />
 
 <br />
 
@@ -135,7 +136,7 @@ git --version
 ### Fork and Clone the repo
 
 ```
-git clone hhttps://github.com/hhhrrrttt222111/developer-portfolio.git
+git clone hhttps://github.com/--- YOUR TWITTER USERNAME ---/developer-portfolio.git
 cd developer-portfolio
 ```
 ### Install packages from the root directory
@@ -183,6 +184,42 @@ yarn start
 | [Heroku](https://www.heroku.com/) | [Deploying React App on Heroku from GitHub](https://medium.com/make-it-heady/deploying-create-react-app-on-heroku-from-github-49447561f670) | [Youtube](https://www.youtube.com/watch?v=dn4mmfbletg) |
 
 ## Github Pages
+
+<br />
+
+
+# SEO
+### Search engine optimization (SEO) is the process of improving the quality and quantity of website traffic to a website or a web page from search engines. 
+### Add the below code snippet to `public/index.html` with your site info. This step is not mandatory
+
+<br />
+
+```html
+    <meta name="description" content="--- SITE DESCRIPTION ---" />
+    <meta property="og:image" content="--- YOUR IMAGE ---">
+    <meta property="og:site_name" content="--- YOUR NAME ---"/>
+    <meta property="og:title" content="--- YOUR NAME ---"/>
+    <meta property="og:url" content="--- YOUR SITE URL ---"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="--- SITE DESCRIPTION ---"/>
+    <meta property="og:image" content="--- YOUR IMAGE ---"/>
+    
+    <meta itemprop="name" content="--- YOUR NAME ---"/>
+    <meta itemprop="url" content="--- YOUR SITE URL ---"/>
+    <meta itemprop="description" content="--- SITE DESCRIPTION ---"/>
+    <meta itemprop="thumbnailUrl" content=""/>
+    <link rel="image_src" href="--- YOUR IMAGE ---"/>
+    <meta itemprop="image" content="--- YOUR IMAGE ---"/>
+    
+    <meta name="twitter:site" content="@--- YOUR TWITTER USERNAME ---">
+    <meta name="twitter:creator" content="@--- YOUR TWITTER USERNAME ---">
+    <meta name="twitter:url" content="--- YOUR SITE URL ---"/>
+    <meta name="twitter:title" content="--- YOUR NAME ---">
+    <meta name="twitter:description" content="--- SITE DESCRIPTION ---">
+    <meta name="twitter:image" content="--- YOUR IMAGE ---">
+    <meta name="twitter:card" content="summary"/>
+
+```
 
 <br />
 
