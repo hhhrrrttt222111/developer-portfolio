@@ -6,6 +6,7 @@ import {
 
 
 export const greenThemeLight = {
+    type: 'light',
     primary: '#3fc337',
     primary1: '#3fc337b3',
     primary2: '#EAEAEA',
@@ -18,6 +19,7 @@ export const greenThemeLight = {
 }
 
 export const greenThemeDark = {
+    type: 'dark',
     primary: '#3fc337',
     primary1: '#3fc337b3',
     primary2: '#212121',
@@ -29,6 +31,7 @@ export const greenThemeDark = {
     aboutimg2: greenThemegirl
 }
 export const bwThemeLight = {
+    type: 'light',
     primary: '#000000',
     primary1: '#000000b3',
     primary2: '#EAEAEA',
@@ -40,6 +43,7 @@ export const bwThemeLight = {
     aboutimg2: bwThemegirl
 }
 export const bwThemeDark = {
+    type: 'dark',
     primary: '#B6B6B6',
     primary1: '#B6B6B6b3',
     primary2: '#212121',
@@ -52,6 +56,7 @@ export const bwThemeDark = {
 }
 
 export const blueThemeLight = {
+    type: 'light',
     primary: '#545fc4',
     primary1: '#545fc4b3',
     primary2: '#eaeaea',
@@ -63,6 +68,7 @@ export const blueThemeLight = {
     aboutimg2: blueThemegirl
 }
 export const blueThemeDark = {
+    type: 'dark',
     primary: '#545fc4',
     primary1: '#545fc4b3',
     primary2: '#212121',
@@ -75,6 +81,7 @@ export const blueThemeDark = {
 }
 
 export const redThemeLight = {
+    type: 'light',
     primary: '#f03939',
     primary1: '#f03939b3',
     primary2: '#eaeaea',
@@ -86,6 +93,7 @@ export const redThemeLight = {
     aboutimg2: redThemegirl
 }
 export const redThemeDark = {
+    type: 'dark',
     primary: '#f03939',
     primary1: '#f03939b3',
     primary2: '#212121',
@@ -98,6 +106,7 @@ export const redThemeDark = {
 }
 
 export const orangeThemeLight = {
+    type: 'light',
     primary: '#f56539',
     primary1: '#f56539b3',
     primary2: '#eaeaea',
@@ -109,6 +118,7 @@ export const orangeThemeLight = {
     aboutimg2: orangeThemegirl
 }
 export const orangeThemeDark = {
+    type: 'dark',
     primary: '#f56539',
     primary1: '#f56539b3',
     primary2: '#212121',
@@ -121,6 +131,7 @@ export const orangeThemeDark = {
 }
 
 export const purpleThemeLight = {
+    type: 'light',
     primary: '#823ae0',
     primary1: '#823ae0b3',
     primary2: '#eaeaea',
@@ -132,6 +143,7 @@ export const purpleThemeLight = {
     aboutimg2: purpleThemegirl
 }
 export const purpleThemeDark = {
+    type: 'dark',
     primary: '#823ae0',
     primary1: '#823ae0b3',
     primary2: '#212121',
@@ -144,6 +156,7 @@ export const purpleThemeDark = {
 }
 
 export const pinkThemeLight = {
+    type: 'light',
     primary: '#ff4f93',
     primary1: '#ff4f93b3',
     primary2: '#eaeaea',
@@ -155,6 +168,7 @@ export const pinkThemeLight = {
     aboutimg2: pinkThemegirl
 }
 export const pinkThemeDark = {
+    type: 'dark',
     primary: '#ff4f93',
     primary1: '#ff4f93b3',
     primary2: '#212121',
@@ -167,6 +181,7 @@ export const pinkThemeDark = {
 }
 
 export const yellowThemeLight = {
+    type: 'light',
     primary: '#E9AD35',
     primary1: '#E9AD35b3',
     primary2: '#eaeaea',
@@ -179,6 +194,7 @@ export const yellowThemeLight = {
 }
 
 export const yellowThemeDark = {
+    type: 'dark',
     primary: '#E9AD35',
     primary1: '#E9AD35b3',
     primary2: '#212121',

@@ -2,7 +2,7 @@ import React,{ useContext} from 'react';
 
 import './About.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
-import {aboutData} from '../../data/aboutData'
+import { aboutData } from '../../data/aboutData'
 
 
 

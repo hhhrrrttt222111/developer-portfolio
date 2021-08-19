@@ -40,7 +40,7 @@
 <br />
 
 # Demo
-## View live demo [here](https://developer-portfolio-template.netlify.app/).
+## View live demo [here](https://dev-portfolio-template.netlify.app/).
 
 <br />
 
@@ -261,6 +261,7 @@ export const headerData = {
 | react-hook-form |
 | react-icons  |
 | react-reveal |
+| react-fast-marquee |
 | react-router-dom  |
 | react-router-hash-link  |
 | react-slick  |
