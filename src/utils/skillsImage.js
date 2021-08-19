@@ -14,7 +14,6 @@ import react from '../assets/svg/skills/react.svg'
 import svelte from '../assets/svg/skills/svelte.svg'
 import typescript from '../assets/svg/skills/typescript.svg'
 import vue from '../assets/svg/skills/vue.svg'
-
 import bootstrap from '../assets/svg/skills/bootstrap.svg'
 import bulma from '../assets/svg/skills/bulma.svg'
 import capacitorjs from '../assets/svg/skills/capacitorjs.svg'
@@ -26,6 +25,21 @@ import postgresql from '../assets/svg/skills/postgresql.svg'
 import tailwind from '../assets/svg/skills/tailwind.svg'
 import vitejs from '../assets/svg/skills/vitejs.svg'
 import vuetifyjs from '../assets/svg/skills/vuetifyjs.svg'
+
+import c from '../assets/svg/skills/c.svg'
+import cplusplus from '../assets/svg/skills/cplusplus.svg'
+import csharp from '../assets/svg/skills/csharp.svg'
+import dart from '../assets/svg/skills/dart.svg'
+import go from '../assets/svg/skills/go.svg'
+import java from '../assets/svg/skills/java.svg'
+import julia from '../assets/svg/skills/julia.svg'
+import kotlin from '../assets/svg/skills/kotlin.svg'
+import matlab from '../assets/svg/skills/matlab.svg'
+import php from '../assets/svg/skills/php.svg'
+import python from '../assets/svg/skills/python.svg'
+import ruby from '../assets/svg/skills/ruby.svg'
+import swift from '../assets/svg/skills/swift.svg'
+
 
 export const skillsImage = (skill) => {
     const skillID = skill.toLowerCase();
@@ -84,6 +98,32 @@ export const skillsImage = (skill) => {
             return vitejs;
         case 'vuetifyjs':
             return vuetifyjs;
+        case 'c':
+            return c;
+        case 'c++':
+            return cplusplus;
+        case 'c#':
+            return csharp;
+        case 'dart':
+            return dart;
+        case 'go':
+            return go;
+        case 'java':
+            return java;
+        case 'kotlin':
+            return kotlin;
+        case 'julia':
+            return julia;
+        case 'matlab':
+            return matlab;
+        case 'php':
+            return php;
+        case 'python':
+            return python;
+        case 'ruby':
+            return ruby;
+        case 'swift':
+            return swift;
         default:
             break;
     }
