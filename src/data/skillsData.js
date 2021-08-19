@@ -1,15 +1,17 @@
 export const skillsData = [
-    'Bootstrap',
-    'Bulma',
-    'CapacitorJS',
-    'Coffeescript',
-    'MemSQL',
-    'MongoDB',
-    'MySQL',
-    'PostgreSQL',
-    'Tailwind',
-    'ViteJS',
-    'VuetifyJS'
+    'C',
+    'C++',
+    'C#',
+    'Dart',
+    'Go',
+    'Java',
+    'Julia',
+    'Kotlin',
+    'Matlab',
+    'PHP',
+    'Python',
+    'Ruby',
+    'Swift',
 ]
 
 
@@ -40,8 +42,12 @@ export const skillsData = [
     MemSQL
     C
     C++
+    C#
     Python
     Java
+    Julia
+    Matlab
+    Swift
     Ruby
     Kotlin
     Go
