@@ -1,0 +1,59 @@
+.testimonials {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+
+/* SLIDER STYLES */
+.slick-slider {
+    height: 100% !important;
+    width: 100%;
+}
+
+
+.slick-initialized { 
+    overflow: hidden; 
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.slick-dots {
+    position: relative !important;
+    bottom: 0 !important;
+}
+
+
+
+.testimonials--body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin-top: 2.5rem;
+}
+
+.testimonials--slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.single--testimony {
+    padding: 2rem;
+    background-color: rgb(209, 114, 114);
+    height: 100%;
+}

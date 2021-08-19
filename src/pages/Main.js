@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Navbar, Footer, Landing, About } from '../components'
+import { Navbar, Footer, Landing, About, Skills, Testimonials } from '../components'
 
 function Main() {
     return (
@@ -10,6 +10,14 @@ function Main() {
         
             <Landing />
             <About />
+            {/* Education */}
+            <Skills />
+            {/* Experience */}
+            {/* PROJECTS */}
+            {/* SERVICES */}
+            <Testimonials />
+            {/* BLOG */}
+            {/* CONTACT */}
             <Footer />
         </div>
     )
