@@ -1,11 +1,15 @@
 export const skillsData = [
-    'Docker',
-    'HTML',
-    'Photoshop',
-    'Illustrator',
-    'GCP',
-    'Adobe XD',
-    'After Effects'
+    'Bootstrap',
+    'Bulma',
+    'CapacitorJS',
+    'Coffeescript',
+    'MemSQL',
+    'MongoDB',
+    'MySQL',
+    'PostgreSQL',
+    'Tailwind',
+    'ViteJS',
+    'VuetifyJS'
 ]
 
 
@@ -16,14 +20,24 @@ export const skillsData = [
     HTML
     CSS
     JS 
-    React JS
+    React
+    Next JS
+    Nuxt JS
     Node JS
+    Vue
+    Angular
     Docker
     Photoshop
     Illustrator
+    Svelte
     GCP
     Adobe XD
     After Effects
+    Bootstrap
+    Bulma
+    CapacitorJs
+    Coffeescript
+    MemSQL
     C
     C++
     Python
@@ -31,6 +45,7 @@ export const skillsData = [
     Ruby
     Kotlin
     Go
+    PHP
     Flutter
     Dart
     Typescript
@@ -41,6 +56,9 @@ export const skillsData = [
     Ubuntu
     Bootstrap
     MongoDB
+    Tailwind
+    ViteJS
+    VuetifyJS
     MySQL
     PostgreSQL
     AWS
