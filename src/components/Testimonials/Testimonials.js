@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from 'react'
+import React, { useContext, useRef } from 'react'
 
 import Slider from "react-slick";
 
@@ -43,9 +43,9 @@ function Testimonials() {
         <>
             {
                 testimonialsData.length > 0 && (
-                    <div className="testimonials">
+                    <div className="testimonials" style={{backgroundColor: theme.primary2}}>
                         <div className="testimonials--header">
-                            <h1>Testimonials</h1>
+                            <h1 style={{color: theme.primary}}>Testimonials</h1>
                         </div>
                         <div className="testimonials--body">
                             <div className="testimonials--slider">
