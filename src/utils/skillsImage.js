@@ -25,7 +25,6 @@ import postgresql from '../assets/svg/skills/postgresql.svg'
 import tailwind from '../assets/svg/skills/tailwind.svg'
 import vitejs from '../assets/svg/skills/vitejs.svg'
 import vuetifyjs from '../assets/svg/skills/vuetifyjs.svg'
-
 import c from '../assets/svg/skills/c.svg'
 import cplusplus from '../assets/svg/skills/cplusplus.svg'
 import csharp from '../assets/svg/skills/csharp.svg'
@@ -39,6 +38,27 @@ import php from '../assets/svg/skills/php.svg'
 import python from '../assets/svg/skills/python.svg'
 import ruby from '../assets/svg/skills/ruby.svg'
 import swift from '../assets/svg/skills/swift.svg'
+
+import adobeaudition from '../assets/svg/skills/adobeaudition.svg'
+import aws from '../assets/svg/skills/aws.svg'
+import deno from '../assets/svg/skills/deno.svg'
+import django from '../assets/svg/skills/django.svg'
+import firebase from '../assets/svg/skills/firebase.svg'
+import gimp from '../assets/svg/skills/gimp.svg'
+import git from '../assets/svg/skills/git.svg'
+import graphql from '../assets/svg/skills/graphql.svg'
+import lightroom from '../assets/svg/skills/lightroom.svg'
+import materialui from '../assets/svg/skills/materialui.svg'
+import nginx from '../assets/svg/skills/nginx.svg'
+import numpy from '../assets/svg/skills/numpy.svg'
+import opencv from '../assets/svg/skills/opencv.svg'
+import premierepro from '../assets/svg/skills/premierepro.svg'
+import pytorch from '../assets/svg/skills/pytorch.svg'
+import selenium from '../assets/svg/skills/selenium.svg'
+import strapi from '../assets/svg/skills/strapi.svg'
+import tensorflow from '../assets/svg/skills/tensorflow.svg'
+import webix from '../assets/svg/skills/webix.svg'
+import wordpress from '../assets/svg/skills/wordpress.svg'
 
 
 export const skillsImage = (skill) => {
@@ -124,6 +144,46 @@ export const skillsImage = (skill) => {
             return ruby;
         case 'swift':
             return swift;
+        case 'adobe audition':
+            return adobeaudition;
+        case 'aws':
+            return aws;
+        case 'deno':
+            return deno;
+        case 'django':
+            return django;
+        case 'firebase':
+            return firebase;
+        case 'gimp':
+            return gimp;
+        case 'git':
+            return git;
+        case 'graphql':
+            return graphql;
+        case 'lightroom':
+            return lightroom;
+        case 'materialui':
+            return materialui;
+        case 'nginx':
+            return nginx;
+        case 'numpy':
+            return numpy;
+        case 'opencv':
+            return opencv;
+        case 'premiere pro':
+            return premierepro;
+        case 'pytorch':
+            return pytorch;
+        case 'selenium':
+            return selenium;
+        case 'strapi':
+            return strapi;
+        case 'tensorflow':
+            return tensorflow;
+        case 'webix':
+            return webix;
+        case 'wordpress':
+            return wordpress;
         default:
             break;
     }

@@ -21,7 +21,7 @@ function Skills() {
                 <div className="skill--scroll">
                     <Marquee 
                         gradient={false} 
-                        speed={50} 
+                        speed={80} 
                         pauseOnHover={true}
                         pauseOnClick={true} 
                         delay={0}
