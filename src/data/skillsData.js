@@ -1,17 +1,16 @@
 export const skillsData = [
-    'C',
-    'C++',
-    'C#',
-    'Dart',
-    'Go',
-    'Java',
-    'Julia',
-    'Kotlin',
-    'Matlab',
-    'PHP',
+    'Premiere Pro',
+    'Pytorch',
+    'Selenium',
+    'Strapi',
+    'Tensorflow',
+    'Webix',
+    'Wordpress',
+    'HTML',
+    'React',
     'Python',
-    'Ruby',
-    'Swift',
+    'Java',
+    'Flutter'
 ]
 
 
@@ -70,4 +69,21 @@ export const skillsData = [
     AWS
     Firebase
     Blender
+    Premiere Pro
+    Adobe Audition
+    Deno
+    Django
+    Gimp
+    Graphql
+    Lightroom
+    MaterialUI
+    Nginx
+    Numpy
+    OpenCV
+    Pytorch
+    Selenium
+    Strapi
+    Tensorflow
+    Webex
+    Wordpress
 */
