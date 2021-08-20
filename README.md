@@ -281,6 +281,7 @@ export const headerData = {
 
 ## Illustrations
 - [Icons8](https://icons8.com/illustrations/styles)
+- [SVG Porn](https://svgporn.com/)
 
 ## Icons
 - [Material Icons](https://material-ui.com/components/material-icons/)
@@ -288,6 +289,7 @@ export const headerData = {
 
 ## Fonts
 - [Poppins](https://fonts.google.com/specimen/Poppins)
+- [Big Shoulders Text](https://fonts.google.com/specimen/Big+Shoulders+Text)
 - [Bestermind](https://www.dafont.com/bestermind.font)
 
 <br />

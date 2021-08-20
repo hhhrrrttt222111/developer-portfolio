@@ -38,7 +38,6 @@ import php from '../assets/svg/skills/php.svg'
 import python from '../assets/svg/skills/python.svg'
 import ruby from '../assets/svg/skills/ruby.svg'
 import swift from '../assets/svg/skills/swift.svg'
-
 import adobeaudition from '../assets/svg/skills/adobeaudition.svg'
 import aws from '../assets/svg/skills/aws.svg'
 import deno from '../assets/svg/skills/deno.svg'
@@ -59,6 +58,20 @@ import strapi from '../assets/svg/skills/strapi.svg'
 import tensorflow from '../assets/svg/skills/tensorflow.svg'
 import webix from '../assets/svg/skills/webix.svg'
 import wordpress from '../assets/svg/skills/wordpress.svg'
+
+import azure from '../assets/svg/skills/azure.svg'
+import blender from '../assets/svg/skills/blender.svg'
+import fastify from '../assets/svg/skills/fastify.svg'
+import figma from '../assets/svg/skills/figma.svg'
+import flutter from '../assets/svg/skills/flutter.svg'
+import haxe from '../assets/svg/skills/haxe.svg'
+import ionic from '../assets/svg/skills/ionic.svg'
+import markdown from '../assets/svg/skills/markdown.svg'
+import microsoftoffice from '../assets/svg/skills/microsoftoffice.svg'
+import picsart from '../assets/svg/skills/picsart.svg'
+import sketch from '../assets/svg/skills/sketch.svg'
+import unity from '../assets/svg/skills/unity.svg'
+import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
 
 
 export const skillsImage = (skill) => {
@@ -184,6 +197,32 @@ export const skillsImage = (skill) => {
             return webix;
         case 'wordpress':
             return wordpress;
+        case 'azure':
+            return azure;
+        case 'blender':
+            return blender;
+        case 'fastify':
+            return fastify;
+        case 'figma':
+            return figma;
+        case 'flutter':
+            return flutter;
+        case 'haxe':
+            return haxe;
+        case 'ionic':
+            return ionic;
+        case 'markdown':
+            return markdown;
+        case 'microsoft office':
+            return microsoftoffice;
+        case 'picsart':
+            return picsart;
+        case 'sketch':
+            return sketch;
+        case 'unity':
+            return unity;
+        case 'wolframalpha':
+            return wolframalpha;
         default:
             break;
     }

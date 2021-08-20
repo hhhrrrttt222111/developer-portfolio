@@ -52,6 +52,7 @@ function Testimonials() {
                                 <Slider {...settings} ref={sliderRef}>
                                     {testimonialsData.map((test) => (
                                         <div className="single--testimony" key={test.id}>
+                                            <img src={test.image} alt={test.name} />
                                             <h1>{test.name}</h1>
                                             <h4>{test.title}</h4>
                                             <p>{test.text}</p>
