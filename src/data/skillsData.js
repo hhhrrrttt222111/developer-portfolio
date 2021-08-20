@@ -1,16 +1,9 @@
 export const skillsData = [
-    'Premiere Pro',
-    'Pytorch',
-    'Selenium',
-    'Strapi',
-    'Tensorflow',
-    'Webix',
-    'Wordpress',
     'HTML',
-    'React',
-    'Python',
-    'Java',
-    'Flutter'
+    'Fastify',
+    'Blender',
+    'Figma',
+    'Javascript',
 ]
 
 
@@ -32,6 +25,16 @@ export const skillsData = [
     Illustrator
     Svelte
     GCP
+    Azure
+    Fastify
+    Haxe
+    Ionic
+    Markdown
+    Microsoft Office
+    Picsart
+    Sketch
+    Unity
+    WolframAlpha
     Adobe XD
     After Effects
     Bootstrap
