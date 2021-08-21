@@ -1,0 +1,20 @@
+.singleBlog {
+    height: 450px;
+    width: 25%;
+    background-color: rgb(171, 240, 240);
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}
+
+
+.singleBlog--image > img {
+    width: 100%;
+}
+
+.singleBlog--body {
+    padding: 1rem;
+    font-family: Poppins;
+}

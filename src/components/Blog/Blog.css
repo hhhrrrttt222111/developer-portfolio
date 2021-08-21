@@ -1,0 +1,55 @@
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+
+.blog--header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem;
+}
+
+
+.blog--header h1 {
+    margin-bottom: 40px;
+    font-size: 3.5rem;
+    font-family: Poppins;
+}
+
+.blog--body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog--bodyContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.blog--viewAll {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.blog--viewAll a button {
+    color: rgb(233, 193, 165);
+    text-transform: inherit;
+    background-color: crimson;
+    border-radius: 10px;
+    padding: 0.55rem 2rem;
+}

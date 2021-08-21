@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Navbar, Footer, Landing, About, Skills, Testimonials } from '../components'
+import { Navbar, Footer, Landing, About, Skills, Testimonials, Blog } from '../../components'
 
 function Main() {
     return (
@@ -16,7 +16,7 @@ function Main() {
             {/* PROJECTS */}
             {/* SERVICES */}
             <Testimonials />
-            {/* BLOG */}
+            <Blog />
             {/* CONTACT */}
             <Footer />
         </div>
