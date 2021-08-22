@@ -26,7 +26,7 @@ export const blogData = [
     {
         id: 4,
         title: 'Creative Product Designer From Facebook',
-        description: 'Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.',
+        description: 'Even the all-powerful God has no control about the blind texts it is an almost unorthographic.',
         date: 'Sep 17, 2018',
         image: 'https://preview.colorlib.com/theme/rezume/images/xpost_2.jpg.pagespeed.ic.wMIXCxQ_OF.webp',
         url: 'https://preview.colorlib.com/theme/rezume/'
@@ -34,7 +34,7 @@ export const blogData = [
     {
         id: 5,
         title: 'Creative Graphic Designer From Google',
-        description: 'Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.',
+        description: 'Even the all-powerful Pointing has no control about the blind texts it is an god unorthographic.',
         date: 'Oct 1, 2018',
         image: 'https://preview.colorlib.com/theme/rezume/images/xpost_1.jpg.pagespeed.ic.1DAtdI1wck.webp',
         url: 'https://preview.colorlib.com/theme/rezume/'

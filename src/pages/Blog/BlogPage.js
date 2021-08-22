@@ -12,7 +12,8 @@ function BlogPage() {
     const { theme } = useContext(ThemeContext);
 
     const filteredArticles = blogData.filter((blog) => {
-        return blog.title.toLowerCase().includes(search.toLowerCase())
+        const content = blog.title + blog.description
+        return content.toLowerCase().includes(search.toLowerCase())
     })
 
     return (
