@@ -15,9 +15,18 @@ import redThemegirl from '../assets/svg/about/redTheme-girl.svg'
 import yellowThemeboy from '../assets/svg/about/yellowTheme-boy.svg'
 import yellowThemegirl from '../assets/svg/about/yellowTheme-girl.svg'
 
+import eduBlue from '../assets/svg/education/eduBlue.svg'
+import eduGreen from '../assets/svg/education/eduGreen.svg'
+import eduBlack from '../assets/svg/education/eduBlack.svg'
+import eduOrange from '../assets/svg/education/eduOrange.svg'
+import eduPink from '../assets/svg/education/eduPink.svg'
+import eduPurple from '../assets/svg/education/eduPurple.svg'
+import eduRed from '../assets/svg/education/eduRed.svg'
+import eduYellow from '../assets/svg/education/eduYellow.svg'
+
 
 export { 
     blueThemegirl, blueThemeboy, bwThemeboy, bwThemegirl, greenThemeboy, greenThemegirl, orangeThemeboy, 
     orangeThemegirl, pinkThemeboy, pinkThemegirl, purpleThemeboy, purpleThemegirl, redThemeboy, redThemegirl, yellowThemeboy,
-    yellowThemegirl
+    yellowThemegirl,eduBlue,eduBlack,eduGreen,eduOrange,eduPink,eduPurple,eduRed,eduYellow
 }

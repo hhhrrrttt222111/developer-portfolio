@@ -1,0 +1,24 @@
+.education {
+    height: 100vh;
+
+}
+
+.education > h1{
+    font-size: 5rem;
+    font-family: Poppins;
+    padding: 3rem;
+}
+
+.education-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}

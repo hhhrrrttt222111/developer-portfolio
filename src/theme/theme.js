@@ -1,7 +1,7 @@
 import { 
     blueThemegirl, blueThemeboy, bwThemeboy, bwThemegirl, greenThemeboy, greenThemegirl, orangeThemeboy, 
     orangeThemegirl, pinkThemeboy, pinkThemegirl, purpleThemeboy, purpleThemegirl, redThemeboy, redThemegirl, yellowThemeboy,
-    yellowThemegirl
+    yellowThemegirl,eduBlack,eduBlue,eduGreen,eduOrange,eduPink,eduPurple,eduRed,eduYellow
 } from './images'
 
 
@@ -15,7 +15,8 @@ export const greenThemeLight = {
     secondary2: '#212121b3',
     secondary3: '#212121b3',
     aboutimg1: greenThemeboy,
-    aboutimg2: greenThemegirl
+    aboutimg2: greenThemegirl,
+    eduimg: eduGreen
 }
 
 export const greenThemeDark = {
@@ -28,7 +29,8 @@ export const greenThemeDark = {
     secondary2: '#eaeaeab3',
     secondary3: '#eaeaeab3',
     aboutimg1: greenThemeboy,
-    aboutimg2: greenThemegirl
+    aboutimg2: greenThemegirl,
+    eduimg: eduGreen
 }
 export const bwThemeLight = {
     type: 'light',
@@ -40,7 +42,8 @@ export const bwThemeLight = {
     secondary2: '#212121b3',
     secondary3: '#212121b3',
     aboutimg1: bwThemeboy,
-    aboutimg2: bwThemegirl
+    aboutimg2: bwThemegirl,
+    eduimg: eduBlack
 }
 export const bwThemeDark = {
     type: 'dark',
@@ -52,7 +55,8 @@ export const bwThemeDark = {
     secondary2: '#eaeaeab3',
     secondary3: '#eaeaeab3',
     aboutimg1: bwThemeboy,
-    aboutimg2: bwThemegirl
+    aboutimg2: bwThemegirl,
+    eduimg: eduBlack
 }
 
 export const blueThemeLight = {
@@ -65,7 +69,8 @@ export const blueThemeLight = {
     secondary2: '#212121b3',
     secondary3: '#212121b3',
     aboutimg1: blueThemeboy,
-    aboutimg2: blueThemegirl
+    aboutimg2: blueThemegirl,
+    eduimg: eduBlue
 }
 export const blueThemeDark = {
     type: 'dark',
@@ -77,7 +82,8 @@ export const blueThemeDark = {
     secondary2: '#eaeaeab3',
     secondary3: '#eaeaeab3',
     aboutimg1: blueThemeboy,
-    aboutimg2: blueThemegirl
+    aboutimg2: blueThemegirl,
+    eduimg: eduBlue
 }
 
 export const redThemeLight = {
@@ -90,7 +96,8 @@ export const redThemeLight = {
     secondary2: '#212121b3',
     secondary3: '#212121b3',
     aboutimg1: redThemeboy,
-    aboutimg2: redThemegirl
+    aboutimg2: redThemegirl,
+    eduimg: eduRed
 }
 export const redThemeDark = {
     type: 'dark',
@@ -102,7 +109,8 @@ export const redThemeDark = {
     secondary2: '#eaeaeab3',
     secondary3: '#eaeaeab3',
     aboutimg1: redThemeboy,
-    aboutimg2: redThemegirl
+    aboutimg2: redThemegirl,
+    eduimg: eduRed
 }
 
 export const orangeThemeLight = {
@@ -115,7 +123,8 @@ export const orangeThemeLight = {
     secondary2: '#212121b3',
     secondary3: '#212121b3',
     aboutimg1: orangeThemeboy,
-    aboutimg2: orangeThemegirl
+    aboutimg2: orangeThemegirl,
+    eduimg: eduOrange
 }
 export const orangeThemeDark = {
     type: 'dark',
@@ -127,7 +136,8 @@ export const orangeThemeDark = {
     secondary2: '#eaeaeab3',
     secondary3: '#eaeaeab3',
     aboutimg1: orangeThemeboy,
-    aboutimg2: orangeThemegirl
+    aboutimg2: orangeThemegirl,
+    eduimg: eduOrange
 }
 
 export const purpleThemeLight = {
@@ -140,7 +150,8 @@ export const purpleThemeLight = {
     secondary2: '#212121b3',
     secondary3: '#212121b3',
     aboutimg1: purpleThemeboy,
-    aboutimg2: purpleThemegirl
+    aboutimg2: purpleThemegirl,
+    eduimg: eduPurple
 }
 export const purpleThemeDark = {
     type: 'dark',
@@ -152,7 +163,8 @@ export const purpleThemeDark = {
     secondary2: '#eaeaeab3',
     secondary3: '#eaeaeab3',
     aboutimg1: purpleThemeboy,
-    aboutimg2: purpleThemegirl
+    aboutimg2: purpleThemegirl,
+    eduimg: eduPurple
 }
 
 export const pinkThemeLight = {
@@ -165,7 +177,8 @@ export const pinkThemeLight = {
     secondary2: '#212121b3',
     secondary3: '#212121b3',
     aboutimg1: pinkThemeboy,
-    aboutimg2: pinkThemegirl
+    aboutimg2: pinkThemegirl,
+    eduimg: eduPink
 }
 export const pinkThemeDark = {
     type: 'dark',
@@ -177,7 +190,8 @@ export const pinkThemeDark = {
     secondary2: '#eaeaeab3',
     secondary3: '#eaeaeab3',
     aboutimg1: pinkThemeboy,
-    aboutimg2: pinkThemegirl
+    aboutimg2: pinkThemegirl,
+    eduimg: eduPink
 }
 
 export const yellowThemeLight = {
@@ -190,7 +204,8 @@ export const yellowThemeLight = {
     secondary2: '#212121b3',
     secondary3: '#212121b3',
     aboutimg1: yellowThemeboy,
-    aboutimg2: yellowThemegirl
+    aboutimg2: yellowThemegirl,
+    eduimg: eduYellow
 }
 
 export const yellowThemeDark = {
@@ -203,7 +218,8 @@ export const yellowThemeDark = {
     secondary2: '#eaeaeab3',
     secondary3: '#eaeaeab3',
     aboutimg1: yellowThemeboy,
-    aboutimg2: yellowThemegirl
+    aboutimg2: yellowThemegirl,
+    eduimg: eduYellow
 }
 
 
