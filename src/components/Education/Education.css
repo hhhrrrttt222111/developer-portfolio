@@ -6,7 +6,8 @@
 .education > h1{
     font-size: 3.5rem;
     font-family: Poppins;
-    padding: 1.5rem;
+    padding: 1rem;
+    margin-left: 3.5rem;
 }
 
 .education-body {
@@ -15,11 +16,11 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 1.5rem;
+    margin-left: 3rem;
 }
 
 .education-description {
-    width: 70%;
+    width: 60%;
 }
 .education-card {
     display: flex;
@@ -31,7 +32,6 @@
     padding: 2rem;
     border-radius: 20px;
     margin-bottom: 1.5rem;
-    flex: 0.7;
 }
 
 .educard-img {
@@ -62,7 +62,6 @@
 }
 
 .education-image {
-    flex: 0.3;
     box-sizing: border-box;
     padding: 1rem;
 }
