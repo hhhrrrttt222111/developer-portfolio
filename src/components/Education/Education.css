@@ -1,0 +1,72 @@
+.education {
+    min-height: 100vh;
+
+}
+
+.education > h1{
+    font-size: 3.5rem;
+    font-family: Poppins;
+    padding: 1.5rem;
+}
+
+.education-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1.5rem;
+}
+
+.education-description {
+    width: 70%;
+}
+.education-card {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 150px;
+    padding: 2rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    flex: 0.7;
+}
+
+.educard-img {
+    border-radius: 50%;
+    padding: 0.7rem;
+}
+
+.education-details{
+    padding: 0.6rem;
+}
+
+.education-details > h6 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.education-details > h4 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.education-details > h5 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.education-image {
+    flex: 0.3;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.education-image > img {
+    width: 510px;
+}
