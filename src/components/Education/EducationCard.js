@@ -2,22 +2,21 @@ import React,{useContext} from 'react';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 
-import { educationData } from '../../data/educationData'
-
-import eduImg from '../../assets/svg/education/educationImg.svg'
+import eduImgWhite from '../../assets/svg/education/eduImgWhite.svg'
+import eduImgBlack from '../../assets/svg/education/eduImgBlack.svg'
 import './Education.css'
 
-function EducationCard() {
+function EducationCard({ id, institution, course, startYear, endYear }) {
     const { theme } = useContext(ThemeContext);
     return (
-        <div className="education-card" style={{backgroundColor:theme.primary}}>
-            <div className="education-img">
-                <img src={eduImg} alt="" />
+        <div key={id} className="education-card" style={{backgroundColor:theme.primary1}}>
+            <div className="educard-img" style={{backgroundColor: theme.primary}}>
+                <img src={theme === 'light' ? eduImgWhite : eduImgBlack} alt="" />
             </div>
             <div className="education-details">
-                 <h6>2009-2012</h6>
-                 <h4>CourseName</h4>
-                 <h5>College Name</h5>
+                 <h6 style={{color: theme.primary}}>{startYear}-{endYear}</h6>
+                 <h4 style={{color: theme.secondary}}>{course}</h4>
+                <h5 style={{color: theme.secondary1}}>{institution}</h5>
             </div>
         </div>
         
