@@ -4,5 +4,5 @@ import { // eslint-disable-next-line
 
 
 export const themeData = {
-    theme: orangeThemeLight
+    theme: orangeThemeDark
 }
