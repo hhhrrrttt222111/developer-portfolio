@@ -1,8 +1,8 @@
-.education {
+.experience{
     min-height: 100vh;
 }
 
-.education-body {
+.experience-body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -10,23 +10,24 @@
     width: 100%;
 }
 
-.education-description {
+.experience-description {
     width: 100%;
     flex: 0.65;
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
-    margin-left: 7rem;
+
 }
 
-.education-description > h1{
+.experience-description > h1 {
     font-size: 3.5rem;
     font-family: Poppins;
     margin-bottom: 2rem;
 }
-.education-card {
+
+.experience-card {
     display: flex;
     flex-direction: row;
     align-items:flex-start;
@@ -38,7 +39,7 @@
     margin-bottom: 1.5rem;
 }
 
-.educard-img {
+.expcard-img {
     border-radius: 50%;
     width: 55px;
     height: 55px;
@@ -47,46 +48,41 @@
     justify-content: center;
 }
 
-.educard-img > img {
+.expcard-img > img {
     width: 40px;
 }
 
-.education-details{
+.experience-details {
     padding-left: 0.6rem;
 }
 
-.education-details > h6 {
+.experience-details > h6 {
     font-family: Poppins;
     font-size: 0.85rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
-.education-details > h4 {
+.experience-details > h4 {
     font-family: Poppins;
     font-size: 1.225rem;
     font-weight: 600;
 }
 
-.education-details > h5 {
+.experience-details > h5 {
     font-family: Poppins;
     font-size: 1.15rem;
     font-weight: 600;
 }
 
-.education-image {
+.experience-image {
     box-sizing: border-box;
     padding: 1rem;
     flex: 0.35;
-    margin-top: 4rem;
+    margin-top: 10rem;
+    margin-left: 7rem;
 }
 
-.education-image > img {
+.experience-image > img {
     width: 100%;
-}
-
-@media (min-width: 992px) and (max-width: 1380px) {
-
-    
-
 }
