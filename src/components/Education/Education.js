@@ -12,9 +12,10 @@ function Education() {
     const { theme } = useContext(ThemeContext);
     return (
         <div className="education" id="education" style={{backgroundColor: theme.primary2}}>
-            <h1 style={{color:theme.primary}}>Education</h1>
+           
             <div className="education-body">
                 <div className="education-description">
+                <h1 style={{color:theme.primary}}>Education</h1>
                     {educationData.map(edu => (
                         <EducationCard 
                             key={edu.id}
