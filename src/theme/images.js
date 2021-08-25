@@ -24,9 +24,19 @@ import eduPurple from '../assets/svg/education/eduPurple.svg'
 import eduRed from '../assets/svg/education/eduRed.svg'
 import eduYellow from '../assets/svg/education/eduYellow.svg'
 
+import expBlue from '../assets/svg/experience/expBlue.svg'
+import expGreen from '../assets/svg/experience/expGreen.svg'
+import expBlack from '../assets/svg/experience/expBlack.svg'
+import expOrange from '../assets/svg/experience/expOrange.svg'
+import expPink from '../assets/svg/experience/expPink.svg'
+import expPurple from '../assets/svg/experience/expPurple.svg'
+import expRed from '../assets/svg/experience/expRed.svg'
+import expYellow from '../assets/svg/experience/expYellow.svg'
+
 
 export { 
     blueThemegirl, blueThemeboy, bwThemeboy, bwThemegirl, greenThemeboy, greenThemegirl, orangeThemeboy, 
-    orangeThemegirl, pinkThemeboy, pinkThemegirl, purpleThemeboy, purpleThemegirl, redThemeboy, redThemegirl, yellowThemeboy,
-    yellowThemegirl,eduBlue,eduBlack,eduGreen,eduOrange,eduPink,eduPurple,eduRed,eduYellow
+    orangeThemegirl, pinkThemeboy, pinkThemegirl, purpleThemeboy, purpleThemegirl, redThemeboy, redThemegirl,
+    yellowThemeboy,yellowThemegirl,eduBlue,eduBlack,eduGreen,eduOrange,eduPink,eduPurple,eduRed,eduYellow,
+    expBlue,expBlack,expGreen,expOrange,expPink,expPurple,expRed,expYellow
 }

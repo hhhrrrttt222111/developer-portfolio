@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { Navbar, Footer, Landing, About, Skills, Testimonials, Blog } from '../../components'
-import Education from '../../components/Education/Education'
+import { Navbar, Footer, Landing, About, Skills, Testimonials, Blog, Education, Experience } from '../../components'
+
 
 function Main() {
     return (
@@ -13,7 +13,7 @@ function Main() {
             <About />
             <Education />
             <Skills />
-            {/* Experience */}
+            <Experience />
             {/* PROJECTS */}
             {/* SERVICES */}
             <Testimonials />
