@@ -40,11 +40,15 @@
 
 .educard-img {
     border-radius: 50%;
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.educard-img > img {
+    width: 40px;
 }
 
 .education-details{
@@ -53,19 +57,20 @@
 
 .education-details > h6 {
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 0.85rem;
     font-weight: 700;
+    margin-bottom: 0.5rem;
 }
 
 .education-details > h4 {
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 1.225rem;
     font-weight: 600;
 }
 
 .education-details > h5 {
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 1.15rem;
     font-weight: 600;
 }
 
