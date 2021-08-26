@@ -1,5 +1,6 @@
 import React,{ useContext} from 'react';
 import { Link } from 'react-router-dom'
+import { makeStyles } from '@material-ui/core/styles';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { projectsData } from '../../data/projectsData'
@@ -12,10 +13,38 @@ function Projects() {
 
     const { theme } = useContext(ThemeContext);
 
+    
+    const useStyles = makeStyles(() => ({
+        viewAllBtn : {
+            color: theme.tertiary, 
+            backgroundColor: theme.primary,
+            "&:hover": {
+                color: theme.secondary, 
+                backgroundColor: theme.primary,
+            }
+        },
+        viewArr : {
+            color: theme.tertiary, 
+            backgroundColor: theme.secondary70,
+            width: '40px',
+            height: '40px',
+            padding: '0.5rem',
+            fontSize: '1.05rem',
+            borderRadius: '50%',
+            cursor: 'pointer',
+            "&:hover": {
+                color: theme.tertiary, 
+                backgroundColor: theme.secondary,
+            }
+        },
+    }));
+
+    const classes = useStyles();
+
     return (
         <>
             {projectsData.length > 0 && (
-                <div className="projects" id="projects" style={{backgroundColor: theme.primary2}}>
+                <div className="projects" id="projects" style={{backgroundColor: theme.secondary}}>
                     <div className="projects--header">
                         <h1 style={{color: theme.primary}}>Projects</h1>
                     </div>
@@ -38,9 +67,9 @@ function Projects() {
                         {projectsData.length > 3 && (
                             <div className="projects--viewAll">
                                 <Link to="/projects">
-                                    <button style={{color: theme.secondary, backgroundColor: theme.primary}}>
+                                    <button className={classes.viewAllBtn}>
                                         View All
-                                        <HiArrowRight className="more-arrow" style={{color: theme.secondary, backgroundColor: theme.primary2}}/>
+                                        <HiArrowRight className={classes.viewArr} />
                                     </button>
                                 </Link>
                             </div>

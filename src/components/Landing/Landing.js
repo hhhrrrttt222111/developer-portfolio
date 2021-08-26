@@ -23,11 +23,17 @@ function Landing() {
             fontWeight: '500',
             height: '50px',
             fontFamily: 'Poppins',
-            border: `3px solid ${theme.primary}`
+            border: `3px solid ${theme.primary}`,
+            transition: '100ms ease-out',
+            "&:hover": {
+                backgroundColor: theme.tertiary,
+                color: theme.secondary,
+                border: `3px solid ${theme.tertiary}`,
+            }
         },
         contactBtn : {
             backgroundColor: theme.primary,
-            color: theme.primary2,
+            color: theme.secondary,
             borderRadius: '30px',
             textTransform: 'inherit',
             textDecoration: 'none',
@@ -36,8 +42,12 @@ function Landing() {
             fontSize: '1rem',
             fontWeight: '500',
             fontFamily: 'Poppins',
+            border: `3px solid ${theme.primary}`,
+            transition: '100ms ease-out',
             "&:hover": {
-                backgroundColor: theme.primary
+                backgroundColor: theme.secondary,
+                color: theme.tertiary,
+                border: `3px solid ${theme.tertiary}`,
             }
         }
     }));
@@ -50,19 +60,19 @@ function Landing() {
                 <div className="landing--container-left" style={{backgroundColor: theme.primary}}>
                     <div className="lcl--content">
                         <a href="/" target="_blank" rel="noreferrer">
-                            <FaLinkedin className="landing--social" style={{color: theme.primary2}}/>
+                            <FaLinkedin className="landing--social" style={{color: theme.secondary}}/>
                         </a>
                         <a href="/" target="_blank" rel="noreferrer">
-                            <FaGithub className="landing--social" style={{color: theme.primary2}}/>
+                            <FaGithub className="landing--social" style={{color: theme.secondary}}/>
                         </a>
                         <a href="/" target="_blank" rel="noreferrer">
-                            <FaTwitter className="landing--social" style={{color: theme.primary2}}/>
+                            <FaTwitter className="landing--social" style={{color: theme.secondary}}/>
                         </a>
                     </div>
                 </div>
-                <img src={headerData.image} alt="" className="landing--img" style={{ opacity: `${drawerOpen ? '0' : '1'}`,borderColor: theme.primary2}}/>
-                <div className="landing--container-right" style={{backgroundColor: theme.primary2}}>
-                    <div className="lcr--content" style={{color: theme.secondary}}>
+                <img src={headerData.image} alt="" className="landing--img" style={{ opacity: `${drawerOpen ? '0' : '1'}`, borderColor: theme.secondary}}/>
+                <div className="landing--container-right" style={{backgroundColor: theme.secondary}}>
+                    <div className="lcr--content" style={{color: theme.tertiary}}>
                         <h6>{headerData.title}</h6>
                         <h1>{headerData.name}</h1>
                         <p>{headerData.desciption}</p>
