@@ -1,6 +1,6 @@
 import React from 'react'
 // eslint-disable-next-line
-import { Navbar, Footer, Landing, About, Skills, Testimonials, Blog, Education, Experience, Contacts } from '../../components'
+import { Navbar, Footer, Landing, About, Skills, Testimonials, Blog, Education, Experience, Contacts, Projects } from '../../components'
 
 
 function Main() {
@@ -14,7 +14,7 @@ function Main() {
             <Education />
             <Skills />
             <Experience />
-            {/* PROJECTS */}
+            <Projects />
             {/* SERVICES */}
             <Testimonials />
             <Blog />

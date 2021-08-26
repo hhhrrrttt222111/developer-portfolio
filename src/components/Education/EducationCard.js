@@ -11,7 +11,7 @@ function EducationCard({ id, institution, course, startYear, endYear }) {
     return (
         <div key={id} className="education-card" style={{backgroundColor:theme.primary1}}>
             <div className="educard-img" style={{backgroundColor: theme.primary}}>
-                <img src={theme === 'light' ? eduImgWhite : eduImgBlack} alt="" />
+                <img src={theme === 'light' ? eduImgBlack : eduImgWhite} alt="" />
             </div>
             <div className="education-details">
                 <h6 style={{color: theme.primary}}>{startYear}-{endYear}</h6>
