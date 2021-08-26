@@ -69,12 +69,12 @@ function Navbar() {
             borderRadius: '78.8418px',
             background: theme.primary2,
             color: theme.primary,
-            width: '65%',
+            width: '85%',
             height: '60px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-evenly',
-            padding: '0 35px',
+            padding: '0 30px',
             boxSizing: 'border-box',
             border: '2px solid',
             borderColor: theme.primary,
@@ -84,7 +84,8 @@ function Navbar() {
                 color: theme.primary2,
             },
             [t.breakpoints.down('sm')]: {
-                width:'85%',
+                width:'100%',
+                padding: '0 25px',
             },
         },
         drawerLinks: {
@@ -165,7 +166,7 @@ function Navbar() {
                             </div>
                         </NavLink>
 
-                        <NavLink to="/#contact" smooth={true} spy="true" duration={2000}>
+                        <NavLink to="/#contacts" smooth={true} spy="true" duration={2000}>
                             <div className={classes.drawerItem}>
                                 <MdPhone className={classes.drawerIcon}/>
                                 <span className={classes.drawerLinks}>Contact</span>

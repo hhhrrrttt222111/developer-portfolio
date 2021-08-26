@@ -53,3 +53,41 @@
     border-radius: 10px;
     padding: 0.55rem 2rem;
 }
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .blog--bodyContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 400px) {
+
+}
+  
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
+}
+
+
+@media only screen and (device-width: 768px) {
+
+}

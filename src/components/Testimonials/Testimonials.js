@@ -13,7 +13,6 @@ function Testimonials() {
     const { theme } = useContext(ThemeContext);
     const sliderRef = useRef();
 
-    console.log(testimonialsData)
 
     const settings = {
         dots: true,
