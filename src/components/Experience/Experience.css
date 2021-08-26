@@ -16,7 +16,7 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
 
 }
@@ -51,6 +51,7 @@
 
 .expcard-img > img {
     width: 40px;
+    pointer-events: none;
 }
 
 .experience-details {
@@ -86,6 +87,7 @@
 
 .experience-image > img {
     width: 100%;
+    pointer-events: none;
 }
 
 

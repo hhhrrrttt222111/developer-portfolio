@@ -1,4 +1,5 @@
 import React,{useContext} from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 
@@ -8,9 +9,22 @@ import eduImgBlack from '../../assets/svg/education/eduImgBlack.svg'
 import './Experience.css'
 
 function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
+
     const { theme } = useContext(ThemeContext);
+
+    const useStyles = makeStyles((t) => ({
+        experienceCard : {
+            backgroundColor:theme.primary1,
+            "&:hover": {
+                
+            },
+        },
+    }));
+
+    const classes = useStyles();
+
     return (
-        <div key={id} className="experience-card" style={{backgroundColor:theme.primary1}}>
+        <div key={id} className={`experience-card ${classes.experienceCard}`}>
              <div className="expcard-img" style={{backgroundColor: theme.primary}}>
                 <img src={theme === 'light' ? eduImgWhite : eduImgBlack} alt="" />
             </div>
