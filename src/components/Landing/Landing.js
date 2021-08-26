@@ -44,8 +44,6 @@ function Landing() {
 
     const classes = useStyles();
 
-    console.log(theme)
-
     return (
         <div className="landing" >
             <div className="landing--container">

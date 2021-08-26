@@ -18,3 +18,49 @@
     padding: 1rem;
     font-family: Poppins;
 }
+
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .singleBlog {
+        height: 450px;
+        width: 55%;
+        background-color: rgb(171, 240, 240);
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .singleBlog {
+        height: 450px;
+        width: 95%;
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 400px) {
+
+}
+  
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
+}
+
+
+@media only screen and (device-width: 768px) {
+
+}
