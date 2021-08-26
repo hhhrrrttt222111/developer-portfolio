@@ -1,11 +1,12 @@
 import React,{ useContext} from 'react';
 import { Link } from 'react-router-dom'
+import { HiArrowRight } from "react-icons/hi";
 
 import './Blog.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { blogData } from '../../data/blogData'
 import SingleBlog from './SingleBlog/SingleBlog';
-import { Button } from '@material-ui/core';
+
 
 function Blog() {
 
@@ -38,7 +39,10 @@ function Blog() {
                         {blogData.length > 3 && (
                             <div className="blog--viewAll">
                                 <Link to="/blog">
-                                    <Button>View All</Button>
+                                    <button style={{color: theme.secondary, backgroundColor: theme.primary}}>
+                                        View All
+                                        <HiArrowRight className="more-arrow" style={{color: theme.secondary, backgroundColor: theme.primary2}}/>
+                                    </button>
                                 </Link>
                             </div>
                         )}

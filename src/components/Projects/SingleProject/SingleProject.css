@@ -1,0 +1,45 @@
+.singleProject {
+    box-shadow: 4px 4px 8px rgba(36, 3, 3, 0.2);
+    width: 304px;
+    height: 360px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem 2rem;
+}
+
+.projectContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.projectContent > h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.525rem;
+    line-height: 110%;
+}
+
+.projectContent > img {
+    width: 100%;
+    height: 60%;
+}
+
+.project--showcaseBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.project--showcaseBtn > button {
+    cursor: pointer;
+    text-decoration: none;
+}

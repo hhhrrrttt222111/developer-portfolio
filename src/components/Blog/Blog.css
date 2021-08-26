@@ -47,11 +47,20 @@
 }
 
 .blog--viewAll a button {
-    color: rgb(233, 193, 165);
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     text-transform: inherit;
-    background-color: crimson;
-    border-radius: 10px;
-    padding: 0.55rem 2rem;
+    border-radius: 45px;
+    font-size: 1.05rem;
+    font-family: Poppins;
+    font-weight: 500;
+    padding-left: 1.5rem;
+    cursor: pointer;
 }
 
 
