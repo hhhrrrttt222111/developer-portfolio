@@ -66,14 +66,6 @@
 }
 
 
-.more-arrow {
-    width: 40px;
-    height: 40px;
-    padding: 0.5rem;
-    font-size: 1.05rem;
-    border-radius: 50%;
-    cursor: pointer;
-}
 
 @media (min-width: 992px) and (max-width: 1380px) {
 

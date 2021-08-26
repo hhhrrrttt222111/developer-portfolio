@@ -12,12 +12,12 @@ function Skills() {
     const { theme } = useContext(ThemeContext);
 
     const skillBoxStyle = {
-        backgroundColor: theme.primary2,
-        boxShadow: `0px 0px 30px ${theme.primary1}`
+        backgroundColor: theme.secondary,
+        boxShadow: `0px 0px 30px ${theme.primary30}`
     }
 
     return (
-        <div className="skills" style={{backgroundColor: theme.primary2}}>
+        <div className="skills" style={{backgroundColor: theme.secondary}}>
             <div className="skillsHeader">
                 <h2 style={{color: theme.primary}}>Skills</h2>
             </div>
@@ -35,7 +35,7 @@ function Skills() {
                         {skillsData.map((skill, id) => (
                             <div className="skill--box" key={id} style={skillBoxStyle}>
                                 <img src={skillsImage(skill)} alt={skill} />
-                                <h3 style={{color: theme.secondary}}>
+                                <h3 style={{color: theme.tertiary}}>
                                     {skill}
                                 </h3>
                             </div>

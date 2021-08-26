@@ -1,11 +1,10 @@
 .testimonials {
     font-family: Poppins;
-    background-color: white;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     overflow: hidden;
 }
 
@@ -182,6 +181,7 @@
 
   .testimonials--header h1{
     font-size: 3rem;
+    margin-top: 1.75rem;
   }
 
   .testimonials--body .quote{

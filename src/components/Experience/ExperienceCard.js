@@ -14,24 +14,25 @@ function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
 
     const useStyles = makeStyles((t) => ({
         experienceCard : {
-            backgroundColor:theme.primary1,
+            backgroundColor:theme.primary30,
             "&:hover": {
-                
+                backgroundColor:theme.primary50,
             },
         },
     }));
 
     const classes = useStyles();
 
+
     return (
         <div key={id} className={`experience-card ${classes.experienceCard}`}>
              <div className="expcard-img" style={{backgroundColor: theme.primary}}>
-                <img src={theme === 'light' ? eduImgWhite : eduImgBlack} alt="" />
+                <img src={theme.type === 'light' ? eduImgBlack : eduImgWhite} alt="" />
             </div>
             <div className="experience-details">
                  <h6 style={{color: theme.primary}}>{startYear}-{endYear}</h6>
-                 <h4 style={{color: theme.secondary}}>{jobtitle}</h4>
-                <h5 style={{color: theme.secondary1}}>{company}</h5>
+                 <h4 style={{color: theme.tertiary}}>{jobtitle}</h4>
+                <h5 style={{color: theme.tertiary80}}>{company}</h5>
             </div>
         </div>
     )

@@ -26,7 +26,7 @@ function SingleProject({ id, name, desc, code, demo, image, theme }) {
     return (
         <div key={id} className="singleProject" style={{backgroundColor: theme.primary}}>
             <div className="projectContent">
-                <h2 style={{color: theme.secondary}}>{name}</h2>
+                <h2 style={{color: theme.tertiary}}>{name}</h2>
                 <img src={image} alt={name} />  
                 <div className="project--showcaseBtn">
                     <button>
