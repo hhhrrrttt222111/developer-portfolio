@@ -4,6 +4,9 @@
     'Blender',
     'Figma',
     'Javascript',
+    'CSS',
+    'React',
+    'Django',
 ]
 
 

@@ -1,4 +1,4 @@
-export const footerData = {
+export const socialsData = {
     github: '',
     facebook: '',
     linkedIn: '',

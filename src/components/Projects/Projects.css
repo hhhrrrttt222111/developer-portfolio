@@ -1,4 +1,4 @@
-.blog {
+.projects {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,7 +8,7 @@
 }
 
 
-.blog--header {
+.projects--header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,13 +17,13 @@
 }
 
 
-.blog--header h1 {
+.projects--header h1 {
     margin-bottom: 40px;
     font-size: 3.5rem;
     font-family: Poppins;
 }
 
-.blog--body {
+.projects--body {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -31,22 +31,24 @@
     justify-content: center;
 }
 
-.blog--bodyContainer {
+.projects--bodyContainer {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 4.5rem;
     width: 100%;
 }
 
-.blog--viewAll {
+.projects--viewAll {
     width: 100%;
     padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-top: 2rem;
 }
 
-.blog--viewAll a button {
+.projects--viewAll a button {
     outline: none;
     border: none;
     width: 150px;
@@ -64,13 +66,14 @@
 }
 
 
+
 @media (min-width: 992px) and (max-width: 1380px) {
 
 }
 
 
 @media screen and (max-width: 992px) {
-    .blog--bodyContainer {
+    .projects--bodyContainer {
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -32,7 +32,7 @@ function Navbar() {
     const useStyles = makeStyles((t) => ({
         navMenu : {
             fontSize: '2.5rem',
-            color: theme.secondary,
+            color: theme.tertiary,
             cursor: 'pointer',
             transform: 'translateY(-10px)',
             transition: 'color 0.3s',
@@ -47,7 +47,7 @@ function Navbar() {
             fontStyle:' normal',
             fontWeight:' normal',
             fontSize:' 24px',
-            background: theme.primary2,
+            background: theme.secondary,
             overflow: 'hidden',
             borderTopRightRadius: '40px',
             borderBottomRightRadius: '40px',
@@ -67,24 +67,25 @@ function Navbar() {
         drawerItem: {
             margin: '2rem auto',
             borderRadius: '78.8418px',
-            background: theme.primary2,
+            background: theme.secondary,
             color: theme.primary,
-            width: '65%',
+            width: '85%',
             height: '60px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-evenly',
-            padding: '0 35px',
+            padding: '0 30px',
             boxSizing: 'border-box',
             border: '2px solid',
             borderColor: theme.primary,
             transition: 'background-color 0.3s, color 0.3s',
             "&:hover": {
                 background: theme.primary,
-                color: theme.primary2,
+                color: theme.secondary,
             },
             [t.breakpoints.down('sm')]: {
-                width:'85%',
+                width:'100%',
+                padding: '0 25px',
             },
         },
         drawerLinks: {
@@ -104,7 +105,7 @@ function Navbar() {
     return (
         <div className="navbar">
             <div className="navbar--container">
-                <h1 style={{color: theme.primary2}}>Jane Doe</h1>
+                <h1 style={{color: theme.secondary}}>Jane Doe</h1>
 
                 <IoMenuSharp className={classes.navMenu} onClick={handleDrawerOpen}/>
             </div>
@@ -165,7 +166,7 @@ function Navbar() {
                             </div>
                         </NavLink>
 
-                        <NavLink to="/#contact" smooth={true} spy="true" duration={2000}>
+                        <NavLink to="/#contacts" smooth={true} spy="true" duration={2000}>
                             <div className={classes.drawerItem}>
                                 <MdPhone className={classes.drawerIcon}/>
                                 <span className={classes.drawerLinks}>Contact</span>
