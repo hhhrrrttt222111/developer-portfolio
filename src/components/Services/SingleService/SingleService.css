@@ -9,6 +9,11 @@
     justify-content: center;
     padding: 1.4rem 1.4rem;
     overflow: hidden;
+    transition: 300ms ease-in-out;
+}
+
+.single-service:hover {
+    transform: scale(1.05);
 }
 
 .service-content {
@@ -23,9 +28,9 @@
     margin-bottom: 10px;
 }
 
-.service-icon > svg{
-    font-size: 3.5rem;
-    color: #000;
+.service-icon > svg {
+    font-size: 3rem;
+    color: #000000;
 }
 
 .service-content > h4 {
@@ -35,4 +40,5 @@
     font-size: 18px;
     text-align: center;
     line-height: 110%;
+    color: #000000;
 }
