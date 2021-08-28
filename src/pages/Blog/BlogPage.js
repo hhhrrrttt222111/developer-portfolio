@@ -1,5 +1,8 @@
 import React, { useContext, useState } from 'react'
 import { Grid } from '@material-ui/core'
+import { Link } from 'react-router-dom'
+import { makeStyles } from '@material-ui/core/styles';
+import { AiOutlineHome } from "react-icons/ai";
 
 import './BlogPage.css'
 import { SingleBlog } from '../../components'
@@ -16,14 +19,50 @@ function BlogPage() {
         return content.toLowerCase().includes(search.toLowerCase())
     })
 
+
+    const useStyles = makeStyles(() => ({
+        search : {
+            color: theme.tertiary, 
+            width: '30%',
+            height: '2.75rem',
+            outline: 'none',
+            border: 'none',
+            borderRadius: '20px',
+            padding: '0.25rem 1rem',
+            backgroundColor: theme.primary50,
+            fontFamily: "'Noto Sans TC', sans-serif",
+            fontWeight: 500,
+            "&::placeholder": {
+                color: theme.tertiary80, 
+            },
+        },
+        home: {
+            color: theme.secondary,
+            position: 'absolute',
+            top: 20,
+            left: 20,
+            fontSize: '2.05rem',
+            cursor: 'pointer',
+            transition: 'all 0.2s',
+            "&:hover": {
+                transform: 'scale(1.1)',
+            }
+        },
+    }));
+
+    const classes = useStyles();
+
     return (
-        <div className="blogPage">
-            <div className="blogPage--header">
-                <h1>Blogs</h1>
+        <div className="blogPage" style={{backgroundColor: theme.secondary}}>
+            <div className="blogPage--header" style={{backgroundColor: theme.primary}}>
+                <Link to="/">
+                    <AiOutlineHome className={classes.home}/>
+                </Link>
+                <h1 style={{color: theme.secondary}}>Blogs</h1>
             </div>
             <div className="blogPage--container">
                 <div className="blog--search">
-                    <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Seach Blog" className="blog--input"/>
+                    <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Seach blog..." className={classes.search}/>
                 </div>
                 <div className="blogs--container">
                     <Grid className="blog-grid" container direction="row" alignItems="center" justifyContent="center">
