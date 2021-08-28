@@ -7,8 +7,10 @@ import { contactsData } from '../../data/contactsData'
 import './Contacts.css'
 
 function Contacts() {
-
+// eslint-disable-next-line
     const { theme } = useContext(ThemeContext);
+
+    console.log(contactsData)
     
     return (
         <div className="contacts" id="contacts">
