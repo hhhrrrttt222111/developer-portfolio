@@ -1,5 +1,5 @@
 .footer {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'var(--primaryFont)', sans-serif;
     height: 50px;
     width: 100%;
     display: flex;
@@ -9,4 +9,10 @@
 
 .footer p {
     font-weight: 600;
+    font-family: var(--primaryFont);
+    font-size: 18px;
+}
+
+.footer p span {
+    font-size: 24px;
 }

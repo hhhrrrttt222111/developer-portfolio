@@ -14,7 +14,7 @@
 }
 
 .skillsHeader h2 {
-    font-family: Poppins;
+    font-family: var(--primaryFont);
     font-style: normal;
     font-weight: bold;
     font-size: 3.5rem;

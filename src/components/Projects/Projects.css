@@ -20,7 +20,7 @@
 .projects--header h1 {
     margin-bottom: 40px;
     font-size: 3.5rem;
-    font-family: Poppins;
+    font-family: var(--primaryFont);
 }
 
 .projects--body {
@@ -59,7 +59,7 @@
     text-transform: inherit;
     border-radius: 45px;
     font-size: 1.05rem;
-    font-family: Poppins;
+    font-family: var(--primaryFont);
     font-weight: 500;
     padding-left: 1.5rem;
     cursor: pointer;

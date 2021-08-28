@@ -43,7 +43,7 @@ function Navbar() {
         MuiDrawer: {
             padding:'0em 1.8em',
             width:'14em',
-            fontFamily:' Poppins',
+            fontFamily:' var(--primaryFont)',
             fontStyle:' normal',
             fontWeight:' normal',
             fontSize:' 24px',
@@ -89,7 +89,7 @@ function Navbar() {
             },
         },
         drawerLinks: {
-            fontFamily: "Poppins",
+            fontFamily: "var(--primaryFont)",
             width:'50%',
             fontSize: '1.3rem',
             fontWeight: 600,
