@@ -3,16 +3,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    min-height: 100vh;
 }
 
 
 .blogPage--header {
     height: 35vh;
     width: 100%;
-    background-color: blueviolet;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .blogPage--header h1 {
@@ -29,6 +30,7 @@
     justify-content: flex-start;
 }
 
+
 .blog--search {
     width: 100%;
     display: flex;
@@ -40,12 +42,68 @@
     width: 30%;
     height: 2.75rem;
     outline: none;
-    border: 2px solid rgb(65, 47, 21);
+    border: none;
     border-radius: 20px;
     padding: 0.25rem 1rem;
 }
 
+.blog--input::placeholder {
+    color: white;
+}
+
 .blogs--container {
-    margin-top: 3rem;
+    margin-top: 5rem;
     width: 100%;
+}
+
+
+.blog-grid {
+    display: flex;
+    gap: 4rem;   
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .blogPage--header {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blog-grid {
+        gap: 1rem;   
+    }
+    .blog--input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 400px) {
+
+}
+  
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
+}
+
+
+@media only screen and (device-width: 768px) {
+
 }
