@@ -23,7 +23,7 @@ function Landing() {
             fontSize: '1rem',
             fontWeight: '500',
             height: '50px',
-            fontFamily: 'Poppins',
+            fontFamily: 'var(--primaryFont)',
             border: `3px solid ${theme.primary}`,
             transition: '100ms ease-out',
             "&:hover": {
@@ -42,7 +42,7 @@ function Landing() {
             height: '50px',
             fontSize: '1rem',
             fontWeight: '500',
-            fontFamily: 'Poppins',
+            fontFamily: 'var(--primaryFont)',
             border: `3px solid ${theme.primary}`,
             transition: '100ms ease-out',
             "&:hover": {

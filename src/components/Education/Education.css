@@ -24,7 +24,7 @@
 
 .education-description > h1{
     font-size: 3.5rem;
-    font-family: Poppins;
+    font-family: var(--primaryFont);
     margin-bottom: 2rem;
 }
 
@@ -60,20 +60,20 @@
 }
 
 .education-details > h6 {
-    font-family: Poppins;
+    font-family: var(--primaryFont);
     font-size: 0.85rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
 .education-details > h4 {
-    font-family: Poppins;
+    font-family: var(--primaryFont);
     font-size: 1.225rem;
     font-weight: 600;
 }
 
 .education-details > h5 {
-    font-family: Poppins;
+    font-family: var(--primaryFont);
     font-size: 1.15rem;
     font-weight: 600;
 }

@@ -1,5 +1,5 @@
 .testimonials {
-    font-family: Poppins;
+    font-family: var(--primaryFont);
     height: 100vh;
     display: flex;
     flex-direction: column;

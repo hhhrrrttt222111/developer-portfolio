@@ -22,7 +22,7 @@
 }
 
 .projectContent > h2 {
-    font-family: Poppins;
+    font-family: var(--primaryFont);
     font-style: normal;
     font-weight: 600;
     font-size: 1.525rem;
@@ -71,7 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Poppins;
+    font-family: var(--primaryFont);
 }
   
 .singleProject:hover .project--desc{
@@ -99,7 +99,7 @@
 }
 
 .project--lang > span {
-    font-family: Poppins;
+    font-family: var(--primaryFont);
     font-weight: 500;
     word-break: break-word; 
     line-height: 100%;

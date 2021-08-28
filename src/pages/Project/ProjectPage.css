@@ -17,7 +17,7 @@
 
 .projectPage-header > h1 {
     font-size: 4rem;
-    font-family: Poppins;
+    font-family: var(--primaryFont);
 }
 
 .projectPage-container {
