@@ -33,4 +33,14 @@
     font-size: 1.5rem;
     width: 65%;
     text-align: center;
+    margin-bottom: 6rem;
+}
+
+.services-bodycontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    width: 100%;
+    flex-wrap: wrap;
 }
