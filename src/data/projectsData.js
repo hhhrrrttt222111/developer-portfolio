@@ -5,8 +5,8 @@ export const projectsData = [
     {
         id: 1,
         projectName: 'To-DO App ',
-        projectDesc: '',
-        tags: ['React', 'CSS', 'Material, Ui'],
+        projectDesc: 'this is a sample description or this project',
+        tags: ['React', 'CSS', 'Material Ui', 'Cryptocurrency', 'Google', 'Helo'],
         code: '',
         demo: '',
         image: expRed
@@ -14,7 +14,7 @@ export const projectsData = [
     {
         id: 2,
         projectName: 'Weather App',
-        projectDesc: '',
+        projectDesc: 'this is a sample description or this project',
         tags: ['React', 'CSS', 'Material, Ui'],
         code: '',
         demo: '',
@@ -23,7 +23,7 @@ export const projectsData = [
     {
         id: 3,
         projectName: 'Nice App',
-        projectDesc: '',
+        projectDesc: 'this is a sample description or this project',
         tags: ['React', 'CSS', 'Material, Ui'],
         code: '',
         demo: '',
