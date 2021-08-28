@@ -17,7 +17,7 @@
 .services-header > h1 {
     margin-bottom: 40px;
     font-size: 3.5rem;
-    font-family: Poppins;
+    font-family: var(--primaryFont);
 }
 
 .services-body {
