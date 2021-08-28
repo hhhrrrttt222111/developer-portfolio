@@ -1,0 +1,16 @@
+.backToTop {
+    position: fixed; 
+    right: 40px;
+    bottom: 60px;
+    height: 20px;
+    font-size: 3rem;
+    z-index: 999;
+    color: green;
+}
+
+.backToTop button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+}

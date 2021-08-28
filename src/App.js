@@ -2,12 +2,15 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import { Main, BlogPage, ProjectPage } from './pages'
+import { BackToTop } from './components'
 import ScrollToTop from './utils/ScrollToTop'
+
+import './App.css'
 
 function App() {
 
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <ScrollToTop/>
         <Switch>
@@ -16,6 +19,7 @@ function App() {
           <Route path="/projects" exact component={ProjectPage} />
         </Switch>
       </Router>
+      <BackToTop />
     </div>
   );
 }
