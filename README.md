@@ -23,21 +23,19 @@
 
 
 # Sections
-- HOME <br />
-- ABOUT <br />
+- HOME
+- ABOUT
 - RESUME
     - EDUCATION
     - SKILLS
     - EXPERIENCE
     - PROJECTS <br />
-
 - SERVICES 
     - TESTIMONIALS <br />
+- BLOG
+- CONTACTS 
 
-- BLOG <br />
-- CONTACTS <br />
-
-<br />
+<br /><br />
 
 # Demo
 ## View live demo [here](https://dev-portfolio-template.netlify.app/).
@@ -163,7 +161,7 @@ yarn start
 <br />
 
 # Usage
-### Customize your details for each component in `src/data` folder.
+### Customize your details for each component in `src/data` [folder](https://github.com/hhhrrrttt222111/developer-portfolio/tree/master/src/data).
 
 Eg:
 ```javascript
@@ -190,7 +188,34 @@ export const headerData = {
 ```
 
 #### Data for each component is divided into respective files.
-#### Set website theme in `src/data/themeData.js` 
+#### Set website theme in [`src/data/themeData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/themeData.js)
+
+#### About You - [`src/data/aboutData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/aboutData.js)
+#### Education details - [`src/data/educationData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/educationData.js) 
+#### Enter your Projects - [`src/data/projectsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/projectsData.js)
+#### Add your Skills - [`src/data/skillsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/skillsData.js)
+#### Experience - [`src/data/experienceData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/experienceData.js)
+#### Services - [`src/data/servicesData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/servicesData.js)
+#### Testimonials - [`src/data/testimonialsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/testimonialsData.js)
+#### Your Blogs and Articles - [`src/data/blogData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/blogData.js)
+#### Contact Details - [`src/data/contactsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/contactsData.js)
+#### Social Media Profiles - [`src/data/contactsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/socialsData.js)
+
+```javascript
+// EXAMPLE
+export const educationData = [
+    {
+        id: 1,
+        institution: '-- INSTITUTION NAME --',
+        course: '-- COURSE NAME --',
+        startYear: '2017',
+        endYear: '2019'
+    },
+    //
+]
+```
+
+## Instructions and format for each section can be found inside the data files.
 
 <br />
 
@@ -229,7 +254,10 @@ export const headerData = {
     <meta property="og:url" content="--- YOUR SITE URL ---"/>
     <meta property="og:type" content="website"/>
     <meta property="og:description" content="--- SITE DESCRIPTION ---"/>
+    <meta property="og:locale" content="---  ---">
     <meta property="og:image" content="--- YOUR IMAGE ---"/>
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     
     <meta itemprop="name" content="--- YOUR NAME ---"/>
     <meta itemprop="url" content="--- YOUR SITE URL ---"/>
@@ -291,6 +319,7 @@ export const headerData = {
 - [Poppins](https://fonts.google.com/specimen/Poppins)
 - [Big Shoulders Text](https://fonts.google.com/specimen/Big+Shoulders+Text)
 - [Bestermind](https://www.dafont.com/bestermind.font)
+- [Roboto](https://fonts.google.com/specimen/Roboto)
 
 <br />
 
@@ -307,6 +336,7 @@ export const headerData = {
 - New theme
 - Can't find required skill in Skills section
 - Add new social media profile
+- Add new service
 - Add another section
 
 
