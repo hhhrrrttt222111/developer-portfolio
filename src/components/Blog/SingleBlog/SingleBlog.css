@@ -37,14 +37,14 @@
 }
 
 .singleBlog--body p {
-    font-family: Poppins;
+    font-family: var(--primaryFont);
     font-weight: 600;
     font-size: 13px;
     margin-bottom: 0.65rem;
 }
 
 .singleBlog--body h3 {
-    font-family: Poppins;
+    font-family: var(--primaryFont);
     margin-bottom: 0.55rem;
     font-size: 19px;
     line-height: 115%;

@@ -65,7 +65,7 @@
  .lcr--content {
      width: 45%;
      margin-right: 7rem;
-     font-family: Poppins;
+     font-family: var(--primaryFont);
      font-style: normal;
  }
 
@@ -94,7 +94,7 @@
      display: flex;
      align-items: center;
      justify-content: space-between;
-     font-family: 'Poppins', sans-serif;
+     font-family: 'var(--primaryFont)', sans-serif;
  }
 
  @media (max-width:1100px) {

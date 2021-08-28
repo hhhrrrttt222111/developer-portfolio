@@ -19,15 +19,20 @@
     padding: 1rem;
 }
 
+.service-icon {
+    margin-bottom: 10px;
+}
+
 .service-icon > svg{
     font-size: 3.5rem;
     color: #000;
 }
 
 .service-content > h4 {
-    font-family: Poppins;
+    font-family: var(--primaryFont);
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     text-align: center;
+    line-height: 110%;
 }

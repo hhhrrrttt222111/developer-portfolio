@@ -20,7 +20,7 @@ function BlogPage() {
     })
 
 
-    const useStyles = makeStyles(() => ({
+    const useStyles = makeStyles((t) => ({
         search : {
             color: theme.tertiary, 
             width: '30%',
@@ -34,6 +34,9 @@ function BlogPage() {
             fontWeight: 500,
             "&::placeholder": {
                 color: theme.tertiary80, 
+            },
+            [t.breakpoints.down('sm')]: {
+                width:'80%',
             },
         },
         home: {

@@ -11,8 +11,8 @@ function Footer() {
 
 
     return (
-        <div className="footer" style={{backgroundColor: theme.primary1}}>
-            <p style={{color: theme.primary2}}>Copyright © {year}</p>
+        <div className="footer" style={{backgroundColor: theme.secondary}}>
+            <p style={{color: theme.tertiary}}>Made with <span style={{color: theme.primary}}>❤</span></p>
         </div>
     )
 }
