@@ -148,6 +148,9 @@
         height: 40px;
     }
 
+    .skillsHeader h2 {
+        font-size: 2.5rem;
+    }
 
     .skill--box h3 {
         font-size: 18px;
