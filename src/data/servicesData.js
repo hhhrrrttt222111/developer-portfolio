@@ -30,5 +30,10 @@ export const servicesData = [
         id: 5,
         title: 'Tutoring',
         icon: <FaChalkboardTeacher />
-    }
+    },
+    /* 
+    {
+        id: 6,
+        title: 'Web Design',
+        icon: */
 ]
