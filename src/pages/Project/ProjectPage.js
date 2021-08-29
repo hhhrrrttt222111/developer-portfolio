@@ -71,8 +71,8 @@ function ProjectPage() {
                </div>
                <div className="project-container">
                    <Grid className="project-grid" container direction="row" alignItems="center" justifyContent="center">
-                       {filteredArticles.reverse().map(project => (
-                           <SingleProject
+                        {filteredArticles.map(project => (
+                            <SingleProject
                                 theme={theme}
                                 key={project.id}
                                 id={project.id}
@@ -81,8 +81,9 @@ function ProjectPage() {
                                 tags={project.tags}
                                 code={project.code}
                                 demo={project.demo}
-                                image={project.image} />
-                       ))}
+                                image={project.image} 
+                            />
+                        ))}
                    </Grid>
                </div>
            </div>    

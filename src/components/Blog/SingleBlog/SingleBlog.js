@@ -4,7 +4,7 @@ import './SingleBlog.css'
 
 function SingleBlog({ theme, title, desc, date, image, url, id }) {
     return (
-        <a className="singleBlog" key={id} href={url} target="_blank" rel="noreferrer" style={{backgroundColor: theme.primary}}>
+        <a className="singleBlog" key={id} href={url} target="_blank" rel="noreferrer" style={{backgroundColor: theme.primary400}}>
             <div className="singleBlog--image" style={{backgroundColor: theme.secondary}}>
                 <img src={image} alt={title} />
             </div>
