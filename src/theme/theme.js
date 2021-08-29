@@ -9,6 +9,8 @@ import {
 export const greenThemeLight = {
     type: 'light',
     primary: '#3fc337',
+    primary400: '#57d750',
+    primary600: '#29c51f',
     primary50: '#3fc33780',
     primary30: '#3fc3374d',
     secondary: '#EAEAEA',
@@ -27,6 +29,8 @@ export const greenThemeLight = {
 export const greenThemeDark = {
     type: 'dark',
     primary: '#3fc337',
+    primary400: '#57d750',
+    primary600: '#29c51f',
     primary50: '#3fc33780',
     primary30: '#3fc3374d',
     secondary: '#212121',
@@ -44,6 +48,8 @@ export const greenThemeDark = {
 export const bwThemeLight = {
     type: 'light',
     primary: '#000000',
+    primary400: '#000000',
+    primary600: '#000000',
     primary50: '#00000080',
     primary30: '#0000004d',
     secondary: '#EAEAEA',
@@ -61,6 +67,8 @@ export const bwThemeLight = {
 export const bwThemeDark = {
     type: 'dark',
     primary: '#B6B6B6',
+    primary400: '#B6B6B6',
+    primary600: '#B6B6B6',
     primary50: '#B6B6B680',
     primary30: '#B6B6B64d',
     secondary: '#212121',
@@ -79,6 +87,8 @@ export const bwThemeDark = {
 export const blueThemeLight = {
     type: 'light',
     primary: '#545fc4',
+    primary400: '#6e76c7',
+    primary600: '#3644c9',
     primary50: '#545fc480',
     primary30: '#545fc44d',
     secondary: '#eaeaea',
@@ -96,6 +106,8 @@ export const blueThemeLight = {
 export const blueThemeDark = {
     type: 'dark',
     primary: '#545fc4',
+    primary400: '#6e76c7',
+    primary600: '#3644c9',
     primary50: '#545fc480',
     primary30: '#545fc44d',
     secondary: '#212121',
@@ -114,6 +126,8 @@ export const blueThemeDark = {
 export const redThemeLight = {
     type: 'light',
     primary: '#f03939',
+    primary400: '#dd4d4d',
+    primary600: '#ea2424',
     primary50: '#f0393980',
     primary30: '#f039394d',
     secondary: '#eaeaea',
@@ -131,6 +145,8 @@ export const redThemeLight = {
 export const redThemeDark = {
     type: 'dark',
     primary: '#f03939',
+    primary400: '#dd4d4d',
+    primary600: '#ea2424',
     primary50: '#f0393980',
     primary30: '#f039394d',
     secondary: '#212121',
@@ -149,6 +165,8 @@ export const redThemeDark = {
 export const orangeThemeLight = {
     type: 'light',
     primary: '#f56539',
+    primary400: '#ff764d',
+    primary600: '#fa5624',
     primary50: '#f5653980',
     primary30: '#f565394d',
     secondary: '#eaeaea',
@@ -166,6 +184,8 @@ export const orangeThemeLight = {
 export const orangeThemeDark = {
     type: 'dark',
     primary: '#f56539',
+    primary400: '#ff764d',
+    primary600: '#fa5624',
     primary50: '#f5653980',
     primary30: '#f565394d',
     secondary: '#212121',
@@ -184,6 +204,8 @@ export const orangeThemeDark = {
 export const purpleThemeLight = {
     type: 'light',
     primary: '#823ae0',
+    primary400: '#9456e5',
+    primary600: '#762ad9',
     primary50: '#823ae080',
     primary30: '#823ae04d',
     secondary: '#eaeaea',
@@ -201,6 +223,8 @@ export const purpleThemeLight = {
 export const purpleThemeDark = {
     type: 'dark',
     primary: '#823ae0',
+    primary400: '#9456e5',
+    primary600: '#762ad9',
     primary50: '#823ae080',
     primary30: '#823ae04d',
     secondary: '#212121',
@@ -219,6 +243,8 @@ export const purpleThemeDark = {
 export const pinkThemeLight = {
     type: 'light',
     primary: '#ff4f93',
+    primary400: '#e56f9d',
+    primary600: '#e14381',
     primary50: '#ff4f9380',
     primary30: '#ff4f934d',
     secondary: '#eaeaea',
@@ -236,6 +262,8 @@ export const pinkThemeLight = {
 export const pinkThemeDark = {
     type: 'dark',
     primary: '#ff4f93',
+    primary400: '#e56f9d',
+    primary600: '#e14381',
     primary50: '#ff4f9380',
     primary30: '#ff4f934d',
     secondary: '#212121',
@@ -254,6 +282,8 @@ export const pinkThemeDark = {
 export const yellowThemeLight = {
     type: 'light',
     primary: '#E9AD35',
+    primary400: '#e8b44c',
+    primary600: '#eeac2a',
     primary50: '#E9AD3580',
     primary30: '#E9AD354d',
     secondary: '#eaeaea',
@@ -272,6 +302,8 @@ export const yellowThemeLight = {
 export const yellowThemeDark = {
     type: 'dark',
     primary: '#E9AD35',
+    primary400: '#e8b44c',
+    primary600: '#eeac2a',
     primary50: '#E9AD3580',
     primary30: '#E9AD354d',
     secondary: '#212121',
