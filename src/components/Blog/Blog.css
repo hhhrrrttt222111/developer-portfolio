@@ -81,11 +81,26 @@
 }
 
 @media screen and (max-width: 800px) {
-
+    .blog--header h1 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 600px) {
-
+    .blog--header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    .blog--viewAll {
+        position: relative;
+        margin-top: 4rem;
+    }
+    .blog--viewAll a {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);  
+    }
 }
 
 @media screen and (max-width: 400px) {

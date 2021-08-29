@@ -23,20 +23,22 @@ function BlogPage() {
     const useStyles = makeStyles((t) => ({
         search : {
             color: theme.tertiary, 
-            width: '30%',
+            width: '40%',
             height: '2.75rem',
             outline: 'none',
             border: 'none',
             borderRadius: '20px',
-            padding: '0.25rem 1rem',
-            backgroundColor: theme.primary50,
+            padding: '0.95rem 1rem',
             fontFamily: "'Noto Sans TC', sans-serif",
             fontWeight: 500,
+            fontSize: '0.85rem',  
+            backgroundColor: theme.secondary, 
+            boxShadow: theme.type === 'dark' ? 'inset 3px 3px 6px #ffffff40, inset -3px -3px 6px #00000050' : 'inset 3px 3px 6px #ffffffbd, inset -3px -3px 6px #00000040',
             "&::placeholder": {
                 color: theme.tertiary80, 
             },
             [t.breakpoints.down('sm')]: {
-                width:'80%',
+                width:'90%',
             },
         },
         home: {
