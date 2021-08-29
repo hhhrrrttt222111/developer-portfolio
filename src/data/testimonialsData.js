@@ -13,14 +13,14 @@ export const testimonialsData = [
         name: 'Hemanth R',
         title: 'Developer',
         text: 'Wow. I just updated my site and it was SO SIMPLE. I am blown away. You guys truly kick ass. Thanks for being so awesome. High fives!',
-        image: boy1
+        image: boy2
     },
     {
         id: 2,
-        name: 'Shimil S',
-        title: 'Designer',
-        text: 'Wow. I just updated my site and it was SO SIMPLE. I am blown away. You guys truly kick ass. Thanks for being so awesome. High fives!',
-        image: boy2
+        name: 'Joey Tribbiani',
+        title: 'Actor',
+        text: "HOW YOU DOIN'?",
+        image: boy1
     },
     {
         id: 3,
@@ -31,9 +31,9 @@ export const testimonialsData = [
     },
     {
         id: 4,
-        name: 'Iron man',
-        title: 'Sooopera',
-        text: 'Wow. I just updated my site and it was SO SIMPLE. I am blown away. You guys truly kick ass. Thanks for being so awesome. High fives!',
+        name: 'Ross Geller',
+        title: 'Paleontologist',
+        text: 'Pivot. Pivot. Piv-ot. Piv-ot. PIVOT!',
         image: boy3
     }
 ]

@@ -62,7 +62,11 @@ function Navbar() {
             color: theme.primary,
             position: 'absolute',
             right: 40,
-            top: 40
+            top: 40,
+            transition: 'color 0.2s',
+            "&:hover": {
+                color: theme.tertiary,
+            },
         },
         drawerItem: {
             margin: '2rem auto',
@@ -78,7 +82,7 @@ function Navbar() {
             boxSizing: 'border-box',
             border: '2px solid',
             borderColor: theme.primary,
-            transition: 'background-color 0.3s, color 0.3s',
+            transition: 'background-color 0.2s, color 0.2s',
             "&:hover": {
                 background: theme.primary,
                 color: theme.secondary,
