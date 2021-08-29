@@ -21,11 +21,12 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                 backgroundColor: theme.secondary,
                 color: theme.primary,
                 transform: 'scale(1.1)',
-                border: 'none',
+                border: `2px solid ${theme.secondary}`,
             },
         },
         icon: {
             fontSize: '1.1rem',
+            transition: 'all 0.2s',
             "&:hover": {
 
             },
@@ -48,10 +49,10 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                     </a>
                 </div>
             </div>
-            <p className="project--desc" style={{background: theme.secondary70, color: theme.tertiary}}>
+            <p className="project--desc" style={{background: theme.secondary, color: theme.tertiary}}>
                 {desc}
             </p>
-            <div className="project--lang" style={{background: theme.secondary50, color: theme.tertiary80}}>
+            <div className="project--lang" style={{background: theme.secondary, color: theme.tertiary80}}>
                 {tags.map((tag, id) => (
                     <span key={id}>{tag}</span>
                 ))}

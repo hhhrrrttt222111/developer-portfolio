@@ -83,11 +83,27 @@
 }
 
 @media screen and (max-width: 800px) {
-
+    .projects--header h1 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 600px) {
-
+    .projects--header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    .projects--viewAll {
+        position: relative;
+        margin-top: 4rem;
+    }
+    .projects--viewAll a {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
 }
 
 @media screen and (max-width: 400px) {
