@@ -79,7 +79,7 @@
     }
 
     .blog-grid {
-        gap: 1rem;   
+        gap: 3rem;   
     }
     .blog--input {
         width: 100%;
@@ -90,8 +90,10 @@
 
 }
 
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 702px) {
+    .blog-grid {
+        gap: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 400px) {

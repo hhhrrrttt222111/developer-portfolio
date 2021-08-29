@@ -60,6 +60,12 @@
     }
 
     .project-grid {
-        gap: 1rem;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 702px) {
+    .project-grid {
+        gap: 1.5rem;
     }
 }
