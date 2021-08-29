@@ -2,7 +2,8 @@ import {
     blueThemegirl, blueThemeboy, bwThemeboy, bwThemegirl, greenThemeboy, greenThemegirl, orangeThemeboy, 
     orangeThemegirl, pinkThemeboy, pinkThemegirl, purpleThemeboy, purpleThemegirl, redThemeboy, redThemegirl, yellowThemeboy,
     yellowThemegirl,eduBlack,eduBlue,eduGreen,eduOrange,eduPink,eduPurple,eduRed,eduYellow,expBlack,expBlue,expGreen,expOrange,
-    expPink,expPurple,expRed,expYellow
+    expPink,expPurple,expRed,expYellow,contactsBlack,contactsBlue,contactsGreen,contactsOrange,contactsPink,contactsPurple,
+    contactsRed,contactsYellow
 } from './images'
 
 
@@ -23,7 +24,8 @@ export const greenThemeLight = {
     aboutimg1: greenThemeboy,
     aboutimg2: greenThemegirl,
     eduimg: eduGreen,
-    expimg: expGreen
+    expimg: expGreen,
+    contactsimg: contactsGreen
 }
 
 export const greenThemeDark = {
@@ -43,7 +45,8 @@ export const greenThemeDark = {
     aboutimg1: greenThemeboy,
     aboutimg2: greenThemegirl,
     eduimg: eduGreen,
-    expimg: expGreen
+    expimg: expGreen,
+    contactsimg: contactsGreen
 }
 export const bwThemeLight = {
     type: 'light',
@@ -62,7 +65,8 @@ export const bwThemeLight = {
     aboutimg1: bwThemeboy,
     aboutimg2: bwThemegirl,
     eduimg: eduBlack,
-    expimg: expBlack
+    expimg: expBlack,
+    contactsimg: contactsBlack
 }
 export const bwThemeDark = {
     type: 'dark',
@@ -81,7 +85,8 @@ export const bwThemeDark = {
     aboutimg1: bwThemeboy,
     aboutimg2: bwThemegirl,
     eduimg: eduBlack,
-    expimg: expBlack
+    expimg: expBlack,
+    contactsimg: contactsBlack
 }
 
 export const blueThemeLight = {
@@ -101,7 +106,8 @@ export const blueThemeLight = {
     aboutimg1: blueThemeboy,
     aboutimg2: blueThemegirl,
     eduimg: eduBlue,
-    expimg: expBlue
+    expimg: expBlue,
+    contactsimg: contactsBlue
 }
 export const blueThemeDark = {
     type: 'dark',
@@ -120,7 +126,8 @@ export const blueThemeDark = {
     aboutimg1: blueThemeboy,
     aboutimg2: blueThemegirl,
     eduimg: eduBlue,
-    expimg: expBlue
+    expimg: expBlue,
+    contactsimg: contactsBlue
 }
 
 export const redThemeLight = {
@@ -140,7 +147,8 @@ export const redThemeLight = {
     aboutimg1: redThemeboy,
     aboutimg2: redThemegirl,
     eduimg: eduRed,
-    expimg: expRed
+    expimg: expRed,
+    contactsimg: contactsRed
 }
 export const redThemeDark = {
     type: 'dark',
@@ -159,7 +167,8 @@ export const redThemeDark = {
     aboutimg1: redThemeboy,
     aboutimg2: redThemegirl,
     eduimg: eduRed,
-    expimg: expRed
+    expimg: expRed,
+    contactsimg: contactsRed
 }
 
 export const orangeThemeLight = {
@@ -179,7 +188,8 @@ export const orangeThemeLight = {
     aboutimg1: orangeThemeboy,
     aboutimg2: orangeThemegirl,
     eduimg: eduOrange,
-    expimg: expOrange
+    expimg: expOrange,
+    contactsimg: contactsOrange
 }
 export const orangeThemeDark = {
     type: 'dark',
@@ -198,7 +208,8 @@ export const orangeThemeDark = {
     aboutimg1: orangeThemeboy,
     aboutimg2: orangeThemegirl,
     eduimg: eduOrange,
-    expimg: expOrange
+    expimg: expOrange,
+    contactsimg: contactsOrange
 }
 
 export const purpleThemeLight = {
@@ -218,7 +229,8 @@ export const purpleThemeLight = {
     aboutimg1: purpleThemeboy,
     aboutimg2: purpleThemegirl,
     eduimg: eduPurple,
-    expimg: expPurple
+    expimg: expPurple,
+    contactsimg: contactsPurple
 }
 export const purpleThemeDark = {
     type: 'dark',
@@ -237,7 +249,8 @@ export const purpleThemeDark = {
     aboutimg1: purpleThemeboy,
     aboutimg2: purpleThemegirl,
     eduimg: eduPurple,
-    expimg: expPurple
+    expimg: expPurple,
+    contactsimg: contactsPurple
 }
 
 export const pinkThemeLight = {
@@ -257,7 +270,8 @@ export const pinkThemeLight = {
     aboutimg1: pinkThemeboy,
     aboutimg2: pinkThemegirl,
     eduimg: eduPink,
-    expimg: expPink
+    expimg: expPink,
+    contactsimg: contactsPink
 }
 export const pinkThemeDark = {
     type: 'dark',
@@ -276,7 +290,8 @@ export const pinkThemeDark = {
     aboutimg1: pinkThemeboy,
     aboutimg2: pinkThemegirl,
     eduimg: eduPink,
-    expimg: expPink
+    expimg: expPink,
+    contactsimg: contactsPink
 }
 
 export const yellowThemeLight = {
@@ -296,7 +311,8 @@ export const yellowThemeLight = {
     aboutimg1: yellowThemeboy,
     aboutimg2: yellowThemegirl,
     eduimg: eduYellow,
-    expimg: expYellow
+    expimg: expYellow,
+    contactsimg: contactsYellow
 }
 
 export const yellowThemeDark = {
@@ -316,7 +332,8 @@ export const yellowThemeDark = {
     aboutimg1: yellowThemeboy,
     aboutimg2: yellowThemegirl,
     eduimg: eduYellow,
-    expimg: expYellow
+    expimg: expYellow,
+    contactsimg: contactsYellow
 }
 
 
