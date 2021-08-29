@@ -9,6 +9,7 @@
     justify-content: center;
     padding: 1.4rem 2rem;
     position: relative;
+    cursor: pointer;
     overflow: hidden;
 }
 
@@ -35,7 +36,7 @@
     transition: opacity 0.7s 0.3s;
 }
 
-.projectContent:hover > img{
+.singleProject:hover img{
     opacity: 0;
 }
 
@@ -53,7 +54,7 @@
 }
 
 .singleProject:hover .project--showcaseBtn a:nth-child(2) {
-    transform: translateX(-140px);
+    transform: translateX(-140px) scale(1.1) !important;
 }
 
 
@@ -82,7 +83,7 @@
     position: absolute;
     bottom: 20px;
     right: 0;
-    width: 135px;
+    width: 140px;
     font-size: 0.8rem;
     display: flex;
     justify-content: center;

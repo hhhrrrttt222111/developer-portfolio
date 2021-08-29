@@ -121,6 +121,7 @@
     .education-description > h1{
         font-size: 3rem;
         margin-bottom: 2rem;
+        align-self: center;
     }
     .education-description {
         padding: 1rem;
@@ -156,7 +157,9 @@
 }
 
 @media screen and (max-width: 600px) {
-
+    .education-description > h1{
+        font-size: 2.5rem;
+    }
 }
 
 @media screen and (max-width: 400px) {

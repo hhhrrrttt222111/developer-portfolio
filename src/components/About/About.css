@@ -1,10 +1,11 @@
 .about {
     min-height: 100vh;
+    position: relative;
 }
 
 .about .line-styling{
-  position: relative;
-  top: 100px;
+  position: absolute;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
   height: 50px;
@@ -68,29 +69,26 @@
 
 @media (min-width: 992px) and (max-width: 1380px) {
 
-  .about .line-styling{
-    top: 70px;
-  }
-
-    .about-body {
-        height: fit-content;
-        padding-top: 4rem;
+    .about-description > h2 {
+      font-size: 3.3rem;
+      margin-bottom: 30px;
     }
-
+    .about-description > p {
+      font-size: 1.15rem;
+    }
 
     .about-img>img {
         width: 300px;
-    }
+    } 
 }
 
 @media screen and (max-width: 992px){
 
   .about .line-styling{
-    top: 70px;
+    top: 20px;
   }
 
     .about-body {
-        /* height: fit-content; */
         padding-top: 2rem;
         display: flex;
         flex-direction: column-reverse;
@@ -101,17 +99,18 @@
     .about-description{
         flex: 0.6;
         box-sizing: border-box;
-        padding: 1.25rem;
+        /* padding: 5% 10%; */
+        padding: 20px;
 
     }
 
     .about-description > h2 {
-        font-size: 3.2rem;
+        font-size: 3rem;
         margin-bottom: 20px;
     }
 
     .about-description > p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .about-img > img {
@@ -122,20 +121,18 @@
 }
 
 @media screen and (max-width: 800px){
-    .about-description > h2 {
-        font-size: 3rem;
-    }
+  .about .line-styling .style-circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  .about-description > h2{
+    align-self: center;
+  }
 
-    .about-description > p {
-        font-size: 1.15rem;
-    }
 }
 
 @media screen and (max-width: 600px){
-
-  .about .line-styling{
-    top: 60px;
-  }
 
   .about .line-styling .style-circle{
     width: 5px;
@@ -148,8 +145,12 @@
     border-radius: 10px;
   }
 
+  .about-description > h2 {
+    font-size: 2.5rem;
+  }
+
     .about-description > p{
-        font-size: 1rem;
+      font-size: 0.95rem;
     }
 
     .about-img > img {
