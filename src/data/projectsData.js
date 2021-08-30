@@ -1,5 +1,11 @@
-import sample from '../assets/svg/projects/sample.svg'
-import expRed from '../assets/svg/experience/expRed.svg'
+import one from '../assets/svg/projects/one.svg'
+import two from '../assets/svg/projects/two.svg'
+import three from '../assets/svg/projects/three.svg'
+import four from '../assets/svg/projects/four.svg'
+import five from '../assets/svg/projects/five.svg'
+import six from '../assets/svg/projects/six.svg'
+import seven from '../assets/svg/projects/seven.svg'
+import eight from '../assets/svg/projects/eight.svg'
 
 export const projectsData = [
     {
@@ -9,7 +15,7 @@ export const projectsData = [
         tags: ['React', 'CSS', 'Material Ui', 'Cryptocurrency', 'Google', 'Helo'],
         code: '',
         demo: '',
-        image: expRed
+        image: one
     },
     {
         id: 2,
@@ -18,7 +24,7 @@ export const projectsData = [
         tags: ['React', 'CSS', 'Material, Ui'],
         code: '',
         demo: '',
-        image: sample
+        image: two
     },
     {
         id: 3,
@@ -27,7 +33,7 @@ export const projectsData = [
         tags: ['React', 'CSS', 'Material, Ui'],
         code: '',
         demo: '',
-        image: 'https://images.unsplash.com/photo-1629956341217-3dc53d58228a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80'
+        image: three
     },
     {
         id: 4,
@@ -36,6 +42,42 @@ export const projectsData = [
         tags: ['React', 'CSS', 'Material, Ui'],
         code: '',
         demo: '',
-        image: sample
+        image: four
+    },
+    {
+        id: 5,
+        projectName: 'To-DO App ',
+        projectDesc: 'this is a sample description or this project',
+        tags: ['React', 'CSS', 'Material Ui', 'Cryptocurrency', 'Google', 'Helo'],
+        code: '',
+        demo: '',
+        image: five
+    },
+    {
+        id: 6,
+        projectName: 'Weather App',
+        projectDesc: 'this is a sample description or this project',
+        tags: ['React', 'CSS', 'Material, Ui'],
+        code: '',
+        demo: '',
+        image: six
+    },
+    {
+        id: 7,
+        projectName: 'Nice App',
+        projectDesc: 'this is a sample description or this project',
+        tags: ['React', 'CSS', 'Material, Ui'],
+        code: '',
+        demo: '',
+        image: seven
+    },
+    {
+        id: 8,
+        projectName: 'react App',
+        projectDesc: '',
+        tags: ['React', 'CSS', 'Material, Ui'],
+        code: '',
+        demo: '',
+        image: eight
     },
 ]

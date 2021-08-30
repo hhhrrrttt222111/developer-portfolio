@@ -4,10 +4,28 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 6rem;
+    position: relative;
 }
 
-.contacts > h1 {
+
+.contacts--img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+}
+
+.contacts--container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6rem;
+    width: 80%;
+    height: 100%;
+}
+
+.contacts--container > h1 {
     font-family: var(--primaryFont);
     font-size: 3.5rem;
     margin-bottom: 2rem;
@@ -114,7 +132,7 @@
 .personal-details {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
     margin-bottom: 2.5rem;
@@ -131,7 +149,10 @@
 .socialmedia-icons {
     width: 100%;
     display: flex;
-    gap: 3rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 .social-icon {
