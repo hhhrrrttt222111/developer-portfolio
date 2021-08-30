@@ -23,12 +23,13 @@
     padding: 6rem;
     width: 80%;
     height: 100%;
+    margin-top: 2rem;
 }
 
 .contacts--container > h1 {
     font-family: var(--primaryFont);
     font-size: 3.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 
 }
 

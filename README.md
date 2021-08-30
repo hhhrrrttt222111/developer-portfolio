@@ -119,7 +119,7 @@
 - [Git](https://git-scm.com/downloads)
 - [Node](https://nodejs.org/en/download/)
 
-## Also check out [this](https://reactjs.org/docs/create-a-new-react-app.html) if you are new to react.
+## Also check [this](https://reactjs.org/docs/create-a-new-react-app.html) out if you are new to react.
 
 #### Make sure you have the latest version of both Git and Node on your computer.
 
@@ -284,12 +284,11 @@ export const educationData = [
 | :-------------: |
 | @material-ui/core  |
 | @material-ui/icons  |
-| react-color |
+| axios |
+| react-fast-marquee |
 | react-helmet  |
-| react-hook-form |
 | react-icons  |
 | react-reveal |
-| react-fast-marquee |
 | react-router-dom  |
 | react-router-hash-link  |
 | react-slick  |
