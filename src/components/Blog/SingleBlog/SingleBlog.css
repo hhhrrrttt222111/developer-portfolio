@@ -81,7 +81,19 @@
 }
 
 @media screen and (max-width: 800px) {
+    .singleBlog {
+        height: 450px;
+        width: 80%;
+        margin: 1rem auto;
+    }
+}
 
+@media screen and (max-width: 700px) {
+    .singleBlog {
+        height: 450px;
+        width: 80%;
+        margin: 1rem auto;
+    }
 }
 
 @media screen and (max-width: 600px) {
