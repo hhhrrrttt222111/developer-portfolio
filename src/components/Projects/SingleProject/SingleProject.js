@@ -1,6 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import { FaPlay, FaCode } from "react-icons/fa";
+import Fade from 'react-reveal/Fade';
 
 import './SingleProject.css'
 
@@ -36,30 +37,32 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
     const classes = useStyles();
 
     return (
-        <div key={id} className="singleProject" style={{backgroundColor: theme.primary400}}>
-            <div className="projectContent">
-                <h2 style={{color: theme.tertiary}}>{name}</h2>
-                {image && (
-                    <img src={image} alt={name} /> 
-                )} 
-                <div className="project--showcaseBtn">
-                    <a href={demo} target="_blank" rel="noreferrer" className={classes.iconBtn}>
-                        <FaPlay className={classes.icon}/>
-                    </a>
-                    <a href={code} target="_blank" rel="noreferrer" className={classes.iconBtn}>
-                        <FaCode className={classes.icon}/>
-                    </a>
+        <Fade bottom>
+            <div key={id} className="singleProject" style={{backgroundColor: theme.primary400}}>
+                <div className="projectContent">
+                    <h2 style={{color: theme.tertiary}}>{name}</h2>
+                    {image && (
+                        <img src={image} alt={name} /> 
+                    )} 
+                    <div className="project--showcaseBtn">
+                        <a href={demo} target="_blank" rel="noreferrer" className={classes.iconBtn}>
+                            <FaPlay className={classes.icon}/>
+                        </a>
+                        <a href={code} target="_blank" rel="noreferrer" className={classes.iconBtn}>
+                            <FaCode className={classes.icon}/>
+                        </a>
+                    </div>
+                </div>
+                <p className="project--desc" style={{background: theme.secondary, color: theme.tertiary}}>
+                    {desc}
+                </p>
+                <div className="project--lang" style={{background: theme.secondary, color: theme.tertiary80}}>
+                    {tags.map((tag, id) => (
+                        <span key={id}>{tag}</span>
+                    ))}
                 </div>
             </div>
-            <p className="project--desc" style={{background: theme.secondary, color: theme.tertiary}}>
-                {desc}
-            </p>
-            <div className="project--lang" style={{background: theme.secondary, color: theme.tertiary80}}>
-                {tags.map((tag, id) => (
-                    <span key={id}>{tag}</span>
-                ))}
-            </div>
-        </div>
+        </Fade>
     )
 }
 

@@ -1,4 +1,4 @@
-import React,{ useContext} from 'react';
+import React, { useContext } from 'react';
 
 import './About.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
