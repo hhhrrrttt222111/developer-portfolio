@@ -34,14 +34,39 @@ function Contacts() {
             backgroundColor: `${theme.secondary}`
         },
         socialIcon: {
-            width: '35px',
-            height: '35px',
+            width: '45px',
+            height: '45px',
             borderRadius: '50%',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
+            fontSize: '21px',
             backgroundColor:theme.primary,
-            color: theme.tertiary
+            color: theme.secondary,
+            transition: '250ms ease-in-out',
+            "&:hover": {
+                transform: 'scale(1.1)',
+                color: theme.secondary50,
+                backgroundColor:theme.tertiary,
+            }
+        },
+        detailsIcon: {
+            backgroundColor:theme.primary,
+            color: theme.secondary,
+            borderRadius: '50%',
+            width: '45px',
+            height: '45px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: '23px',
+            transition: '250ms ease-in-out',
+            flexShrink: 0,
+            "&:hover": {
+                transform: 'scale(1.1)',
+                color: theme.secondary50,
+                backgroundColor:theme.tertiary,
+            }
         }
     }))
 
@@ -111,19 +136,19 @@ function Contacts() {
 
                     <div className="contacts-details">
                         <a href={`mailto:${contactsData.email}`} className="personal-details">
-                            <div className="details-icon" style={{backgroundColor:theme.primary}}>
+                            <div className={classes.detailsIcon}>
                                 <FiAtSign />
                             </div>
                             <p style={{color:theme.tertiary}}>{contactsData.email}</p>
                         </a>
                         <a href={`tel:${contactsData.phone}`} className="personal-details">
-                            <div className="details-icon" style={{backgroundColor:theme.primary}}>
+                            <div className={classes.detailsIcon}>
                                 <FiPhone/> 
                             </div>
                             <p style={{color:theme.tertiary}}>{contactsData.phone}</p>
                         </a>
                         <div className="personal-details">
-                            <div className="details-icon" style={{backgroundColor:theme.primary}}>
+                            <div className={classes.detailsIcon}>
                                 <HiOutlineLocationMarker />
                             </div>
                             <p style={{color:theme.tertiary}}>Menlo Park, California, United States - 673822 </p>

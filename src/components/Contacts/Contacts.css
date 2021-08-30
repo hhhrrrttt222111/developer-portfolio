@@ -1,5 +1,5 @@
 .contacts {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -44,6 +44,7 @@
 .contacts-form {
     display: flex;
     flex: 0.4;
+    width: 100%;
 }
 
 .contacts-form form {
@@ -102,8 +103,6 @@
     font-family: var(--primaryFont);
 }
 
-.submit-icon {
-}
 
 .submit-icon svg {
     font-size: 20px;
@@ -119,21 +118,12 @@
     padding-left: 7rem;
 }
 
-.details-icon {
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-}
 
 
 .personal-details {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     width: 100%;
     margin-bottom: 2.5rem;
@@ -141,19 +131,21 @@
 
 .personal-details p {
     margin-left: 1.5rem;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 110%;
     font-weight: 400;
     font-family: var(--primaryFont);
     width: 45%;
 }
 
 .socialmedia-icons {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    margin-top: 4rem;
 }
 
 .social-icon {
@@ -165,3 +157,104 @@
     justify-content: center;
 }
 
+@media (min-width: 992px) and (max-width: 1380px) {
+    .contacts--img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 240px;
+    }
+    .contacts--container {
+        padding: 4rem;
+        width: 90%;
+        margin-top: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .contacts--img {
+        display: none;
+    }
+    .contacts--container {
+        padding: 4rem;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .contacts-details {
+        padding-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contacts--container h1 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    .contacts--container {
+        padding: 2rem;
+        margin-top: 0rem;
+        align-items: center;
+    }
+    .contacts-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts-form {
+        display: flex;
+        flex: 1;
+        width: 80%;
+    }
+    .contacts-form form {
+        align-items: flex-end;
+    }
+    .contacts-details {
+        padding-left: 0rem;
+        padding: 1rem;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .socialmedia-icons {
+        width: 100%;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    .personal-details {
+        margin-bottom: 1.8rem;
+    }
+    .personal-details p {
+        margin-left: 1.5rem;
+        font-size: 18px;
+        line-height: 110%;
+        font-weight: 400;
+        font-family: var(--primaryFont);
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contacts-form {
+        display: flex;
+        flex: 1;
+        width: 100%;
+    }
+    .contacts--container h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+}
+  
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
+}
+
+
+@media only screen and (device-width: 768px) {
+
+}
