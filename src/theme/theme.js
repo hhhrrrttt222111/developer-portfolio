@@ -336,13 +336,3 @@ export const yellowThemeDark = {
     contactsimg: contactsYellow
 }
 
-
-// primary => color
-// primary30 => color 70% alpha
-// secondary => bg dark/light
-// secondary70 => bg darb3k/light
-// secondary50 => bg dar80k/light
-// tertiary => text light/dark
-// tertiary80 => text light/dark 80%
-// tertiary70 => text light/dark 70%
-// tertiary3 => text light/dark 70%
