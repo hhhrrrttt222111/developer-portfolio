@@ -79,7 +79,7 @@ function Contacts() {
             justifyContent: 'center',
             fontSize: '21px',
             backgroundColor:theme.primary,
-            color: theme.secondary70,
+            color: theme.secondary,
             transition: '250ms ease-in-out',
             "&:hover": {
                 transform: 'scale(1.1)',
@@ -89,7 +89,7 @@ function Contacts() {
         },
         detailsIcon: {
             backgroundColor:theme.primary,
-            color: theme.secondary70,
+            color: theme.secondary,
             borderRadius: '50%',
             width: '45px',
             height: '45px',
@@ -107,7 +107,7 @@ function Contacts() {
         },
         submitBtn: {
             backgroundColor:theme.primary, 
-            color:theme.secondary70,
+            color:theme.secondary,
             transition: '250ms ease-in-out',
             "&:hover": {
                 transform: 'scale(1.08)',
