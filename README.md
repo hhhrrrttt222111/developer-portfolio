@@ -478,7 +478,7 @@ export const educationData = [
 
 <br />
 
-# Contributors
+# Contributors :man_technologist::woman_technologist:
 
 <div>
     <table>

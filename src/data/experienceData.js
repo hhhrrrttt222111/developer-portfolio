@@ -1,23 +1,23 @@
 export const experienceData = [
     {
         id: 1,
-        company: 'BVM Eroor',
-        jobtitle: 'Higher Secondary Education',
-        startYear: '2007',
+        company: 'Globex Corporation',
+        jobtitle: 'Frontend Developer',
+        startYear: '2018',
         endYear: '2019'
     },
     {
         id: 2,
-        company: 'Model Engineering College, Thrikkakara',
-        jobtitle: 'B Tech',
+        company: 'Vehement Capital Partners',
+        jobtitle: 'Backend Developer',
         startYear: '2019',
-        endYear: '2023'
+        endYear: '2020'
     },
     {
         id: 3,
-        company: 'IIT blaaaah',
-        jobtitle: 'M Tech',
-        startYear: '2023',
+        company: 'Wonka Industries',
+        jobtitle: 'Marketing',
+        startYear: '2020',
         endYear: 'Present'
     },
 ]
