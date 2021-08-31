@@ -1,9 +1,9 @@
-# Developer Portfolio 👾
+# Developer Portfolio 
 ## A responsive portfolio template for developers
 
 <br />
 
-## Table of Contents
+## Table of Contents :scroll:
 - [Sections](#sections)
 - [Demo](#demo)
 - [Themes](#themes)
@@ -22,7 +22,7 @@
 <br /><br />
 
 
-# Sections
+# Sections :bookmark:
 - HOME
 - ABOUT
 - RESUME
@@ -37,13 +37,13 @@
 
 <br /><br />
 
-# Demo
+# Demo :movie_camera:
 ## View live demo [here](https://dev-portfolio-template.netlify.app/).
 
 <br />
 
-# Themes
-### Green
+# Themes :art:
+### Green :green_circle:
 
 <div style="display: flex; justify-content: space-between;">
     <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/greenThemeLight.png" width="48%" alt="">
@@ -51,7 +51,7 @@
 </div>
 <br />
 
-### Black & White
+### Black & White :black_circle:
 
 <div style="display: flex; justify-content: space-between;">
     <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/bwThemeLight.png" width="48%" alt="">
@@ -59,7 +59,7 @@
 </div>
 <br />
 
-### Blue
+### Blue :large_blue_circle:
 
 <div style="display: flex; justify-content: space-between;">
     <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/blueThemeLight.png" width="48%" alt="">
@@ -68,7 +68,7 @@
 
 <br />
 
-### Red
+### Red :red_circle:
 
 <div style="display: flex; justify-content: space-between;">
     <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/redThemeLight.png" width="48%" alt="">
@@ -77,7 +77,7 @@
 
 <br />
 
-### Orange
+### Orange :orange_circle:
 
 <div style="display: flex; justify-content: space-between;">
     <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/orangeThemeLight.png" width="48%" alt="">
@@ -86,7 +86,7 @@
 
 <br />
 
-### Purple
+### Purple :purple_circle:
 
 <div style="display: flex; justify-content: space-between;">
     <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/purpleThemeLight.png" width="48%" alt="">
@@ -95,7 +95,7 @@
 
 <br />
 
-### Pink
+### Pink 
 
 <div style="display: flex; justify-content: space-between;">
     <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/pinkThemeLight.png" width="48%" alt="">
@@ -104,7 +104,7 @@
 
 <br />
 
-### Yellow
+### Yellow :yellow_circle:
 
 <div style="display: flex; justify-content: space-between;">
     <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/yellowThemeLight.png" width="48%" alt="">
@@ -113,7 +113,7 @@
 
 <br /> <br />
 
-# Installation
+# Installation :arrow_down:
 ### You will need to download Git and Node to run this project
 
 - [Git](https://git-scm.com/downloads)
@@ -130,7 +130,7 @@ git --version
 
 <br />
 
-# Getting Started
+# Getting Started :dart:
 ### Fork and Clone the repo
 
 ```
@@ -155,7 +155,7 @@ yarn start
 ```
 <br />
 
-# Folder Structure
+# Folder Structure :open_file_folder:
 
 ```bash
 ├── LICENSE   
@@ -278,7 +278,7 @@ yarn start
 ```
 <br />
 
-# Usage
+# Usage :joystick:
 ### Customize your details for each component in `src/data` [folder](https://github.com/hhhrrrttt222111/developer-portfolio/tree/master/src/data).
 
 Eg:
@@ -306,18 +306,27 @@ export const headerData = {
 ```
 
 #### Data for each component is divided into respective files.
-#### Set website theme in [`src/data/themeData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/themeData.js)
+>#### Set website theme in [`src/data/themeData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/themeData.js) and choose your favourite font from [`src/App.css`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/App.css)
 
-#### About You - [`src/data/aboutData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/aboutData.js)
-#### Education details - [`src/data/educationData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/educationData.js) 
-#### Enter your Projects - [`src/data/projectsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/projectsData.js)
-#### Add your Skills - [`src/data/skillsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/skillsData.js)
-#### Experience - [`src/data/experienceData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/experienceData.js)
-#### Services - [`src/data/servicesData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/servicesData.js)
-#### Testimonials - [`src/data/testimonialsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/testimonialsData.js)
-#### Your Blogs and Articles - [`src/data/blogData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/blogData.js)
-#### Contact Details - [`src/data/contactsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/contactsData.js)
-#### Social Media Profiles - [`src/data/contactsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/socialsData.js)
+> #### About You - [`src/data/aboutData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/aboutData.js)
+
+> #### Education details - [`src/data/educationData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/educationData.js) 
+
+> #### Enter your Projects - [`src/data/projectsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/projectsData.js)
+
+> #### Add your Skills - [`src/data/skillsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/skillsData.js)
+
+> #### Experience - [`src/data/experienceData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/experienceData.js)
+
+> #### Services - [`src/data/servicesData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/servicesData.js)
+
+> #### Testimonials - [`src/data/testimonialsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/testimonialsData.js)
+
+> #### Your Blogs and Articles - [`src/data/blogData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/blogData.js)
+
+> #### Contact Details - [`src/data/contactsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/contactsData.js)
+
+> #### Social Media Profiles - [`src/data/contactsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/socialsData.js)
 
 ```javascript
 // EXAMPLE
@@ -333,11 +342,15 @@ export const educationData = [
 ]
 ```
 
-## Instructions and format for each section can be found inside the data files.
+### Instructions and format for each section can be found inside the data files.
+<br />
+
+## Setting Up Contacts form :envelope_with_arrow:
+> ### Follow these [instructions](https://github.com/hhhrrrttt222111/developer-portfolio/wiki/Contacts) to connect contacts form with Google Sheet
 
 <br />
 
-# Hosting
+# Hosting :globe_with_meridians:
 ## Netlify
 | Site   | Docs  | Demo  |
 | :-------------: |:-------------: |:-------------: |
@@ -358,7 +371,7 @@ export const educationData = [
 <br />
 
 
-# SEO
+# SEO :spider:
 ### Search engine optimization (SEO) is the process of improving the quality and quantity of website traffic to a website or a web page from search engines. 
 ### Add the below code snippet to `public/index.html` with your site info. This step is not mandatory
 
@@ -396,7 +409,7 @@ export const educationData = [
 
 <br />
 
-# Packages Used
+# Packages Used :package:
 
 | Client Side Packages  |
 | :-------------: |
@@ -416,13 +429,13 @@ export const educationData = [
 
 <br />
 
-# APIs Used
-
+# APIs Used :world_map:
+- [SheetDB](https://sheetdb.io/)
 
 
 <br />
 
-# Fonts and Images
+# Fonts and Images :performing_arts:
 
 ## Illustrations
 - [Icons8](https://icons8.com/illustrations/styles)
@@ -434,22 +447,25 @@ export const educationData = [
 
 ## Fonts
 - [Poppins](https://fonts.google.com/specimen/Poppins)
+- [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- [Raleway](https://fonts.google.com/specimen/Raleway)
 - [Big Shoulders Text](https://fonts.google.com/specimen/Big+Shoulders+Text)
 - [Bestermind](https://www.dafont.com/bestermind.font)
 - [Roboto](https://fonts.google.com/specimen/Roboto)
 
 <br />
 
-# Upcoming Features
+# Upcoming Features :construction:
 - Light/Dark theme toggle
 - More illustrations to choose from
-- Achievements and Awards
+- Achievements and Awards section
 - More fonts to choose from
 
 
 <br /><br />
 
 ## Raise an issue for...
+- Found a bug
 - New theme
 - Can't find required skill in Skills section
 - Add new social media profile
