@@ -3,5 +3,5 @@ export const contactsData = {
     phone: '+915588776600',
     address: 'Menlo Park, California, United States - 673822 ',
 
-    sheetAPI: 'https://sheetdb.io/api/v1/7q8y0kku52z77'
+    sheetAPI: ''
 }

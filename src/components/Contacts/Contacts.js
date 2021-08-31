@@ -41,6 +41,7 @@ function Contacts() {
         input: {
             border: `4px solid ${theme.primary80}`,
             backgroundColor: `${theme.secondary}`,
+            color: `${theme.tertiary}`,
             fontFamily: 'var(--primaryFont)',
             fontWeight: 500,    
             transition: 'border 0.2s ease-in-out',
@@ -51,6 +52,7 @@ function Contacts() {
         message: {
             border: `4px solid ${theme.primary80}`,
             backgroundColor: `${theme.secondary}`,
+            color: `${theme.tertiary}`,
             fontFamily: 'var(--primaryFont)',
             fontWeight: 500,
             transition: 'border 0.2s ease-in-out',
@@ -77,17 +79,17 @@ function Contacts() {
             justifyContent: 'center',
             fontSize: '21px',
             backgroundColor:theme.primary,
-            color: theme.secondary,
+            color: theme.secondary70,
             transition: '250ms ease-in-out',
             "&:hover": {
                 transform: 'scale(1.1)',
-                color: theme.secondary50,
+                color: theme.secondary,
                 backgroundColor:theme.tertiary,
             }
         },
         detailsIcon: {
             backgroundColor:theme.primary,
-            color: theme.secondary,
+            color: theme.secondary70,
             borderRadius: '50%',
             width: '45px',
             height: '45px',
@@ -99,17 +101,17 @@ function Contacts() {
             flexShrink: 0,
             "&:hover": {
                 transform: 'scale(1.1)',
-                color: theme.secondary50,
+                color: theme.secondary,
                 backgroundColor:theme.tertiary,
             }
         },
         submitBtn: {
             backgroundColor:theme.primary, 
-            color:theme.secondary,
+            color:theme.secondary70,
             transition: '250ms ease-in-out',
             "&:hover": {
                 transform: 'scale(1.08)',
-                color: theme.secondary50,
+                color: theme.secondary,
                 backgroundColor:theme.tertiary,
             }
         },
