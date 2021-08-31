@@ -84,6 +84,7 @@
     flex: 0.35;
     margin-left: 7%;
     margin-top: 1rem;
+    pointer-events: none;
 }
 
 .experience-image > img {

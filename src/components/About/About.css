@@ -60,6 +60,7 @@
 
 .about-img {
     margin-top: 40px;
+    pointer-events: none;
 }
 
 .about-img > img {
