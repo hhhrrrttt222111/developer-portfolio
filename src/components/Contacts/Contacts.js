@@ -27,11 +27,15 @@ function Contacts() {
     const useStyles = makeStyles((t) => ({
         input: {
             border: `4px solid ${theme.primary}`,
-            backgroundColor: `${theme.secondary}`
+            backgroundColor: `${theme.secondary}`,
+            fontFamily: 'var(--primaryFont)',
+            fontWeight: 500,    
         },
         message: {
             border: `4px solid ${theme.primary}`,
-            backgroundColor: `${theme.secondary}`
+            backgroundColor: `${theme.secondary}`,
+            fontFamily: 'var(--primaryFont)',
+            fontWeight: 500,    
         },
         socialIcon: {
             width: '45px',
@@ -75,8 +79,6 @@ function Contacts() {
     const handleContactForm = (e) => {
         e.preventDefault()
 
-        // https://docs.google.com/spreadsheets/d/1zuBWf5oGhINciw82bTjZA6gVtBbWxrGHc5KNOmc7-QI/edit#gid=0
-
         if(name && email && message) {
 
             if(isEmail(email)) {
@@ -105,6 +107,8 @@ function Contacts() {
         }
 
     }
+
+    console.log(errMsg)
     
     return (
         <div className="contacts" id="contacts" style={{backgroundColor: theme.secondary}}>
@@ -114,18 +118,18 @@ function Contacts() {
                     <div className="contacts-form">
                         <form onSubmit={handleContactForm}>
                             <div className="input-container">
-                                <input value={name} onChange={(e) => setName(e.target.value)} type="text" name="Name" className={`form-input ${classes.input}`}/>
+                                <input value={name} placeholder="Name" onChange={(e) => setName(e.target.value)} type="text" name="Name" className={`form-input ${classes.input}`}/>
                             </div>
                             <div className="input-container">
-                                <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" name="Email" className={`form-input ${classes.input}`}/>
+                                <input value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} type="email" name="Email" className={`form-input ${classes.input}`}/>
                             </div>
                             <div className="input-container">
-                                <input value={message} onChange={(e) => setMessage(e.target.value)} type="text" name="Message" className={`form-message ${classes.message}`} />
+                                <input value={message} placeholder="Message" onChange={(e) => setMessage(e.target.value)} type="text" name="Message" className={`form-message ${classes.message}`} />
                             </div>
 
                             <div className="submit-btn" >
                                 <button type="submit" style={{backgroundColor:theme.primary, color:theme.tertiary}}>
-                                    <p>Send</p>
+                                    <p>{!success ? 'Send' : 'Sent'}</p>
                                     <div className="submit-icon" style={{backgroundColor: theme.primary30}}>
                                         <AiOutlineSend />
                                     </div>

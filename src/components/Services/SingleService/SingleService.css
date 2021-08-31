@@ -8,12 +8,11 @@
     align-items: center;
     justify-content: center;
     padding: 1.4rem 1.4rem;
-    overflow: hidden;
     transition: 300ms ease-in-out;
 }
 
 .single-service:hover {
-    transform: scale(1.05);
+    transform: scale(1.15);
 }
 
 .service-content {
@@ -29,7 +28,7 @@
 }
 
 .service-icon > svg {
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #000000;
 }
 
@@ -37,7 +36,7 @@
     font-family: var(--primaryFont);
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     line-height: 110%;
     color: #000000;
@@ -47,13 +46,13 @@
     .single-service {
         width: 160px;
         height: 160px;
-        padding: 1.4rem 1.4rem;
+        padding: 1.2rem 1.2rem;
     }
     .service-icon > svg {
         font-size: 2.5rem;
     }
     
     .service-content > h4 {
-        font-size: 16px;
+        font-size: 15px;
     }
 }

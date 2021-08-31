@@ -15,7 +15,7 @@
 }
 
 .services-header > h1 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 3.5rem;
     font-family: var(--primaryFont);
 }
@@ -32,7 +32,7 @@
     font-family: var(--primaryFont);
     font-weight: 400;
     font-size: 1.5rem;
-    width: 65%;
+    width: 60%;
     text-align: center;
     margin-bottom: 6rem;
 }
