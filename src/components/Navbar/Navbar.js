@@ -12,6 +12,7 @@ import CloseIcon from '@material-ui/icons/Close';
 
 import './Navbar.css'
 import { ThemeContext } from '../../contexts/ThemeContext'
+import { headerData } from '../../data/headerData'
 
 function Navbar() {
 
@@ -127,7 +128,7 @@ function Navbar() {
     return (
         <div className="navbar">
             <div className="navbar--container">
-                <h1 style={{color: theme.secondary}}>Jane Doe</h1>
+                <h1 style={{color: theme.secondary}}>{headerData.name}</h1>
 
                 <IoMenuSharp className={classes.navMenu} onClick={handleDrawerOpen}/>
             </div>
