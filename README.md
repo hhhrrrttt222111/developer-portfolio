@@ -139,7 +139,7 @@ git --version
 ### Fork and Clone the repo
 
 ```
-git clone hhttps://github.com/hhhrrrttt222111/developer-portfolio.git
+git clone https://github.com/hhhrrrttt222111/developer-portfolio.git
 cd developer-portfolio
 ```
 ### Install packages from the root directory
