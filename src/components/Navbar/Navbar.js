@@ -39,7 +39,13 @@ function Navbar() {
             transition: 'color 0.3s',
             "&:hover": {
                 color: theme.primary,
-            }
+            },
+            [t.breakpoints.down('sm')]: {
+                fontSize: '2.5rem',
+            },
+            [t.breakpoints.down('xs')]: {
+                fontSize: '2rem',
+            },
         },
         MuiDrawer: {
             padding:'0em 1.8em',
@@ -68,6 +74,10 @@ function Navbar() {
             "&:hover": {
                 color: theme.tertiary,
             },
+            [t.breakpoints.down('sm')]: {
+                right: 20,
+                top: 20,
+            },
         },
         drawerItem: {
             margin: '2rem auto',
@@ -91,6 +101,7 @@ function Navbar() {
             [t.breakpoints.down('sm')]: {
                 width:'100%',
                 padding: '0 25px',
+                height: '55px',
             },
         },
         drawerLinks: {
@@ -98,9 +109,15 @@ function Navbar() {
             width:'50%',
             fontSize: '1.3rem',
             fontWeight: 600,
+            [t.breakpoints.down('sm')]: {
+                fontSize: '1.125rem',
+            },
         },
         drawerIcon: {
             fontSize: '1.6rem',
+            [t.breakpoints.down('sm')]: {
+                fontSize: '1.385rem',
+            },
         }
     }));
 

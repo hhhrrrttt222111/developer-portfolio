@@ -48,6 +48,13 @@
     }
 }
 
+@media (max-width:800px) {
+    .navLink--container {
+        margin-top: 3rem;
+    }
+}
+
+
 @media (max-width:600px) {
     .nav-menu{
         color: var(--primary-2);
@@ -60,5 +67,20 @@
     }
     .MuiDrawer-paper{
       border-radius: 0 !important;
+    }
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    .navbar {
+        height: 5rem;
+    }
+    .navbar--container {
+        padding: 0 1rem;
+        margin-top: 0rem;
+    }
+    .navbar--container > h1 {
+        font-size: 1.5rem;
     }
 }
