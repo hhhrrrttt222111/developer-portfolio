@@ -227,3 +227,17 @@
          margin-top: 60%;
      }
  }
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    .landing {
+        height: 100%;
+     }
+
+    .landing--img {
+        --img-size: 150px;
+        left: 50%;
+        top: 20%;
+    }
+}

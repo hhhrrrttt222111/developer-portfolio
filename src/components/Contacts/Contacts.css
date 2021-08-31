@@ -246,12 +246,20 @@
 }
 
 @media screen and (max-width: 400px) {
-
+    .contacts-details {
+        padding-left: 0rem;
+        padding: 0rem;
+        align-items: center;
+        margin-top: 2rem;
+    }
 }
   
 @media only screen and (min-device-width: 320px) and (max-device-width: 
   480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
-
+    .contacts-details {
+        padding-left: 0rem;
+        padding: 0rem;
+    }
 }
 
 
