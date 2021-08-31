@@ -83,6 +83,7 @@
     padding: 1rem;
     flex: 0.35;
     margin-top: 1rem;
+    pointer-events: none;
 }
 
 .education-image > img {
