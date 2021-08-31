@@ -61,7 +61,7 @@
 
 
 .form-input {
-  height: 50px;
+    height: 50px;
     box-sizing: border-box;
     border-radius: 50px; 
     outline: none;
@@ -97,6 +97,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    cursor: pointer;
 }
 
 .submit-btn button p {
@@ -104,18 +105,21 @@
     font-family: var(--primaryFont);
 }
 
-.submit-icon{
+.submit-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 5px;
 }
-.submit-icon svg {
+.send-icon {
     font-size: 25px;
     transform-origin: center;
-    transform: translate(5px,-3px) rotate(-45deg);
-    /* transform: translate(10px,-3px) rotate(-30deg) ; */
+    transform: translate(5px,-3px) rotate(-30deg);
+}
+
+.success-icon {
+    font-size: 28px;
+    transition: all 0.3s 0.8s ease-in-out;
 }
 
 .contacts-details {
@@ -159,14 +163,6 @@
     margin-top: 4rem;
 }
 
-.social-icon {
-    width: 35px ;
-    height: 35px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 @media (min-width: 992px) and (max-width: 1380px) {
     .contacts--img {
@@ -224,6 +220,10 @@
         flex: 1;
         width: 80%;
     }
+    
+    .form-input {
+        margin-bottom: 0.45rem;
+    }
     .contacts-form form {
         align-items: flex-end;
     }
@@ -278,6 +278,55 @@
 }
 
 
-@media only screen and (device-width: 768px) {
 
-}
+
+
+@keyframes spin{
+    0%{
+        opacity: 1;
+        transform: translate(5px,-3px) rotate(0deg);
+    }
+    /* 60%{
+      opacity: 0;
+    }
+    80%{
+      opacity: 1;
+    } */
+    100%{
+      transform: rotate(359deg);
+    }
+  }
+
+  @keyframes fly{
+    /* 0%,100%{
+        transform: translate(5px,-3px) rotate(-30deg);
+        opacity: 1;
+    }
+    25%{
+        transform: translate(15px,-10px) rotate(-30deg);
+        opacity: 0.8;
+    }
+    50%{
+        transform: translate(20px,-12px) rotate(-30deg);
+        opacity: 0;
+    }
+    60%{
+        transform: translate(-12px,10px) rotate(-30deg);
+        opacity: 0;
+    }
+    75%{
+        opacity: 0.8;
+    } */
+    10%{
+        transform: rotate(0deg);
+        }
+        20%{
+        transform: translateX(-10px);    
+        }
+        70%{
+          transform: translateX(60px);
+        }
+        100%{
+            transform: translateX(80px);
+        }
+  }
