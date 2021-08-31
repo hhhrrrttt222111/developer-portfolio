@@ -56,3 +56,18 @@
         font-size: 15px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .single-service {
+        width: 150px;
+        height: 150px;
+        padding: 1.2rem 1.2rem;
+    }
+    .service-icon > svg {
+        font-size: 2.2rem;
+    }
+    
+    .service-content > h4 {
+        font-size: 13px;
+    }
+}
