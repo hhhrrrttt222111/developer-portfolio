@@ -75,6 +75,9 @@
 }
 
 @media screen and (max-width: 800px) {
+    .services {
+        padding: 1rem;
+    }
     .services-header h1 {
         font-size: 3rem;
         margin-bottom: 30px;
@@ -92,9 +95,15 @@
 }
 
 @media screen and (max-width: 600px) {
+    .services {
+        padding: 0.5rem;
+    }
     .services-header h1 {
         font-size: 2.5rem;
         margin-bottom: 20px;
+    }
+    .services-bodycontainer {
+        gap: 1rem;
     }
 }
 
