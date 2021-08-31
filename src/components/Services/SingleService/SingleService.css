@@ -8,31 +8,78 @@
     align-items: center;
     justify-content: center;
     padding: 1.4rem 1.4rem;
-    transition: 300ms ease-in-out;
+    /* overflow: hidden; */
+    transition: transform 300ms ease-in-out;
 }
 
 .single-service:hover {
-    transform: scale(1.15);
+    transform: scale(1.15) ;
 }
 
 .service-content {
+    position: relative;
+    height: 150px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 1rem;
 }
 
 .service-icon {
-    margin-bottom: 10px;
+    position: absolute;
+    top: 15%;
+    /* transform: translateY(-50%); */
 }
 
 .service-icon > svg {
     font-size: 2.8rem;
-    color: #000000;
+    /* color: #000000; */
+}
+
+.single-service:hover svg{
+    animation: magic 0.7s ease-in-out both;
+}
+
+@keyframes magic {
+    0%, 100%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(0,-20px);
+    }
+    50%{
+        transform: translate(0,0px);
+    }
+    75%{
+        transform: translate(0,-10px);
+    }
+
+    /* slide-up-fade
+
+    0%, 100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    33%{
+        transform: translate(0,-50px);
+        opacity: 0;
+    }
+    67%{
+        transform: translate(0,50px);
+        opacity: 0;
+    } */
+    
 }
 
 .service-content > h4 {
+    position: absolute;
+    top: 60%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     font-family: var(--primaryFont);
     font-style: normal;
     font-weight: 600;
@@ -69,5 +116,6 @@
     
     .service-content > h4 {
         font-size: 13px;
+        top: 50%;
     }
 }

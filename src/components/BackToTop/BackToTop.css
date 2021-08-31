@@ -1,8 +1,8 @@
 .backToTop {
     position: fixed; 
-    right: 40px;
+    right: 10px;
     bottom: 60px;
-    height: 20px;
+    height: 30px;
     font-size: 3rem;
     z-index: 999;
 }
@@ -12,11 +12,12 @@
     border: none;
     cursor: pointer;
     background: none;
+    padding: 20px;
 }
 
 @media screen and (max-width: 800px) {
     .backToTop { 
-        right: 15px;
+        right: -10px;
         bottom: 50px;
         font-size: 2.75rem;
     }
