@@ -1,9 +1,11 @@
 import React, { useContext, useState } from 'react';
+import { Snackbar, IconButton, SnackbarContent } from '@material-ui/core';
+import CloseIcon from '@material-ui/icons/Close';
 import axios from 'axios'
 import isEmail from 'validator/lib/isEmail';
 import { makeStyles } from '@material-ui/core/styles';
 import { FaTwitter, FaLinkedinIn, FaGithub, FaYoutube, FaBloggerB, FaRedditAlien, FaStackOverflow, FaCodepen, FaInstagram, FaGitlab, FaMediumM } from "react-icons/fa";
-import { AiOutlineSend } from "react-icons/ai";
+import { AiOutlineSend, AiOutlineCheckCircle } from "react-icons/ai";
 import { FiPhone, FiAtSign } from "react-icons/fi";
 import { HiOutlineLocationMarker } from "react-icons/hi"
 
@@ -14,6 +16,7 @@ import { contactsData } from '../../data/contactsData'
 import './Contacts.css'
 
 function Contacts() {
+    const [open, setOpen] = useState(false);
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -23,6 +26,16 @@ function Contacts() {
     const [errMsg, setErrMsg] = useState('')
 
     const { theme } = useContext(ThemeContext);
+
+
+    
+    const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+            return;
+        }
+
+        setOpen(false);
+    };
 
     const useStyles = makeStyles((t) => ({
         input: {
@@ -89,7 +102,17 @@ function Contacts() {
                 color: theme.secondary50,
                 backgroundColor:theme.tertiary,
             }
-        }
+        },
+        submitBtn: {
+            backgroundColor:theme.primary, 
+            color:theme.secondary,
+            transition: '250ms ease-in-out',
+            "&:hover": {
+                transform: 'scale(1.08)',
+                color: theme.secondary50,
+                backgroundColor:theme.tertiary,
+            }
+        },
     }))
 
     const classes = useStyles();
@@ -98,7 +121,6 @@ function Contacts() {
         e.preventDefault()
 
         if(name && email && message) {
-
             if(isEmail(email)) {
                 const responseData = {
                     name: name,
@@ -115,18 +137,19 @@ function Contacts() {
                         setName("");
                         setEmail("");
                         setMessage("")
+                        setOpen(false)
                     })
             } else {
                 setErrMsg('Invalid email')
+                setOpen(true)
             }
             
         } else {
             setErrMsg('Enter all the fields')
+            setOpen(true)
         }
 
     }
-
-    console.log(errMsg)
     
     return (
         <div className="contacts" id="contacts" style={{backgroundColor: theme.secondary}}>
@@ -136,27 +159,53 @@ function Contacts() {
                     <div className="contacts-form">
                         <form onSubmit={handleContactForm}>
                             <div className="input-container">
-                                <label for="Name"  className={classes.label}>Name</label>
-                                <input value={name} onChange={(e) => setName(e.target.value)} type="text" name="Name" className={`form-input ${classes.input}`}/>
+                                <label htmlFor="Name"  className={classes.label}>Name</label>
+                                <input placeholder="John Doe" value={name} onChange={(e) => setName(e.target.value)} type="text" name="Name" className={`form-input ${classes.input}`}/>
                             </div>
                             <div className="input-container">
-                                <label for="Email"  className={classes.label}>Email</label>
-                                <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="Email" className={`form-input ${classes.input}`}/>
+                                <label htmlFor="Email"  className={classes.label}>Email</label>
+                                <input placeholder="John@doe.com" value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="Email" className={`form-input ${classes.input}`}/>
                             </div>
                             <div className="input-container">
-                                <label for="Message"  className={classes.label}>Message</label>
-                                <textarea value={message} onChange={(e) => setMessage(e.target.value)} type="text" name="Message" className={`form-message ${classes.message}`} />
+                                <label htmlFor="Message"  className={classes.label}>Message</label>
+                                <textarea placeholder="Type your message...." value={message} onChange={(e) => setMessage(e.target.value)} type="text" name="Message" className={`form-message ${classes.message}`} />
                             </div>
 
                             <div className="submit-btn" >
-                                <button type="submit" style={{backgroundColor:theme.primary, color:theme.secondary}}>
+                                <button type="submit" className={classes.submitBtn} >
                                     <p>{!success ? 'Send' : 'Sent'}</p>
                                     <div className="submit-icon">
-                                        <AiOutlineSend />
+                                        <AiOutlineSend className="send-icon" style={{animation: !success ? 'initial' : 'fly 0.8s linear both', position: success ? 'absolute' : 'initial'}}/>
+                                        <AiOutlineCheckCircle className="success-icon" style={{display: !success ? 'none' : 'inline-flex', opacity: !success ? '0': '1'}}/>
                                     </div>
                                 </button>
                             </div>
                         </form>
+                        <Snackbar
+                            anchorOrigin={{
+                                vertical: 'top',
+                                horizontal: 'center',
+                            }}
+                            open={open}
+                            autoHideDuration={4000}
+                            onClose={handleClose}
+                        >
+                            <SnackbarContent 
+                                action={
+                                    <React.Fragment>
+                                        <IconButton size="small" aria-label="close" color="inherit" onClick={handleClose}>
+                                            <CloseIcon fontSize="small" />
+                                        </IconButton>
+                                    </React.Fragment>
+                                }
+                                style={{
+                                    backgroundColor: theme.primary,
+                                    color: theme.secondary,
+                                    fontFamily: 'var(--primaryFont)'
+                                }}
+                                message={errMsg}
+                            />
+                        </Snackbar>
                     </div>
 
                     <div className="contacts-details">
