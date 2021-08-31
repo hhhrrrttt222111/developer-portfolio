@@ -7,3 +7,6 @@ import {
 export const themeData = {
     theme: purpleThemeLight
 }
+
+
+// Choose theme from above
