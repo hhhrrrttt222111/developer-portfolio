@@ -5,6 +5,7 @@
     justify-content: flex-start;
     min-height: 100vh;
     padding: 2rem;
+    overflow-x: hidden;
 }
 
 
@@ -36,11 +37,12 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 3.45rem;
+    gap: 4.5rem;
 }
 
 .blog--viewAll {
     width: 100%;
+    margin-top: 1rem;
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -94,7 +96,7 @@
     }
     .blog--viewAll {
         position: relative;
-        margin-top: 4rem;
+        margin-top: 2.5rem;
     }
     .blog--viewAll a {
         position: absolute;

@@ -69,3 +69,17 @@
         gap: 1.5rem;
     }
 }
+
+@media screen and (max-width: 550px) {
+    .projectPage-header h1 {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .projectPage-header {
+        height: 20vh;
+    }
+    .projectPage-header h1 {
+        font-size: 2.5rem;
+    }
+}
