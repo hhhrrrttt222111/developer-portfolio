@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 6rem;
+    padding: 2rem 6rem 3rem;
     width: 80%;
     height: 100%;
     margin-top: 2rem;
@@ -89,9 +89,10 @@
 .submit-btn button {
     border: none;
     outline: none;
-    width: 100px;
-    height: 40px;
+    width: 140px;
+    height: 50px;
     border-radius: 50px;
+    font-weight: 500;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -103,9 +104,18 @@
     font-family: var(--primaryFont);
 }
 
+.submit-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    padding: 5px;
+}
 .submit-icon svg {
-    font-size: 20px;
+    font-size: 25px;
+    transform-origin: center;
+    transform: translate(5px,-3px) rotate(-45deg);
+    /* transform: translate(10px,-3px) rotate(-30deg) ; */
 }
 
 .contacts-details {
@@ -116,6 +126,7 @@
     flex: 0.6;
     box-sizing: border-box;
     padding-left: 7rem;
+    margin-top: 1.2rem;
 }
 
 
@@ -133,7 +144,7 @@
     margin-left: 1.5rem;
     font-size: 18px;
     line-height: 110%;
-    font-weight: 400;
+    font-weight: 500;
     font-family: var(--primaryFont);
     width: 45%;
 }
@@ -165,7 +176,7 @@
         width: 240px;
     }
     .contacts--container {
-        padding: 4rem;
+        padding: 2rem 4rem;
         width: 90%;
         margin-top: 1rem;
     }
@@ -177,12 +188,19 @@
         display: none;
     }
     .contacts--container {
-        padding: 4rem;
         width: 100%;
         margin-top: 1rem;
     }
+    .contacts--container > h1 {
+        font-size: 3rem;
+        margin: 0 0 1.2rem 0;
+    }
     .contacts-details {
         padding-left: 4rem;
+    }
+    .personal-details p {
+        margin-left: 1rem;
+        font-size: 1rem;
     }
 }
 
@@ -224,11 +242,7 @@
         margin-bottom: 1.8rem;
     }
     .personal-details p {
-        margin-left: 1.5rem;
-        font-size: 18px;
-        line-height: 110%;
-        font-weight: 400;
-        font-family: var(--primaryFont);
+        margin-left: 1.2rem;
         width: 95%;
     }
 }
@@ -252,6 +266,7 @@
         align-items: center;
         margin-top: 2rem;
     }
+    .submit-btn{align-self: center;}
 }
   
 @media only screen and (min-device-width: 320px) and (max-device-width: 
