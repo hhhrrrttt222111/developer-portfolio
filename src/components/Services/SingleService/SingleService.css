@@ -42,3 +42,18 @@
     line-height: 110%;
     color: #000000;
 }
+
+@media screen and (max-width: 800px) {
+    .single-service {
+        width: 160px;
+        height: 160px;
+        padding: 1.4rem 1.4rem;
+    }
+    .service-icon > svg {
+        font-size: 2.5rem;
+    }
+    
+    .service-content > h4 {
+        font-size: 16px;
+    }
+}
