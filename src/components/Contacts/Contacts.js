@@ -26,16 +26,34 @@ function Contacts() {
 
     const useStyles = makeStyles((t) => ({
         input: {
-            border: `4px solid ${theme.primary}`,
+            border: `4px solid ${theme.primary80}`,
             backgroundColor: `${theme.secondary}`,
             fontFamily: 'var(--primaryFont)',
             fontWeight: 500,    
+            transition: 'border 0.2s ease-in-out',
+            "&:focus": {
+                border: `4px solid ${theme.primary600}`,
+            }    
         },
         message: {
-            border: `4px solid ${theme.primary}`,
+            border: `4px solid ${theme.primary80}`,
             backgroundColor: `${theme.secondary}`,
             fontFamily: 'var(--primaryFont)',
-            fontWeight: 500,    
+            fontWeight: 500,
+            transition: 'border 0.2s ease-in-out',
+            "&:focus": {
+                border: `4px solid ${theme.primary600}`,
+            }    
+        },
+        label: {
+            backgroundColor: `${theme.secondary}`,
+            color: `${theme.primary}`,
+            fontFamily: 'var(--primaryFont)',
+            fontWeight: 600, 
+            fontSize: '0.9rem',
+            padding: '0 5px',
+            transform: 'translate(25px,50%)',
+            display: 'inline-flex', 
         },
         socialIcon: {
             width: '45px',
@@ -118,19 +136,22 @@ function Contacts() {
                     <div className="contacts-form">
                         <form onSubmit={handleContactForm}>
                             <div className="input-container">
-                                <input value={name} placeholder="Name" onChange={(e) => setName(e.target.value)} type="text" name="Name" className={`form-input ${classes.input}`}/>
+                                <label for="Name"  className={classes.label}>Name</label>
+                                <input value={name} onChange={(e) => setName(e.target.value)} type="text" name="Name" className={`form-input ${classes.input}`}/>
                             </div>
                             <div className="input-container">
-                                <input value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} type="email" name="Email" className={`form-input ${classes.input}`}/>
+                                <label for="Email"  className={classes.label}>Email</label>
+                                <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="Email" className={`form-input ${classes.input}`}/>
                             </div>
                             <div className="input-container">
-                                <input value={message} placeholder="Message" onChange={(e) => setMessage(e.target.value)} type="text" name="Message" className={`form-message ${classes.message}`} />
+                                <label for="Message"  className={classes.label}>Message</label>
+                                <textarea value={message} onChange={(e) => setMessage(e.target.value)} type="text" name="Message" className={`form-message ${classes.message}`} />
                             </div>
 
                             <div className="submit-btn" >
-                                <button type="submit" style={{backgroundColor:theme.primary, color:theme.tertiary}}>
+                                <button type="submit" style={{backgroundColor:theme.primary, color:theme.secondary}}>
                                     <p>{!success ? 'Send' : 'Sent'}</p>
-                                    <div className="submit-icon" style={{backgroundColor: theme.primary30}}>
+                                    <div className="submit-icon">
                                         <AiOutlineSend />
                                     </div>
                                 </button>
