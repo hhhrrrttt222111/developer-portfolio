@@ -9,7 +9,7 @@
 <br />
 
 ## Table of Contents :scroll:
-- [Sections](#sections)
+- [Sections](#sections-bookmark)
 - [Demo](#demo)
 - [Themes](#themes)
 - [Installation](#installation)
