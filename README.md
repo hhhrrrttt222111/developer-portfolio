@@ -10,19 +10,19 @@
 
 ## Table of Contents :scroll:
 - [Sections](#sections-bookmark)
-- [Demo](#demo)
-- [Themes](#themes)
-- [Installation](#installation)
-- [Getting Started](#getting-started)
-- [Folder Structure](#folder-structure)
-- [Usage](#usage)
-- [Hosting](#hosting)
-- [SEO](#seo)
-- [Packages Used](#packages-used)
-- [APIs Used](#apis-used)
-- [Fonts and Images](#fonts-and-images)
-- [Upcoming Features](#upcoming-features)
-- [Contributors](#contributors)
+- [Demo](#demo-movie_camera)
+- [Themes](#themes-art)
+- [Installation](#installation-arrow_down)
+- [Getting Started](#getting-started-dart)
+- [Folder Structure](#folder-structure-open_file_folder)
+- [Usage](#usage-joystick)
+- [Hosting](#hosting-globe_with_meridians)
+- [SEO](#seo-spider)
+- [Packages Used](#packages-used-package)
+- [APIs Used](#apis-used-world_map)
+- [Fonts and Images](#fonts-and-images-performing_arts)
+- [Upcoming Features](#upcoming-features-construction)
+- [Contributors](#contributors-man_technologistwoman_technologist)
 
 <br /><br />
 
