@@ -73,6 +73,8 @@ import sketch from '../assets/svg/skills/sketch.svg'
 import unity from '../assets/svg/skills/unity.svg'
 import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
 
+import canva from '../assets/svg/skills/canva.svg'
+
 
 export const skillsImage = (skill) => {
     const skillID = skill.toLowerCase();
@@ -223,6 +225,8 @@ export const skillsImage = (skill) => {
             return unity;
         case 'wolframalpha':
             return wolframalpha;
+        case 'canva':
+            return canva;
         default:
             break;
     }
