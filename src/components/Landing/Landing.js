@@ -14,7 +14,7 @@ import { FaTwitter, FaLinkedin, FaGithub, FaYoutube, FaBlogger } from "react-ico
 function Landing() {
     const { theme, drawerOpen }  = useContext(ThemeContext)
 
-    const useStyles = makeStyles(() => ({
+    const useStyles = makeStyles((t) => ({
         resumeBtn : {
             color: theme.primary,
             borderRadius: '30px',
@@ -50,7 +50,10 @@ function Landing() {
                 backgroundColor: theme.secondary,
                 color: theme.tertiary,
                 border: `3px solid ${theme.tertiary}`,
-            }
+            },
+            [t.breakpoints.down('sm')]: {
+                display: 'none',
+            },
         }
     }));
 
