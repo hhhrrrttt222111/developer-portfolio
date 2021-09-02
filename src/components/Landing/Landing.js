@@ -31,7 +31,10 @@ function Landing() {
                 backgroundColor: theme.tertiary,
                 color: theme.secondary,
                 border: `3px solid ${theme.tertiary}`,
-            }
+            },
+            [t.breakpoints.down('sm')]: {
+                width: '180px',
+            },
         },
         contactBtn : {
             backgroundColor: theme.primary,
