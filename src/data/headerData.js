@@ -1,5 +1,5 @@
 import resume from '../assets/pdf/resume.pdf'
-import dp from '../assets/img/profile.JPG'
+import dp from '../assets/img/purple_dp.png'
 
 export const headerData = {
     name: 'Shimil Abraham',

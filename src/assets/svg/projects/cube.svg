@@ -1,0 +1,19 @@
+<svg width="572" height="673" viewBox="0 0 572 673" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="skeleton cube">
+<path id="dark" d="M60 469.021L70.5001 459.5L85.5001 451L113.5 435L169 405L278.658 342.004L278.764 382.004L60.1062 509.021L60 469.021Z" fill="#0052CC"/>
+<rect id="color" width="252.873" height="40" transform="matrix(0.850498 0.525978 -0.00408566 0.999992 290.353 336.004)" fill="#1A75FF"/>
+<rect id="light" width="282.179" height="40" transform="matrix(0.871141 0.491033 -0.869137 0.494572 318.765 328.005)" fill="#80B3FF"/>
+<rect id="light_2" width="272.482" height="40" transform="matrix(0.849986 0.526805 -0.888936 0.458031 52.5575 456.005)" fill="#80B3FF"/>
+<rect id="light_3" width="321" height="40" transform="matrix(0.868952 -0.494896 0.863069 0.505086 5.64368 459.19)" fill="#80B3FF"/>
+<rect id="light_4" width="294.14" height="40" transform="matrix(0.868952 -0.494896 0.863069 0.505086 254.34 611.572)" fill="#80B3FF"/>
+<rect id="color_2" width="35" height="400" transform="matrix(0.890512 0.45496 -0.0141776 0.9999 263.289 27.9072)" fill="#1A75FF"/>
+<rect id="color_3" width="35" height="258.28" transform="matrix(0.890512 0.45496 -0.0141776 0.9999 504.662 212)" fill="#1A75FF"/>
+<rect id="dark_2" width="35" height="321.934" transform="matrix(0.890678 -0.454635 -0.0123659 0.999924 292.374 44.124)" fill="#0052CC"/>
+<path id="dark_3" d="M42.7595 220.371L74.2371 205.069L66.5 464.5L34.5191 479.114L37 349.5L39 284.5L39 252.5L39 235.5L42.7595 220.371Z" fill="#0052CC"/>
+<path id="dark_4" fill-rule="evenodd" clip-rule="evenodd" d="M569.514 174.005L287.5 337.5L279 672.957L564.199 504.962L569.514 174.005ZM535.284 232.794L317.292 361.201L313.23 614.168L531.222 485.761L535.284 232.794Z" fill="#0052CC"/>
+<path id="color_4" fill-rule="evenodd" clip-rule="evenodd" d="M287.5 338L9.59604 165.367L0.931424 496.254L280.867 672.88L287.5 338ZM255.528 360.169L41.5585 225.165L34.9357 478.078L248.905 613.083L255.528 360.169Z" fill="#1A75FF"/>
+<path id="dark_5" d="M73 165.017L291.764 40L291.764 77.9999L73.1062 205.017L73 165.017Z" fill="#0052CC"/>
+<path id="color_5" d="M292 38.9999L507.231 171.005L507.068 211.005L292 77.9995L292 38.9999Z" fill="#1A75FF"/>
+<path id="light_5" fill-rule="evenodd" clip-rule="evenodd" d="M293.247 0.118118L9.49985 166L148.5 253.5L217.5 297L252.5 319L287.367 338.022L318 321.5L331 314.5L343.5 306.5L371 291.5L400 274.5L570.106 173.939L293.247 0.118118ZM292.554 39.9316L76.4424 165.349L288.06 298.209L504.171 172.791L292.554 39.9316Z" fill="#80B3FF"/>
+</g>
+</svg>

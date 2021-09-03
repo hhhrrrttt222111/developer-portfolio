@@ -1,5 +1,6 @@
 .experience{
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    min-height: 50vh;
 }
 
 .experience-body {
@@ -16,7 +17,8 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    align-items: center;
     justify-content: center;
     margin-right: 2rem;
 }

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { Button } from '@material-ui/core'
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { makeStyles } from '@material-ui/core/styles';
 
 import './Landing.css'
@@ -13,7 +14,7 @@ import { FaTwitter, FaLinkedin, FaGithub, FaYoutube, FaBlogger } from "react-ico
 function Landing() {
     const { theme, drawerOpen }  = useContext(ThemeContext)
 
-    const useStyles = makeStyles(() => ({
+    const useStyles = makeStyles((t) => ({
         resumeBtn : {
             color: theme.primary,
             borderRadius: '30px',
@@ -30,7 +31,10 @@ function Landing() {
                 backgroundColor: theme.tertiary,
                 color: theme.secondary,
                 border: `3px solid ${theme.tertiary}`,
-            }
+            },
+            [t.breakpoints.down('sm')]: {
+                width: '180px',
+            },
         },
         contactBtn : {
             backgroundColor: theme.primary,
@@ -49,7 +53,10 @@ function Landing() {
                 backgroundColor: theme.secondary,
                 color: theme.tertiary,
                 border: `3px solid ${theme.tertiary}`,
-            }
+            },
+            [t.breakpoints.down('sm')]: {
+                display: 'none',
+            },
         }
     }));
 
@@ -100,7 +107,9 @@ function Landing() {
                                     <Button className={classes.resumeBtn}>Download CV</Button>
                                 </a>
                             )}
-                            <Button className={classes.contactBtn}>Contact</Button>
+                            <NavLink to="/#contacts" smooth={true} spy="true" duration={2000}>
+                                <Button className={classes.contactBtn}>Contact</Button>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

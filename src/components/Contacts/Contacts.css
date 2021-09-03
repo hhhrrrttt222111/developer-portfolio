@@ -152,6 +152,7 @@
     font-weight: 500;
     font-family: var(--primaryFont);
     width: 45%;
+    word-break: break-word;
 }
 
 .socialmedia-icons {

@@ -227,7 +227,7 @@ function Contacts() {
                             <div className={classes.detailsIcon}>
                                 <HiOutlineLocationMarker />
                             </div>
-                            <p style={{color:theme.tertiary}}>Menlo Park, California, United States - 673822 </p>
+                            <p style={{color:theme.tertiary}}>{contactsData.address}</p>
                         </div>
 
                         <div className="socialmedia-icons">
