@@ -1,0 +1,94 @@
+.achievement {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3rem;
+}
+
+.achievement-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex: 0.4;
+}
+
+.achievement-body h1 {
+    font-family: var(--primaryFont);
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.achievement-body h4 {
+    font-size: 1.5rem;
+    font-family: var(--primaryFont);
+    font-weight: 400;
+}
+
+.achievement-cards {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 5%;
+    width: 100%;
+    flex: 0.6;
+}
+
+.achievement-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 180px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+    transition: background-color 200ms ease-in-out;
+    width: 100%;
+}
+
+.achievecard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.achievecard-details2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    width: 56%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--primaryFont);
+    font-size: 18px;
+}
+
+.achievecard-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.achievecard-field svg {
+    margin-right: 6px;
+}
+
+.achievecard-details1 h2 {
+    font-family: var(--primaryFont);
+    font-size: 1.225rem;
+}
+
+.achievecard-details1 p {
+    font-size: 1rem;
+    font-family: var(--primaryFont);
+    font-weight: 600;
+}
+
