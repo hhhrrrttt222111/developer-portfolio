@@ -19,7 +19,7 @@ function Achievement() {
                     <AchievementCard 
                        key={achieve.id}
                        id={achieve.id}
-                       description={achieve.description}
+                       title={achieve.title}
                        details={achieve.details}
                        date={achieve.date}
                        field={achieve.field}

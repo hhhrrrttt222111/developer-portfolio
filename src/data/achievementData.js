@@ -3,15 +3,15 @@ export const achievementData = {
     achievements : [
         {
             id : 1,
-            description : 'My transition from a Software Engineer to a CS grad student',
-            details : 'Why I decided to go for a Master’s degree',
+            title : 'My transition from a Software Engineer to a CS grad student',
+            details : 'Why I decided to go for a Master’s degree Why I decided to go for a Master’s degree',
             date : 'Aug 20, 2019',
             field : 'Automation',
             image : ''
         },
         {
             id : 2,
-            description : 'My transition from a Software Engineer to a CS grad student',
+            title : 'My transition from a Software Engineer to a CS grad student',
             details : 'Why I decided to go for a Master’s degree',
             date : 'Aug 20, 2019',
             field : 'Automation',
@@ -19,7 +19,7 @@ export const achievementData = {
         },
         {
             id : 3,
-            description : 'My transition from a Software Engineer to a CS grad student',
+            title : 'My transition from a Software Engineer to a CS grad student',
             details : 'Why I decided to go for a Master’s degree',
             date : 'Aug 20, 2019',
             field : 'Automation',

@@ -22,8 +22,8 @@
 }
 
 .achievement-body h4 {
-    font-size: 1.5rem;
-    font-family: var(--primaryFont);
+    font-size: 1.75rem;
+    font-family: 'Caveat', cursive;
     font-weight: 400;
 }
 
@@ -43,13 +43,14 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 180px;
+    height: 170px;
     padding: 1.5rem;
     border-radius: 20px;
     margin-bottom: 1.5rem;
     margin-left: 1.5rem;
     transition: background-color 200ms ease-in-out;
     width: 100%;
+    position: relative;
 }
 
 .achievecard-content {
@@ -57,21 +58,28 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    width: 70%;
+    width: 65%;
+   
 }
 
 .achievecard-details2 {
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
-    width: 56%;
-    justify-content: space-between;
+    width: 50%;
     align-items: center;
     font-family: var(--primaryFont);
     font-size: 18px;
+    position: absolute;
+    bottom: 7px;
+    left: 25px;
+}
+
+.achievecard-details2 h5 {
+   width: 50%;
 }
 
 .achievecard-field {
+    width: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -84,11 +92,13 @@
 .achievecard-details1 h2 {
     font-family: var(--primaryFont);
     font-size: 1.225rem;
+    line-height: 110%;
+    margin-bottom: 6px;
 }
 
 .achievecard-details1 p {
-    font-size: 1rem;
-    font-family: var(--primaryFont);
+    font-size: 1.15rem;
+    font-family: Roboto;
     font-weight: 600;
 }
 
