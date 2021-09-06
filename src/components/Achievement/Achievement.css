@@ -13,6 +13,7 @@
     align-items: flex-start;
     justify-content: space-evenly;
     flex: 0.4;
+    width: 90%;
 }
 
 .achievement-body h1 {
@@ -100,5 +101,59 @@
     font-size: 1.15rem;
     font-family: Roboto;
     font-weight: 600;
+}
+
+@media (min-width: 992px) and (max-width: 1380px) {
+    
+
+}
+
+@media screen and (max-width: 992px) {
+    .achievement{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 2rem;
+    }
+
+
+    .achievement-body {
+        width: 100%;
+    }
+
+    .achievement-body h1 {
+        font-size: 2.5rem;
+    }
+
+    .achievement-cards {
+        margin-left: 0%;
+        padding: 1rem;
+    }
+
+    .achievement-card {
+        margin-left: 0px;
+        height: 300px;
+    }
+
+    .achievecard-content {
+        width: 100%;
+    }
+
+    .achievecard-details1 h2 {
+        font-size: 1.15rem;
+    }
+
+    .achievecard-details1 p {
+        font-size: 1rem;
+    }
+
+    .achievecard-details2 {
+        width: 85%;
+        position: absolute;
+        bottom: 7px;
+        left: 17px;
+    }
 }
 
