@@ -1,15 +1,16 @@
 /* eslint-disable */
-import { BiShoppingBag, BiPencil } from "react-icons/bi";
-import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
-import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
-import { FaInternetExplorer,  FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaRegNewspaper } from "react-icons/fa";
+// import { BiShoppingBag, BiPencil } from "react-icons/bi";
+// import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
+import { FiFigma, FiCamera, FiCodepen, FiPenTool, FiVideo } from "react-icons/fi";
+// import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
+// import { FaInternetExplorer,  FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaRegNewspaper } from "react-icons/fa";
 
  
 
 export const servicesData = [
     // {
     //     id: 1,
-    //     title: 'Marketing',
+    //     title: 'UI Designing',
     //     icon: <BiShoppingBag/>
     // },
     // {
@@ -24,24 +25,24 @@ export const servicesData = [
     // },
     {
         id: 4,
-        title: 'Internet Research',
-        icon: <FaInternetExplorer />
+        title: 'UI Designing',
+        icon: <FiFigma />
     },
     {
         id: 5,
         title: 'Tutoring',
-        icon: <FaChalkboardTeacher />
+        icon: <FiPenTool />
     },
 
     {
         id: 6,
-        title: 'Web Design',
-        icon: <BsCodeSlash />
+        title: 'Web Development',
+        icon: <FiCodepen />
     },
     {
         id: 7,
         title: 'Photography',
-        icon: <FaCameraRetro />
+        icon: <FiCamera />
     },
     // {
     //     id: 8,
@@ -51,7 +52,7 @@ export const servicesData = [
     {
         id: 9,
         title: 'Video Editing',
-        icon: <FaVideo />
+        icon: <FiVideo />
     },
     // {
     //     id: 10,

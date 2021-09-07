@@ -3,5 +3,5 @@ export const contactsData = {
     phone: '+917593994207',
     address: '32/485 C, Bharathan Nagar, Chelavoor, Calicut, Kerala, India',
 
-    sheetAPI: ''
+    sheetAPI: 'https://sheetdb.io/api/v1/rrrb0zhma1wo4'
 }
