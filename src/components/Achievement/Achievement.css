@@ -92,6 +92,7 @@
 
 .achievecard-details1 h2 {
     font-family: var(--primaryFont);
+    font-weight: 500;
     font-size: 1.225rem;
     line-height: 110%;
     margin-bottom: 6px;
@@ -100,7 +101,7 @@
 .achievecard-details1 p {
     font-size: 1.15rem;
     font-family: Roboto;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 @media (min-width: 992px) and (max-width: 1380px) {
