@@ -5,7 +5,7 @@ import {
 
 
 export const themeData = {
-    theme: purpleThemeDark
+    theme: blueThemeDark
 }
 
 
