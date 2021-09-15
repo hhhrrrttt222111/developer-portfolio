@@ -145,11 +145,15 @@
 
     .achievement-card {
         margin-left: 0px;
-        height: 300px;
+        height: fit-content;
     }
 
     .achievecard-content {
         width: 70%;
+    }
+
+    .achievecard-details1 {
+        margin-bottom: 20px;
     }
 
     .achievecard-details1 h2 {
@@ -157,7 +161,7 @@
     }
 
     .achievecard-details1 p {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .achievecard-details2 {
@@ -169,11 +173,26 @@
 
     .achievecard-imgcontainer {
         width: 30%;
+        display: flex;
+       justify-content: center;
     }
 
+    .achievecard-imgcontainer > img {
+        width: 80px;
+        height: 70px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .achievecard-details1 p {
+        font-size: 0.85rem;
+    }
     .achievecard-imgcontainer > img {
         width: 70px;
         height: 60px;
     }
+
 }
 
