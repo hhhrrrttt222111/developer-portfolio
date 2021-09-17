@@ -28,3 +28,16 @@ export const achievementData = {
 
     ]
 }
+
+
+// Do not remove any fields.
+// Leave it blank instead as shown below.
+
+/*
+
+export const achievementData = {
+    bio : "",
+    achievements : []
+}
+
+*/
