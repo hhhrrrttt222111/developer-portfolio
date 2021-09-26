@@ -1,12 +1,14 @@
 .navbar {
-    height: 6.5rem;
-    position: absolute;
-    background-color: transparent;
+    height: 6rem;
+    position: fixed;
+    top: 0;
+    background-color: rgba(33, 33, 33, 0.65) !important;
     z-index: 99;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    backdrop-filter: blur(3px);
 }
 
 .navbar--container {
@@ -15,7 +17,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 0 3rem;
-    margin-top: 1rem;
+    margin-top: .6rem;
 }
 
 .navbar--container > h1 {
