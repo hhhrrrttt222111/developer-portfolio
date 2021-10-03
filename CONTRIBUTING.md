@@ -68,6 +68,6 @@ git remote add upstream https://github.com/hhhrrrttt222111/developer-portfolio.g
 2. Pull the latest changes from the main branch.
 
 ```bash
-git pull upstream main
+git pull upstream master
 ```
 
