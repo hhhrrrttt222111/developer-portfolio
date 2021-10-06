@@ -8,9 +8,9 @@
 
 @font-face {
   font-family: 'BestermindRegular';
-  src: url('./assets/fonts/Bestermind/BestermindRegular.ttf'); /* IE9 Compat Modes */
-  src: url('./assets/fonts/Bestermind/BestermindRegular.ttf') format('embedded-opentype'), /* IE6-IE8 */
-       url('./assets/fonts/Bestermind/BestermindRegular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('./assets/fonts/Bestermind/BestermindRegular.ttf'); 
+  src: url('./assets/fonts/Bestermind/BestermindRegular.ttf') format('embedded-opentype'), 
+       url('./assets/fonts/Bestermind/BestermindRegular.ttf')  format('truetype'), 
 }
 
 * {
@@ -39,13 +39,12 @@ a {
 }
 
 img{
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+  -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+     -khtml-user-select: none; 
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none; 
 
 }
 
