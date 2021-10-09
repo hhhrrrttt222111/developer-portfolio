@@ -156,10 +156,19 @@ function Navbar() {
         className='drawer'
         disableScrollLock={true}
       >
-        <div className='div-closebtn' aria-label='Close'>
+        <div className='div-closebtn'>
           <CloseIcon
             onClick={handleDrawerClose}
+            onKeyDown={(e) => {
+              if (e.key === ' ' || e.key === 'Enter') {
+                e.preventDefault();
+                handleDrawerClose();
+              }
+            }}
             className={classes.closebtnIcon}
+            role='button'
+            tabIndex='0'
+            aria-label='Close'
           />
         </div>
         <br />
