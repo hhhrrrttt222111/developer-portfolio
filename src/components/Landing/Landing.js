@@ -41,6 +41,13 @@ function Landing() {
                 width: '180px',
             },
         },
+        resumeLink: {
+            '&:focus button': {
+                backgroundColor: theme.tertiary,
+                color: theme.secondary,
+                border: `3px solid ${theme.tertiary}`,
+            },
+        },
         contactBtn: {
             backgroundColor: theme.primary,
             color: theme.secondary,
@@ -61,6 +68,13 @@ function Landing() {
             },
             [t.breakpoints.down('sm')]: {
                 display: 'none',
+            },
+        },
+        contactLink: {
+            '&:focus button': {
+                backgroundColor: theme.secondary,
+                color: theme.tertiary,
+                border: `3px solid ${theme.tertiary}`,
             },
         },
     }));
@@ -166,23 +180,37 @@ function Landing() {
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (
                                 <a
+                                    className={classes.resumeLink}
                                     href={headerData.resumePdf}
                                     download='resume'
                                     target='_blank'
                                     rel='noreferrer'
+                                    aria-labelledby='resume-btn'
                                 >
-                                    <Button className={classes.resumeBtn}>
+                                    <Button
+                                        id='resume-btn'
+                                        className={classes.resumeBtn}
+                                        tabIndex='-1'
+                                        aria-hidden='true'
+                                    >
                                         Download CV
                                     </Button>
                                 </a>
                             )}
                             <NavLink
+                                className={classes.contactLink}
                                 to='/#contacts'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
+                                aria-labelledby='contact-btn'
                             >
-                                <Button className={classes.contactBtn}>
+                                <Button
+                                    id='contact-btn'
+                                    className={classes.contactBtn}
+                                    tabIndex='-1'
+                                    aria-hidden='true'
+                                >
                                     Contact
                                 </Button>
                             </NavLink>
