@@ -20,6 +20,11 @@ function Landing() {
     const { theme, drawerOpen } = useContext(ThemeContext);
 
     const useStyles = makeStyles((t) => ({
+        socialsLink: {
+            '&:focus': {
+                outline: `1.5px dotted ${theme.secondary}`,
+            },
+        },
         resumeBtn: {
             color: theme.primary,
             borderRadius: '30px',
@@ -39,6 +44,13 @@ function Landing() {
             },
             [t.breakpoints.down('sm')]: {
                 width: '180px',
+            },
+        },
+        resumeLink: {
+            '&:focus button': {
+                backgroundColor: theme.tertiary,
+                color: theme.secondary,
+                border: `3px solid ${theme.tertiary}`,
             },
         },
         contactBtn: {
@@ -63,6 +75,13 @@ function Landing() {
                 display: 'none',
             },
         },
+        contactLink: {
+            '&:focus button': {
+                backgroundColor: theme.secondary,
+                color: theme.tertiary,
+                border: `3px solid ${theme.tertiary}`,
+            },
+        },
     }));
 
     const classes = useStyles();
@@ -77,6 +96,7 @@ function Landing() {
                     <div className='lcl--content'>
                         {socialsData.linkedIn && (
                             <a
+                                className={classes.socialsLink}
                                 href={socialsData.linkedIn}
                                 target='_blank'
                                 rel='noreferrer'
@@ -90,6 +110,7 @@ function Landing() {
                         )}
                         {socialsData.github && (
                             <a
+                                className={classes.socialsLink}
                                 href={socialsData.github}
                                 target='_blank'
                                 rel='noreferrer'
@@ -103,6 +124,7 @@ function Landing() {
                         )}
                         {socialsData.twitter && (
                             <a
+                                className={classes.socialsLink}
                                 href={socialsData.twitter}
                                 target='_blank'
                                 rel='noreferrer'
@@ -116,6 +138,7 @@ function Landing() {
                         )}
                         {socialsData.youtube && (
                             <a
+                                className={classes.socialsLink}
                                 href={socialsData.youtube}
                                 target='_blank'
                                 rel='noreferrer'
@@ -129,6 +152,7 @@ function Landing() {
                         )}
                         {socialsData.blogger && (
                             <a
+                                className={classes.socialsLink}
                                 href={socialsData.blogger}
                                 target='_blank'
                                 rel='noreferrer'
@@ -166,23 +190,37 @@ function Landing() {
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (
                                 <a
+                                    className={classes.resumeLink}
                                     href={headerData.resumePdf}
                                     download='resume'
                                     target='_blank'
                                     rel='noreferrer'
+                                    aria-labelledby='resume-btn'
                                 >
-                                    <Button className={classes.resumeBtn}>
+                                    <Button
+                                        id='resume-btn'
+                                        className={classes.resumeBtn}
+                                        tabIndex='-1'
+                                        aria-hidden='true'
+                                    >
                                         Download CV
                                     </Button>
                                 </a>
                             )}
                             <NavLink
+                                className={classes.contactLink}
                                 to='/#contacts'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
+                                aria-labelledby='contact-btn'
                             >
-                                <Button className={classes.contactBtn}>
+                                <Button
+                                    id='contact-btn'
+                                    className={classes.contactBtn}
+                                    tabIndex='-1'
+                                    aria-hidden='true'
+                                >
                                     Contact
                                 </Button>
                             </NavLink>

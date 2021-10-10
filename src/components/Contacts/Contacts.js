@@ -79,6 +79,7 @@ function Contacts() {
             padding: '0 5px',
             transform: 'translate(25px,50%)',
             display: 'inline-flex',
+            cursor: 'pointer',
         },
         socialIcon: {
             width: '45px',
@@ -91,7 +92,19 @@ function Contacts() {
             backgroundColor: theme.primary,
             color: theme.secondary,
             transition: '250ms ease-in-out',
+            '&:focus': {
+                transform: 'scale(1.1)',
+                color: theme.secondary,
+                backgroundColor: theme.tertiary,
+            },
             '&:hover': {
+                transform: 'scale(1.1)',
+                color: theme.secondary,
+                backgroundColor: theme.tertiary,
+            },
+        },
+        detailsLink: {
+            '&:focus div': {
                 transform: 'scale(1.1)',
                 color: theme.secondary,
                 backgroundColor: theme.tertiary,
@@ -119,6 +132,11 @@ function Contacts() {
             backgroundColor: theme.primary,
             color: theme.secondary,
             transition: '250ms ease-in-out',
+            '&:focus': {
+                transform: 'scale(1.08)',
+                color: theme.secondary,
+                backgroundColor: theme.tertiary,
+            },
             '&:hover': {
                 transform: 'scale(1.08)',
                 color: theme.secondary,
@@ -176,6 +194,7 @@ function Contacts() {
                                     Name
                                 </label>
                                 <input
+                                    id='Name'
                                     placeholder='John Doe'
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
@@ -192,6 +211,7 @@ function Contacts() {
                                     Email
                                 </label>
                                 <input
+                                    id='Email'
                                     placeholder='John@doe.com'
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
@@ -208,6 +228,7 @@ function Contacts() {
                                     Message
                                 </label>
                                 <textarea
+                                    id='Message'
                                     placeholder='Type your message....'
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
@@ -283,7 +304,7 @@ function Contacts() {
                     <div className='contacts-details'>
                         <a
                             href={`mailto:${contactsData.email}`}
-                            className='personal-details'
+                            className={`personal-details ${classes.detailsLink}`}
                         >
                             <div className={classes.detailsIcon}>
                                 <FiAtSign />
@@ -294,7 +315,7 @@ function Contacts() {
                         </a>
                         <a
                             href={`tel:${contactsData.phone}`}
-                            className='personal-details'
+                            className={`personal-details ${classes.detailsLink}`}
                         >
                             <div className={classes.detailsIcon}>
                                 <FiPhone />
