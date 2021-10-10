@@ -29,7 +29,13 @@ function BackToTop() {
     window.addEventListener('scroll', toggleVisible);
 
     const useStyles = makeStyles(() => ({
-        icon: {
+        toTopBtn: {
+            '&:focus svg': {
+                outline: `1px dotted ${theme.tertiary}`,
+                outlineOffset: '4px',
+            },
+        },
+        toTopIcon: {
             fontSize: '3rem',
             color: theme.tertiary,
         },
@@ -42,8 +48,12 @@ function BackToTop() {
             style={{ display: visible ? 'inline' : 'none' }}
             className='backToTop'
         >
-            <button onClick={scrollToTop} aria-label='Back to top'>
-                <IoIosArrowDropupCircle className={classes.icon} />
+            <button
+                className={classes.toTopBtn}
+                onClick={scrollToTop}
+                aria-label='Back to top'
+            >
+                <IoIosArrowDropupCircle className={classes.toTopIcon} />
             </button>
         </div>
     );
