@@ -34,18 +34,18 @@ function Navbar() {
         navMenuButton: {
             background: 'transparent',
             border: 'none',
+            '&:focus': {
+                outline: `1.5px dotted ${theme.tertiary}`,
+            },
+            '&:hover svg': {
+                color: theme.primary,
+            },
         },
         navMenuIcon: {
             fontSize: '2.5rem',
             color: theme.tertiary,
             cursor: 'pointer',
             transition: 'color 0.3s',
-            '&:focus': {
-                color: theme.primary,
-            },
-            '&:hover': {
-                color: theme.primary,
-            },
             [t.breakpoints.down('sm')]: {
                 fontSize: '2.5rem',
             },
@@ -77,6 +77,9 @@ function Navbar() {
             right: 40,
             top: 40,
             transition: 'color 0.2s',
+            '&:focus': {
+                outline: `1px dotted ${theme.tertiary}`,
+            },
             '&:hover': {
                 color: theme.tertiary,
             },
