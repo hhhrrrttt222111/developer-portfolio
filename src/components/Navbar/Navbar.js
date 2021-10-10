@@ -5,7 +5,7 @@ import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
 import { HiDocumentText } from 'react-icons/hi';
 import { BsFillGearFill } from 'react-icons/bs';
 import { MdPhone } from 'react-icons/md';
-import { FaUser, FaFolderOpen } from 'react-icons/fa';
+import { FaUser, FaFolderOpen, FaFileExcel } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
@@ -13,6 +13,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import './Navbar.css';
 import { headerData } from '../../data/headerData';
 import { ThemeContext } from '../../contexts/ThemeContext';
+import { NoEncryption } from '@material-ui/icons';
 
 function Navbar() {
     const { theme, setHandleDrawer } = useContext(ThemeContext);
@@ -30,12 +31,18 @@ function Navbar() {
     };
 
     const useStyles = makeStyles((t) => ({
-        navMenu: {
+        navMenuButton: {
+            background: 'transparent',
+            border: 'none',
+        },
+        navMenuIcon: {
             fontSize: '2.5rem',
             color: theme.tertiary,
             cursor: 'pointer',
-            transform: 'translateY(-10px)',
             transition: 'color 0.3s',
+            '&:focus': {
+                color: theme.primary,
+            },
             '&:hover': {
                 color: theme.primary,
             },
@@ -103,13 +110,21 @@ function Navbar() {
                 height: '55px',
             },
         },
-        drawerLinks: {
+        drawerText: {
             fontFamily: 'var(--primaryFont)',
             width: '50%',
             fontSize: '1.3rem',
             fontWeight: 600,
             [t.breakpoints.down('sm')]: {
                 fontSize: '1.125rem',
+            },
+        },
+        drawerLink: {
+            '&:focus': {
+                '& div': {
+                    background: theme.primary,
+                    color: theme.secondary,
+                },
             },
         },
         drawerIcon: {
@@ -136,12 +151,15 @@ function Navbar() {
                 <h1 style={{ color: theme.secondary }}>
                     {shortname(headerData.name)}
                 </h1>
-
-                <IoMenuSharp
-                    className={classes.navMenu}
+                <button
+                    className={classes.navMenuButton}
                     onClick={handleDrawerOpen}
-                    aria-label='Menu'
-                />
+                >
+                    <IoMenuSharp
+                        className={classes.navMenuIcon}
+                        aria-label='Menu'
+                    />
+                </button>
             </div>
             <Drawer
                 variant='temporary'
@@ -180,6 +198,7 @@ function Navbar() {
                         <Fade left>
                             <NavLink
                                 to='/'
+                                className={classes.drawerLink}
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
@@ -188,7 +207,7 @@ function Navbar() {
                                     <IoHomeSharp
                                         className={classes.drawerIcon}
                                     />
-                                    <span className={classes.drawerLinks}>
+                                    <span className={classes.drawerText}>
                                         Home
                                     </span>
                                 </div>
@@ -198,13 +217,14 @@ function Navbar() {
                         <Fade left>
                             <NavLink
                                 to='/#about'
+                                className={classes.drawerLink}
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
                             >
                                 <div className={classes.drawerItem}>
                                     <FaUser className={classes.drawerIcon} />
-                                    <span className={classes.drawerLinks}>
+                                    <span className={classes.drawerText}>
                                         About
                                     </span>
                                 </div>
@@ -214,6 +234,7 @@ function Navbar() {
                         <Fade left>
                             <NavLink
                                 to='/#resume'
+                                className={classes.drawerLink}
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
@@ -222,7 +243,7 @@ function Navbar() {
                                     <HiDocumentText
                                         className={classes.drawerIcon}
                                     />
-                                    <span className={classes.drawerLinks}>
+                                    <span className={classes.drawerText}>
                                         Resume
                                     </span>
                                 </div>
@@ -232,6 +253,7 @@ function Navbar() {
                         <Fade left>
                             <NavLink
                                 to='/#services'
+                                className={classes.drawerLink}
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
@@ -240,7 +262,7 @@ function Navbar() {
                                     <BsFillGearFill
                                         className={classes.drawerIcon}
                                     />
-                                    <span className={classes.drawerLinks}>
+                                    <span className={classes.drawerText}>
                                         Services
                                     </span>
                                 </div>
@@ -250,6 +272,7 @@ function Navbar() {
                         <Fade left>
                             <NavLink
                                 to='/#blog'
+                                className={classes.drawerLink}
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
@@ -258,7 +281,7 @@ function Navbar() {
                                     <FaFolderOpen
                                         className={classes.drawerIcon}
                                     />
-                                    <span className={classes.drawerLinks}>
+                                    <span className={classes.drawerText}>
                                         Blog
                                     </span>
                                 </div>
@@ -268,13 +291,14 @@ function Navbar() {
                         <Fade left>
                             <NavLink
                                 to='/#contacts'
+                                className={classes.drawerLink}
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
                             >
                                 <div className={classes.drawerItem}>
                                     <MdPhone className={classes.drawerIcon} />
-                                    <span className={classes.drawerLinks}>
+                                    <span className={classes.drawerText}>
                                         Contact
                                     </span>
                                 </div>
