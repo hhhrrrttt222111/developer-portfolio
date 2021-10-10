@@ -79,6 +79,7 @@ function Contacts() {
             padding: '0 5px',
             transform: 'translate(25px,50%)',
             display: 'inline-flex',
+            cursor: 'pointer',
         },
         socialIcon: {
             width: '45px',
@@ -176,6 +177,7 @@ function Contacts() {
                                     Name
                                 </label>
                                 <input
+                                    id='Name'
                                     placeholder='John Doe'
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
@@ -192,6 +194,7 @@ function Contacts() {
                                     Email
                                 </label>
                                 <input
+                                    id='Email'
                                     placeholder='John@doe.com'
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
@@ -208,6 +211,7 @@ function Contacts() {
                                     Message
                                 </label>
                                 <textarea
+                                    id='Message'
                                     placeholder='Type your message....'
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
