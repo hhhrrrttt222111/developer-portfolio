@@ -6,12 +6,28 @@ import { FaQuoteLeft, FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { testimonialsData } from '../../data/testimonialsData';
+import { makeStyles } from '@material-ui/core/styles';
 
 import './Testimonials.css';
 
 function Testimonials() {
     const { theme } = useContext(ThemeContext);
     const sliderRef = useRef();
+
+    const useStyles = makeStyles((t) => ({
+        arrowBtn: {
+            '&:focus': {
+                opacity: 1,
+                outline: `1.5px dotted ${theme.secondary}`,
+                outlineOffset: '2px',
+            },
+            '&:hover': {
+                opacity: 1,
+            },
+        },
+    }));
+
+    const classes = useStyles();
 
     const settings = {
         dots: true,
@@ -57,6 +73,28 @@ function Testimonials() {
                             className='testimonials--slider'
                             style={{ backgroundColor: theme.primary }}
                         >
+                            <button
+                                className={`prevBtn ${classes.arrowBtn}`}
+                                onClick={gotoPrev}
+                                style={{
+                                    backgroundColor: theme.secondary,
+                                }}
+                            >
+                                <FaArrowLeft
+                                    style={{ color: theme.primary }}
+                                    aria-label='Previous testimonial'
+                                />
+                            </button>
+                            <button
+                                className={`nextBtn ${classes.arrowBtn}`}
+                                onClick={gotoNext}
+                                style={{ backgroundColor: theme.secondary }}
+                            >
+                                <FaArrowRight
+                                    style={{ color: theme.primary }}
+                                    aria-label='Next testimonial'
+                                />
+                            </button>
                             <Slider {...settings} ref={sliderRef}>
                                 {testimonialsData.map((test) => (
                                     <div
@@ -92,26 +130,6 @@ function Testimonials() {
                                     </div>
                                 ))}
                             </Slider>
-                            <button
-                                className='prevBtn'
-                                onClick={gotoPrev}
-                                style={{ backgroundColor: theme.secondary }}
-                            >
-                                <FaArrowLeft
-                                    style={{ color: theme.primary }}
-                                    aria-label='Previous testimonial'
-                                />
-                            </button>
-                            <button
-                                className='nextBtn'
-                                onClick={gotoNext}
-                                style={{ backgroundColor: theme.secondary }}
-                            >
-                                <FaArrowRight
-                                    style={{ color: theme.primary }}
-                                    aria-label='Next testimonial'
-                                />
-                            </button>
                         </div>
                     </div>
                 </div>
