@@ -18,6 +18,12 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
             border: `2px solid ${theme.tertiary}`,
             color: theme.tertiary,
             transition: 'all 0.2s',
+            '&:focus': {
+                backgroundColor: theme.secondary,
+                color: theme.primary,
+                transform: 'scale(1.1)',
+                border: `2px solid ${theme.secondary}`,
+            },
             '&:hover': {
                 backgroundColor: theme.secondary,
                 color: theme.primary,

@@ -1,31 +1,35 @@
-import React,{ useContext} from 'react';
-import { Link } from 'react-router-dom'
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { projectsData } from '../../data/projectsData'
-import { HiArrowRight } from "react-icons/hi";
+import { projectsData } from '../../data/projectsData';
+import { HiArrowRight } from 'react-icons/hi';
 
-import './Projects.css'
+import './Projects.css';
 import SingleProject from './SingleProject/SingleProject';
 
 function Projects() {
-
     const { theme } = useContext(ThemeContext);
 
-    
     const useStyles = makeStyles(() => ({
-        viewAllBtn : {
-            color: theme.tertiary, 
+        viewAllBtn: {
+            color: theme.tertiary,
             backgroundColor: theme.primary,
             transition: 'color 0.2s',
-            "&:hover": {
-                color: theme.secondary, 
+            '&:focus': {
+                color: theme.secondary,
                 backgroundColor: theme.primary,
-            }
+                outline: `1px dotted ${theme.tertiary}`,
+                outlineOffset: `2px`,
+            },
+            '&:hover': {
+                color: theme.secondary,
+                backgroundColor: theme.primary,
+            },
         },
-        viewArr : {
-            color: theme.tertiary, 
+        viewArr: {
+            color: theme.tertiary,
             backgroundColor: theme.secondary70,
             width: '40px',
             height: '40px',
@@ -34,10 +38,10 @@ function Projects() {
             borderRadius: '50%',
             cursor: 'pointer',
             transition: 'background-color 0.2s',
-            "&:hover": {
-                color: theme.tertiary, 
+            '&:hover': {
+                color: theme.tertiary,
                 backgroundColor: theme.secondary,
-            }
+            },
         },
     }));
 
@@ -46,13 +50,17 @@ function Projects() {
     return (
         <>
             {projectsData.length > 0 && (
-                <div className="projects" id="projects" style={{backgroundColor: theme.secondary}}>
-                    <div className="projects--header">
-                        <h1 style={{color: theme.primary}}>Projects</h1>
+                <div
+                    className='projects'
+                    id='projects'
+                    style={{ backgroundColor: theme.secondary }}
+                >
+                    <div className='projects--header'>
+                        <h1 style={{ color: theme.primary }}>Projects</h1>
                     </div>
-                    <div className="projects--body">
-                        <div className="projects--bodyContainer">
-                            {projectsData.slice(0, 3).map(project => (
+                    <div className='projects--body'>
+                        <div className='projects--bodyContainer'>
+                            {projectsData.slice(0, 3).map((project) => (
                                 <SingleProject
                                     theme={theme}
                                     key={project.id}
@@ -65,24 +73,24 @@ function Projects() {
                                     image={project.image}
                                 />
                             ))}
-                        </div> 
+                        </div>
 
                         {projectsData.length > 3 && (
-                            <div className="projects--viewAll">
-                                <Link to="/projects">
-                                    <button className={classes.viewAllBtn}>
-                                        View All
-                                        <HiArrowRight className={classes.viewArr} />
-                                    </button>
+                            <div className='projects--viewAll'>
+                                <Link
+                                    to='/projects'
+                                    className={classes.viewAllBtn}
+                                >
+                                    View All
+                                    <HiArrowRight className={classes.viewArr} />
                                 </Link>
                             </div>
                         )}
                     </div>
                 </div>
             )}
-
         </>
-    )
+    );
 }
 
-export default Projects
+export default Projects;
