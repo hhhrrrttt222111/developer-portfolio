@@ -160,8 +160,22 @@ function Navbar() {
                 />
 
                 <div className="nav-box">
+
+                <NavLink
+                                to='/'
+                                smooth={true}
+                                spy='true'
+                                duration={2000}
+                            >
+                               {/* <div className={classes.drawerItem}>
+                                    <FaUser className={classes.drawerIcon} */}
+                                    <span className={classes.drawerLinks}>
+                                      Home
+                                    </span>
+                                {/*</div>*/}
+                            </NavLink>
                  <NavLink
-                                to='/#portfolio'
+                                to='/portfolio'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
@@ -178,7 +192,7 @@ function Navbar() {
                
                
                             <NavLink
-                                to='/#aboutme'
+                                to='/aboutme'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
@@ -215,7 +229,7 @@ function Navbar() {
 
                         
                             <NavLink
-                                to='/#contact'
+                                to='/contact'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}

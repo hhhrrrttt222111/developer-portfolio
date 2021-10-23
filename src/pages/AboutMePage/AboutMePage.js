@@ -12,17 +12,7 @@ function AboutMePage() {
             </Helmet>
 
             <Navbar />        
-            <Landing />
             <About />
-            <Education />
-            <Skills />
-            <Experience />
-            <Projects />
-            <Achievement />
-            <Services />
-            <Testimonials />
-            <Blog />
-            <Contacts />
             <Footer />
         </div>
     )
