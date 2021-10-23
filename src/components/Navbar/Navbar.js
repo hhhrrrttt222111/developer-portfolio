@@ -19,6 +19,8 @@ function Navbar() {
 
     const [open, setOpen] = useState(false);
 
+    const [hamburger,setHamburger]=useState(false);
+
     const handleDrawerOpen = () => {
         setOpen(true);
         setHandleDrawer();
@@ -28,6 +30,17 @@ function Navbar() {
         setOpen(false);
         setHandleDrawer();
     };
+
+    const showHamburger = ()=>{
+        if(window.innerWidth>800){
+            setHamburger(false);
+        }
+        else{
+            setHamburger(true);
+        }
+    };
+    
+    window.addEventListener("resize", showHamburger);
 
     const useStyles = makeStyles((t) => ({
         navMenu: {
@@ -45,6 +58,7 @@ function Navbar() {
             [t.breakpoints.down('xs')]: {
                 fontSize: '2rem',
             },
+            display: hamburger? 'flex':'none'
         },
         MuiDrawer: {
             padding: '0em 1.8em',
@@ -108,6 +122,8 @@ function Navbar() {
             width: '50%',
             fontSize: '1.3rem',
             fontWeight: 600,
+            paddingLeft:20,
+            color:'#f5f5f5',
             [t.breakpoints.down('sm')]: {
                 fontSize: '1.125rem',
             },
@@ -129,19 +145,91 @@ function Navbar() {
             return name;
         }
     };
-
-    return (
-        <div className='navbar'>
+    
+        return(
+            <div className='navbar'>
             <div className='navbar--container'>
                 <h1 style={{ color: theme.secondary }}>
                     {shortname(headerData.name)}
                 </h1>
-
+                
                 <IoMenuSharp
                     className={classes.navMenu}
                     onClick={handleDrawerOpen}
                     aria-label='Menu'
                 />
+
+                <div className="nav-box">
+                 <NavLink
+                                to='/#portfolio'
+                                smooth={true}
+                                spy='true'
+                                duration={2000}
+                            >
+                               {/* <div className={classes.drawerItem}>
+                                    <HiDocumentText
+                                        className={classes.drawerIcon}
+        />*/}
+                                    <span className={classes.drawerLinks}>
+                                        Portfolio
+                                    </span>
+                                {/*</div>*/}
+                </NavLink>
+               
+               
+                            <NavLink
+                                to='/#aboutme'
+                                smooth={true}
+                                spy='true'
+                                duration={2000}
+                            >
+                               {/* <div className={classes.drawerItem}>
+                                    <FaUser className={classes.drawerIcon} */}
+                                    <span className={classes.drawerLinks}>
+                                        About
+                                    </span>
+                                {/*</div>*/}
+                            </NavLink>
+                    
+                       
+
+                        
+                            <NavLink
+                                to={{pathname: "https://innaturestudio.picfair.com/"}} target="_blank"
+                                smooth={true}
+                                spy='true'
+                                duration={2000}
+                            >
+                              
+                                {/*   <div className={classes.drawerItem}>
+                                    <BsFillGearFill
+                                        className={classes.drawerIcon}
+                                />*/}
+                                    
+                                    <span className={classes.drawerLinks}>
+                                        Shop
+                                    </span>
+                                {/*</div>*/}
+                            </NavLink>
+                       
+
+                        
+                            <NavLink
+                                to='/#contact'
+                                smooth={true}
+                                spy='true'
+                                duration={2000}
+                            >
+                               {/* <div className={classes.drawerItem}>
+                                    <MdPhone className={classes.drawerIcon} />*/}
+                                    <span className={classes.drawerLinks}>
+                                        Contact
+                                    </span>
+                                {/*</div>*/}
+                            </NavLink>
+                 </div>      
+
+
             </div>
             <Drawer
                 variant='temporary'
@@ -196,8 +284,26 @@ function Navbar() {
                         </Fade>
 
                         <Fade left>
+                        <NavLink
+                                to='/#portfolio'
+                                smooth={true}
+                                spy='true'
+                                duration={2000}
+                            >
+                                <div className={classes.drawerItem}>
+                                    <HiDocumentText
+                                        className={classes.drawerIcon}
+                                    />
+                                    <span className={classes.drawerLinks}>
+                                        Portfolio
+                                    </span>
+                                </div>
+                         </NavLink>
+                       </Fade>
+
+                       <Fade left>
                             <NavLink
-                                to='/#about'
+                                to='/#aboutme'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
@@ -210,24 +316,7 @@ function Navbar() {
                                 </div>
                             </NavLink>
                         </Fade>
-
-                        <Fade left>
-                            <NavLink
-                                to='/#resume'
-                                smooth={true}
-                                spy='true'
-                                duration={2000}
-                            >
-                                <div className={classes.drawerItem}>
-                                    <HiDocumentText
-                                        className={classes.drawerIcon}
-                                    />
-                                    <span className={classes.drawerLinks}>
-                                        Resume
-                                    </span>
-                                </div>
-                            </NavLink>
-                        </Fade>
+                       
 
                         <Fade left>
                             <NavLink
@@ -241,13 +330,13 @@ function Navbar() {
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                        Services
+                                        Shop
                                     </span>
                                 </div>
                             </NavLink>
                         </Fade>
 
-                        <Fade left>
+                      {/*  <Fade left>
                             <NavLink
                                 to='/#blog'
                                 smooth={true}
@@ -263,11 +352,11 @@ function Navbar() {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                      </Fade>*/}
 
                         <Fade left>
                             <NavLink
-                                to='/#contacts'
+                                to='/#contact'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
@@ -284,7 +373,12 @@ function Navbar() {
                 </div>
             </Drawer>
         </div>
-    );
-}
+        );
+    }
+   
+    
+       
+ 
+
 
 export default Navbar;
