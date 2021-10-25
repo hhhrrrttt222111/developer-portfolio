@@ -65,7 +65,8 @@
 
 .about-img1 {
   position:relative;
-    margin-top: 40px;
+    margin-top:0;
+    margin-left: 50px;
     pointer-events: none;
     max-width:400px;
   
@@ -77,9 +78,9 @@
   border-radius: 5px;
 }
 .about-img2 {
-  position: absolute;
-  margin-top: 330px;
-  margin-left:-330px;
+  position: relative;
+  margin-top: 250px;
+  margin-left:-150px;
   pointer-events: none;
   width:250px;
  
@@ -111,7 +112,7 @@
       width: 400px;
   } 
 }
-@media (min-width: 820px) and (max-width: 1150px) {
+@media (min-width: 1020px) and (max-width: 1150px) {
 
     .about-description > h2 {
       font-size: 3.3rem;
@@ -125,11 +126,33 @@
         width: 300px;
     } 
     .about-img2{
-      margin-left:-200px;
+      margin-left:-100px;
     }
     .about-img2>img{
       width: 210px;
     }
+}
+
+@media (min-width: 820px) and (max-width: 1020px) {
+
+  .about-description > h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+  .about-description > p {
+    font-size: 1rem;
+  }
+
+  .about-img1>img {
+      width: 280px;
+  } 
+  .about-img2{
+    margin-left:-100px;
+    margin-top:200px;
+  }
+  .about-img2>img{
+    width: 200px;
+  }
 }
 
 /*@media screen and (max-width: 992px){
