@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 import { ThemeContext } from './contexts/ThemeContext';
-import { Main, BlogPage, ProjectPage, PortfolioPage,AboutMePage,ContactPage } from './pages'
+import { Main, BlogPage, ProjectPage, PortfolioPage,AboutMePage,ContactPage,GalleryPage } from './pages'
 import { BackToTop } from './components'
 import ScrollToTop from './utils/ScrollToTop'
 
@@ -28,6 +28,7 @@ function App() {
           <Route path="/aboutme" exact component={AboutMePage} />
           {/*<Route path="/shop" exact component={PortfolioPage}/>*/}
           <Route path="/contact" exact component={ContactPage} />
+          <Route path="/gallery" exact component={GalleryPage} />
 
           <Redirect to="/" />
         </Switch>

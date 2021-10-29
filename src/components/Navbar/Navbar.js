@@ -9,6 +9,8 @@ import { FaUser, FaFolderOpen } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
+import {AiOutlineShopping} from 'react-icons/ai';
+//import { Dimensions } from 'react-native';
 
 import './Navbar.css';
 import { headerData } from '../../data/headerData';
@@ -20,6 +22,7 @@ function Navbar() {
     const [open, setOpen] = useState(false);
 
     const [hamburger,setHamburger]=useState(false);
+    //const windowSize=Dimensions.get('window').width;
 
     const handleDrawerOpen = () => {
         setOpen(true);
@@ -41,6 +44,7 @@ function Navbar() {
     };
     
     window.addEventListener("resize", showHamburger);
+    
 
     const useStyles = makeStyles((t) => ({
         navMenu: {
@@ -147,12 +151,11 @@ function Navbar() {
     };
     
         return(
+
             <div className='navbar'>
             <div className='navbar--container'>
-                <h1 style={{ color: theme.secondary }}>
-                    {shortname(headerData.name)}
-                </h1>
-                
+                <p className="naslov">druid's photos</p>
+           
                 <IoMenuSharp
                     className={classes.navMenu}
                     onClick={handleDrawerOpen}
@@ -299,7 +302,7 @@ function Navbar() {
 
                         <Fade left>
                         <NavLink
-                                to='/#portfolio'
+                                to='/portfolio'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
@@ -317,7 +320,7 @@ function Navbar() {
 
                        <Fade left>
                             <NavLink
-                                to='/#aboutme'
+                                to='/aboutme'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
@@ -334,14 +337,15 @@ function Navbar() {
 
                         <Fade left>
                             <NavLink
-                                to='/#services'
+                                to={{pathname: "https://innaturestudio.picfair.com/"}} target="_blank"
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
                             >
                                 <div className={classes.drawerItem}>
-                                    <BsFillGearFill
+                                    <AiOutlineShopping
                                         className={classes.drawerIcon}
+                                        style={{fontSize:"2rem"}}
                                     />
                                     <span className={classes.drawerLinks}>
                                         Shop
@@ -370,7 +374,7 @@ function Navbar() {
 
                         <Fade left>
                             <NavLink
-                                to='/#contact'
+                                to='/contact'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}

@@ -38,6 +38,13 @@
     justify-content: flex-end;
     align-items: flex-start;
 }
+.naslov{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top:-10px;
+    color:white;
+    letter-spacing: 0.1em;
+    font-size:  1.8rem;
+}
 
 
 @media (max-width:1100px) {

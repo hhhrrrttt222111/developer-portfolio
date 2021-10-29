@@ -21,8 +21,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 2rem 6rem 3rem;
-    width: 80%;
+    padding: 2rem 0rem 3rem;
+    width: 100%;
     height: 100%;
     margin-top: 2rem;
 }
@@ -38,14 +38,16 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
     width: 100%;
 }
 
 .contacts-form {
     display: flex;
-    flex: 0.4;
+    flex: 1;
     width: 100%;
+    margin-top:2rem;
+    margin-left: 4rem;
 }
 
 .contacts-form form {
@@ -158,16 +160,35 @@
 }
 
 .socialmedia-icons {
-    width: 90%;
+    width: 10%;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
 }
-
-
+.contacts-pictures{
+    display:flex;
+    flex-direction: row;
+    width:40%;
+    height:100%;
+    overflow: hidden;
+}
+.pics{
+    height:100%;
+    width:33%;
+    object-fit: fill;
+ 
+}
+.pics>img{
+    
+    width:100%;
+    object-fit: fill;
+    height: 100%;
+}
 @media (min-width: 992px) and (max-width: 1380px) {
     .contacts--img {
         position: absolute;
@@ -176,8 +197,8 @@
         width: 240px;
     }
     .contacts--container {
-        padding: 2rem 4rem;
-        width: 90%;
+        padding: 2rem 0rem;
+        width: 100%;
         margin-top: 1rem;
     }
 }
