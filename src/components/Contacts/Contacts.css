@@ -1,5 +1,5 @@
 .contacts {
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -175,19 +175,21 @@
     flex-direction: row;
     width:40%;
     height:100%;
-    overflow: hidden;
+    min-height: 10px;
+    
 }
 .pics{
-    height:100%;
+   min-height:100%;
     width:33%;
-    object-fit: fill;
+ /*background-image:url('../../assets/png/tree.jpg')*/
  
 }
 .pics>img{
     
     width:100%;
     object-fit: fill;
-    height: 100%;
+    min-height:700px;
+    
 }
 @media (min-width: 992px) and (max-width: 1380px) {
     .contacts--img {
@@ -226,6 +228,7 @@
 }
 
 @media screen and (max-width: 800px) {
+    
     .contacts--container h1 {
         font-size: 3rem;
         margin-bottom: 30px;
@@ -234,16 +237,26 @@
         padding: 2rem;
         margin-top: 0rem;
         align-items: center;
+        padding:0;
     }
     .contacts-body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-image: url("https://images.unsplash.com/photo-1611267254323-4db7b39c732c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+       background-size: cover;
     }
     .contacts-form {
         display: flex;
         flex: 1;
         width: 80%;
+        
+    }
+    .contacts-form form >h2{
+        text-align: left;
+        margin-top: 1rem;
+        font-size: 3.5rem;
+        font-family: var(--primaryFont);
     }
     
     .form-input {
@@ -262,6 +275,8 @@
         width: 100%;
         gap: 1.5rem;
         margin-top: 2rem;
+        flex-direction: row;
+        margin-bottom: 1rem;
     }
     .personal-details {
         margin-bottom: 1.8rem;
@@ -270,17 +285,25 @@
         margin-left: 1.2rem;
         width: 95%;
     }
+    .contacts-pictures{
+        display:none;
+    }
+    
 }
 
 @media screen and (max-width: 600px) {
     .contacts-form {
         display: flex;
         flex: 1;
-        width: 100%;
+        width: 70%;
+        margin-left: 0;
     }
     .contacts--container h1 {
         font-size: 2.5rem;
         margin-bottom: 20px;
+    }
+    .socialmedia-icons{
+        margin-left: 0;
     }
 }
 

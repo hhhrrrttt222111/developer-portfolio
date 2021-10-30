@@ -161,21 +161,21 @@ function Contacts() {
                 <div className='contacts-body'>
 
                     <div className='contacts-pictures'>
-                        <div className='pics' style={{backgroundColor:'yellow'}}>
+                        <div className='pics' >
                             <img src="https://images.unsplash.com/photo-1611267254323-4db7b39c732c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"/>
                         </div>
-                        <div className='pics' style={{backgroundColor:'blue'}}>
-                        <img src="https://images.unsplash.com/photo-1611267254323-4db7b39c732c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"/>
+                        <div className='pics'>
+                       <img src="https://images.unsplash.com/photo-1611267254323-4db7b39c732c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"/>
                         </div>
-                        <div className='pics'style={{backgroundColor:'red'}}>
-                        <img src="https://images.unsplash.com/photo-1611267254323-4db7b39c732c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"/>
+                        <div className='pics'>
+                       <img src="../../assets/png/tree.jpg"/>
                         </div>
                     </div>
 
                     <div className='contacts-form'>
                     
                         <form onSubmit={handleContactForm}>
-                        <h1 style={{ color: theme.primary }}>Contact</h1>
+                        <h2 style={{ color: theme.primary, fontSize: '3.5rem',fontFamily: 'var(--primaryFont)' }}>Contact</h2>
                             <div className='input-container'>
                                 <label htmlFor='Name' className={classes.label}>
                                     Name
