@@ -1,7 +1,7 @@
 .navbar {
-    height: 4rem;
+    height: 3rem;
     position: absolute;
-    background-color: transparent;
+    background-color: rgba(20, 20, 20, 0.4);
     z-index: 99;
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@
 }
 .naslov{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top:-10px;
+    margin-top:0;
     color:white;
     letter-spacing: 0.1em;
     font-size:  1.8rem;
@@ -57,6 +57,9 @@
     .nav-menu{
         font-size: 2.2rem;
         margin-top: -1rem;
+    }
+    .naslov{
+        font-size: 1.5rem;
     }
 }
 
@@ -84,6 +87,9 @@
     }
     .MuiDrawer-paper{
       border-radius: 0 !important;
+    }
+    .naslov{
+        font-size: 1.2rem;
     }
 }
 

@@ -62,7 +62,8 @@ function Navbar() {
             [t.breakpoints.down('xs')]: {
                 fontSize: '2rem',
             },
-            display: hamburger? 'flex':'none'
+            display: hamburger? 'flex':'none',
+            marginTop:'1rem'
         },
         MuiDrawer: {
             padding: '0em 1.8em',
@@ -154,7 +155,7 @@ function Navbar() {
 
             <div className='navbar'>
             <div className='navbar--container'>
-                <p className="naslov">druid's photos</p>
+                <p className="naslov" style={{color:theme.tertiary}}>druid's photos</p>
            
                 <IoMenuSharp
                     className={classes.navMenu}

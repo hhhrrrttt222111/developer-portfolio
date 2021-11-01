@@ -5,7 +5,7 @@
 
 .about .line-styling{
   position: absolute;
-  top: 50px;
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   height: 50px;
