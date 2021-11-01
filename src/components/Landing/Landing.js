@@ -15,6 +15,7 @@ import {
     FaYoutube,
     FaBlogger,
 } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
 
 function Landing() {
     const { theme, drawerOpen } = useContext(ThemeContext);
@@ -70,77 +71,57 @@ function Landing() {
     return (
         <div className='landing'>
             <div className='landing--container'>
-                <div
-                    className='landing--container-left'
-                    style={{ backgroundColor: theme.primary }}
-                >
-                    <div className='lcl--content'>
+               <div className='container'>
+                    <div className='links'>
+                    
                         {socialsData.instagram && (
                             <a
                                 href={socialsData.instagram}
                                 target='_blank'
                                 rel='noreferrer'
                             >
+                            
                                 <FaInstagram
                                     className='landing--social'
-                                    style={{ color: theme.secondary }}
+                                    style={{ color: theme.primary }}
                                     aria-label='Instagram'
                                 />
                             </a>
                         )}
+                     
                         
                         
                        
                        
                     </div>
-                </div>
-                <img
-                    src={headerData.image}
-                    alt=''
-                    className='landing--img'
-                    style={{
-                        opacity: `${drawerOpen ? '0' : '1'}`,
-                        borderColor: theme.secondary,
-                    }}
-                />
-                <div
-                    className='landing--container-right'
-                    style={{ backgroundColor: theme.secondary }}
-                >
+             
+                    
+              
                     <div
                         className='lcr--content'
                         style={{ color: theme.tertiary }}
                     >
-                        <h6>{headerData.title}</h6>
+                       
                         <h1>{headerData.name}</h1>
-                        <p>{headerData.desciption}</p>
+                        <h6>{headerData.title}</h6>
+                        <p>{headerData.description}</p>
 
                         <div className='lcr-buttonContainer'>
-                            {headerData.resumePdf && (
-                                <a
-                                    href={headerData.resumePdf}
-                                    download='resume'
-                                    target='_blank'
-                                    rel='noreferrer'
-                                >
-                                    <Button className={classes.resumeBtn}>
-                                        Download CV
-                                    </Button>
-                                </a>
-                            )}
+                           
                             <NavLink
-                                to='/#contacts'
+                                to='/portfolio'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
                             >
-                                <Button className={classes.contactBtn}>
-                                    Contact
+                                <Button className={classes.resumeBtn}>
+                                    Portfolio
                                 </Button>
                             </NavLink>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     );

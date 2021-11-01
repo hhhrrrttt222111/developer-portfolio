@@ -13,7 +13,7 @@ function Main() {
 
             <Navbar />        
             <Landing />
-            <About />
+            {/*<About />
             <Education />
             <Skills />
             <Experience />
@@ -22,7 +22,7 @@ function Main() {
             <Services />
             <Testimonials />
             <Blog />
-            <Contacts />
+            <Contacts />*/}
             <Footer />
         </div>
     )

@@ -1,5 +1,5 @@
 .contacts {
-    /*min-height: 100vh;*/
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -31,6 +31,7 @@
     font-family: var(--primaryFont);
     font-size: 3.5rem;
     margin-bottom: 2.5rem;
+   /* min-height: 100vh;*/
 
 }
 
@@ -188,7 +189,7 @@
     
     width:100%;
     object-fit: fill;
-    min-height:700px;
+    min-height:100vh;
     
 }
 @media (min-width: 992px) and (max-width: 1380px) {
@@ -238,19 +239,21 @@
         margin-top: 0rem;
         align-items: center;
         padding:0;
+        
     }
     .contacts-body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image: url("https://images.unsplash.com/photo-1611267254323-4db7b39c732c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+        background-image: url("../../assets/png/stairs.jpg");
        background-size: cover;
+       padding:3rem;
     }
     .contacts-form {
         display: flex;
         flex: 1;
         width: 80%;
-        
+        margin-left: 0;
     }
     .contacts-form form >h2{
         text-align: left;
