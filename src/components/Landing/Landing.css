@@ -126,7 +126,9 @@
   }
 
   .lcr--content h6 {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
   }
 
   .lcr--content h1 {
@@ -136,33 +138,39 @@
   .lcr--content p {
     margin-top: 0.3rem;
     margin-bottom: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1rem;
   }
-
+.container{
+  margin-top:10rem;
+}
   .lcr-buttonContainer {
     margin-top: 1rem;
     flex-direction: column;
     width: 200px;
     height: 120px;
     align-items: flex-start;
+    margin-top: 3rem;
+  }
+  .landing--social{
+    top:6rem;
   }
 }
 
 @media (max-width: 900px) {
-  .landing--img {
-    --img-size: 300px;
-  }
 
   .landing--social {
-    font-size: 30px;
+    font-size: 35px;
+    top:4.5rem;
   }
   .lcr--content {
-    width: 60%;
+    width: 100%;
     margin-top: 10%;
     margin-right: 6%;
   }
-
+  .lcr--content h1{
+    font-size: 2.5rem;
+  }
   .lcr-buttonContainer {
     margin-top: 1rem;
     flex-direction: column;
@@ -173,6 +181,19 @@
   .lcr-buttonContainer button:nth-child(2) {
     display: none;
   }
+
+}
+@media (max-width:730px){
+  .lcr--content{
+    width:60%;
+    margin-left:1rem;
+  }
+  .lcr-buttonContainer{
+    margin-top: 2rem;
+  }
+  .landing--social{
+    top:3rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -180,20 +201,15 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .landing--img {
-    --img-size: 200px;
-    left: 50%;
-    top: 30%;
-    border: 8px solid #eaeaea;
-    transform: translate(-50%, -50%);
-  }
+ 
   .landing--container-left {
     flex: initial;
     width: 100%;
     height: 30%;
   }
   .landing--social {
-    display: none;
+    top:8rem;
+    right:4rem;
   }
   .landing--container-right {
     box-sizing: border-box;
@@ -212,7 +228,7 @@
     width: 100%;
   }
   .lcr--content h6 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
   }
   .lcr--content h1 {
@@ -230,6 +246,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width:70%;
   }
   .lcr-buttonContainer button {
     margin-top: -20%;
@@ -240,10 +257,21 @@
   .lcr--content {
     margin-top: 35%;
   }
+  .landing--social{
+    right:2.8rem;
+    top:5rem;
+  }
 }
 @media (max-width: 370px) {
   .lcr--content {
     margin-top: 60%;
+  }
+  .lcr-buttonContainer{
+    width: 40%;
+  }
+  .landing--social{
+    top:2rem;
+    right: 2rem;
   }
 }
 
@@ -256,5 +284,8 @@
     --img-size: 150px;
     left: 50%;
     top: 20%;
+  }
+  .landing--social{
+    right: 1rem;
   }
 }
