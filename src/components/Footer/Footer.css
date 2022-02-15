@@ -1,10 +1,12 @@
 .footer {
+   
     font-family: 'var(--primaryFont)', sans-serif;
     height: 60px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+ 
 }
 
 .footer p {
@@ -15,4 +17,12 @@
 
 .footer p span {
     font-size: 24px;
+}
+#copyrights{
+    display: grid;
+    align-items: flex-end;
+    
+    margin-top: 10px;
+    justify-items: center;
+    font-size: 12px;
 }

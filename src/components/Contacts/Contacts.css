@@ -1,4 +1,5 @@
 .contacts {
+    
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -184,6 +185,9 @@
 
 
 @media screen and (max-width: 992px) {
+    .contacts{
+        min-height: 60vh;
+    }
     .contacts--img {
         display: none;
     }

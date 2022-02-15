@@ -14,7 +14,7 @@
 }
 
 .landing--img {
-  --img-size: 400px;
+  --img-size: 300px;
   position: absolute;
   left: 35%;
   transform: translateX(-50%);
@@ -27,7 +27,7 @@
 }
 
 .landing--container-left {
-  flex: 35%;
+  flex: 45%;
   height: 100%;
   display: flex;
   align-items: flex-end;

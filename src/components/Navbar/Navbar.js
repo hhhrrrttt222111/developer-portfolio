@@ -5,10 +5,11 @@ import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
 import { HiDocumentText } from 'react-icons/hi';
 import { BsFillGearFill } from 'react-icons/bs';
 import { MdPhone } from 'react-icons/md';
-import { FaUser, FaFolderOpen } from 'react-icons/fa';
+import { FaUser, FaFolderOpen, FaProjectDiagram } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
+import { GiSkills } from "react-icons/gi";
 
 import './Navbar.css';
 import { headerData } from '../../data/headerData';
@@ -134,7 +135,7 @@ function Navbar() {
         <div className='navbar'>
             <div className='navbar--container'>
                 <h1 style={{ color: theme.secondary }}>
-                    {shortname(headerData.name)}
+                    {/* {shortname(headerData.name)} */}
                 </h1>
 
                 <IoMenuSharp
@@ -231,17 +232,17 @@ function Navbar() {
 
                         <Fade left>
                             <NavLink
-                                to='/#services'
+                                to='/#skills'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
                             >
                                 <div className={classes.drawerItem}>
-                                    <BsFillGearFill
+                                    <GiSkills
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                        Services
+                                        Skills
                                     </span>
                                 </div>
                             </NavLink>
@@ -249,17 +250,17 @@ function Navbar() {
 
                         <Fade left>
                             <NavLink
-                                to='/#blog'
+                                to='/#projects'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
                             >
                                 <div className={classes.drawerItem}>
-                                    <FaFolderOpen
+                                    <FaProjectDiagram
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                        Blog
+                                        Projects
                                     </span>
                                 </div>
                             </NavLink>

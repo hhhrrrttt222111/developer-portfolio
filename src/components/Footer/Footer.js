@@ -22,8 +22,18 @@ function Footer() {
                 <span style={{color: theme.primary, margin: '0 0.5rem -1rem 0.5rem'}}>
                     ❤
                 </span>
-                 by {shortname(headerData.name)}
+              
+                 by   <a target="_blank" href='https://github.com/AswinAnand66'>Aswin Anandh</a>
+                 <br/>
+                 <p id='copyrights'>
+                     Hemanath © 2021
+                 </p>
+                
             </p>
+            <br/>
+            <br/>
+           
+           
         </div>
     )
 }

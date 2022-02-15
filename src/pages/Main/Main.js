@@ -7,21 +7,21 @@ import { headerData } from '../../data/headerData'
 function Main() {
     return (
         <div>
-            <Helmet>
+            {/* <Helmet>
                 <title>{headerData.name} - Porfolio</title>
-            </Helmet>
+            </Helmet> */}
 
             <Navbar />        
             <Landing />
             <About />
-            <Education />
+            {/* <Education /> */}
             <Skills />
-            <Experience />
+            {/* <Experience /> */}
             <Projects />
-            <Achievement />
-            <Services />
-            <Testimonials />
-            <Blog />
+            {/* <Achievement />
+            <Services /> */}
+            {/* <Testimonials /> */}
+            {/* <Blog /> */}
             <Contacts />
             <Footer />
         </div>

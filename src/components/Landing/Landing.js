@@ -7,7 +7,7 @@ import './Landing.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
-
+import Particle from '../particles/Particle';
 import {
     FaTwitter,
     FaLinkedin,
@@ -68,12 +68,16 @@ function Landing() {
     const classes = useStyles();
 
     return (
+
         <div className='landing'>
+            
             <div className='landing--container'>
+                
                 <div
                     className='landing--container-left'
                     style={{ backgroundColor: theme.primary }}
                 >
+                
                     <div className='lcl--content'>
                         {socialsData.linkedIn && (
                             <a
@@ -114,7 +118,7 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {socialsData.youtube && (
+                        {/* {socialsData.youtube && (
                             <a
                                 href={socialsData.youtube}
                                 target='_blank'
@@ -126,8 +130,8 @@ function Landing() {
                                     aria-label='YouTube'
                                 />
                             </a>
-                        )}
-                        {socialsData.blogger && (
+                        )} */}
+                        {/* {socialsData.blogger && (
                             <a
                                 href={socialsData.blogger}
                                 target='_blank'
@@ -139,8 +143,9 @@ function Landing() {
                                     aria-label='Blogger'
                                 />
                             </a>
-                        )}
+                        )} */}
                     </div>
+                  
                 </div>
                 <img
                     src={headerData.image}
@@ -159,20 +164,22 @@ function Landing() {
                         className='lcr--content'
                         style={{ color: theme.tertiary }}
                     >
-                        <h6>{headerData.title}</h6>
+                        
                         <h1>{headerData.name}</h1>
+                        <h3>{headerData.title}</h3>
+                        
                         <p>{headerData.desciption}</p>
 
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (
                                 <a
                                     href={headerData.resumePdf}
-                                    download='resume'
+                                    view='resume'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
                                     <Button className={classes.resumeBtn}>
-                                        Download CV
+                                        View CV
                                     </Button>
                                 </a>
                             )}

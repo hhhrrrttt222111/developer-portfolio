@@ -169,14 +169,14 @@ function Contacts() {
             <div className='contacts--container'>
                 <h1 style={{ color: theme.primary }}>Contacts</h1>
                 <div className='contacts-body'>
-                    <div className='contacts-form'>
+                    {/* <div className='contacts-form'>
                         <form onSubmit={handleContactForm}>
                             <div className='input-container'>
                                 <label htmlFor='Name' className={classes.label}>
                                     Name
                                 </label>
                                 <input
-                                    placeholder='John Doe'
+                                    placeholder='Aswin Anand'
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
                                     type='text'
@@ -192,7 +192,7 @@ function Contacts() {
                                     Email
                                 </label>
                                 <input
-                                    placeholder='John@doe.com'
+                                    placeholder='Enter email'
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     type='email'
@@ -278,7 +278,7 @@ function Contacts() {
                                 message={errMsg}
                             />
                         </Snackbar>
-                    </div>
+                    </div> */}
 
                     <div className='contacts-details'>
                         <a
@@ -353,7 +353,7 @@ function Contacts() {
                                     <FaInstagram aria-label='Instagram' />
                                 </a>
                             )}
-                            {socialsData.medium && (
+                            {/* {socialsData.medium && (
                                 <a
                                     href={socialsData.medium}
                                     target='_blank'
@@ -362,8 +362,8 @@ function Contacts() {
                                 >
                                     <FaMediumM aria-label='Medium' />
                                 </a>
-                            )}
-                            {socialsData.blogger && (
+                            )} */}
+                            {/* {socialsData.blogger && (
                                 <a
                                     href={socialsData.blogger}
                                     target='_blank'
@@ -382,8 +382,8 @@ function Contacts() {
                                 >
                                     <FaYoutube aria-label='YouTube' />
                                 </a>
-                            )}
-                            {socialsData.reddit && (
+                            )} */}
+                            {/* {socialsData.reddit && (
                                 <a
                                     href={socialsData.reddit}
                                     target='_blank'
@@ -422,7 +422,7 @@ function Contacts() {
                                 >
                                     <FaGitlab aria-label='GitLab' />
                                 </a>
-                            )}
+                            )} */}
                         </div>
                     </div>
                 </div>
