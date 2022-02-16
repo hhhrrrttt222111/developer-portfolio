@@ -30,7 +30,7 @@ You can always seek help and are recommended to discuss the course of action and
 
 ```bash
 git checkout -b <branch name>
-```
+```d
 
 3. Write your code.
 
