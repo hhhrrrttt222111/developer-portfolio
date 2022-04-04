@@ -5,7 +5,8 @@ import {
 
 
 export const themeData = {
-    theme: orangeThemeDark
+    defaultTheme: orangeThemeLight,
+    secondaryTheme: orangeThemeDark
 }
 
 
