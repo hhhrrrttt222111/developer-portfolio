@@ -34,6 +34,12 @@
     backdrop-filter: blur(20px) !important;
 }
 
+.switch-container {
+    position: absolute;
+    right: 90px;
+    top: 26px;
+}
+
 
 @media (max-width:1100px) {
     .navbar--container{
@@ -67,6 +73,9 @@
     }
     .MuiDrawer-paper{
       border-radius: 0 !important;
+    }
+    .switch-container {
+        right: 50px;
     }
 }
 
