@@ -1,12 +1,17 @@
  export const skillsData = [
-    'HTML',
-    'Fastify',
-    'Blender',
-    'Figma',
-    'Javascript',
-    'CSS',
-    'React',
-    'Django',
+    'Python',
+    'PowerBi',
+    'ML',
+    'MySQL',
+    //'PostgreSQL',
+    'Docker',
+    'Git',
+    'Numpy',
+    'OpenCV',
+    'Pytorch',
+    'Tensorflow',
+    'Microsoft Office',
+    'Matlab',
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.

@@ -45,7 +45,7 @@ function Blog() {
             {blogData.length > 0 && (
                 <div className="blog" id="blog" style={{backgroundColor: theme.secondary}}>
                     <div className="blog--header">
-                        <h1 style={{color: theme.primary}}>Blog</h1>
+                        <h1 style={{color: theme.primary}}>Publications</h1>
                     </div>
                     <div className="blog--body">
                         <div className="blog--bodyContainer">
@@ -65,7 +65,7 @@ function Blog() {
 
                         {blogData.length > 3 && (
                             <div className="blog--viewAll">
-                                <Link to="/blog">
+                                <Link to="/publications">
                                     <button className={classes.viewAllBtn}>
                                         View All
                                         <HiArrowRight className={classes.viewArr} />

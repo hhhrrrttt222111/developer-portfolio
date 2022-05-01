@@ -36,6 +36,7 @@ import kotlin from '../assets/svg/skills/kotlin.svg'
 import matlab from '../assets/svg/skills/matlab.svg'
 import php from '../assets/svg/skills/php.svg'
 import python from '../assets/svg/skills/python.svg'
+import powerbi from '../assets/svg/skills/powerbi.svg'
 import ruby from '../assets/svg/skills/ruby.svg'
 import swift from '../assets/svg/skills/swift.svg'
 import adobeaudition from '../assets/svg/skills/adobeaudition.svg'
@@ -58,6 +59,7 @@ import strapi from '../assets/svg/skills/strapi.svg'
 import tensorflow from '../assets/svg/skills/tensorflow.svg'
 import webix from '../assets/svg/skills/webix.svg'
 import wordpress from '../assets/svg/skills/wordpress.svg'
+import ml from '../assets/svg/skills/ml.png'
 
 import azure from '../assets/svg/skills/azure.svg'
 import blender from '../assets/svg/skills/blender.svg'
@@ -81,6 +83,8 @@ export const skillsImage = (skill) => {
     switch (skillID) {
         case 'gcp':
             return gcp;
+        case 'ml':
+            return ml;
         case 'html':
             return html;
         case 'photoshop':
@@ -227,6 +231,8 @@ export const skillsImage = (skill) => {
             return wolframalpha;
         case 'canva':
             return canva;
+        case 'powerbi':
+            return powerbi;
         default:
             break;
     }

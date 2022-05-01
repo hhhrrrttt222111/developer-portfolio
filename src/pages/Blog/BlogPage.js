@@ -71,17 +71,17 @@ function BlogPage() {
     return (
         <div className="blogPage" style={{backgroundColor: theme.secondary}}>
             <Helmet>
-                <title>{headerData.name} | Blog</title>
+                <title>{headerData.name} | Publications</title>
             </Helmet>
             <div className="blogPage--header" style={{backgroundColor: theme.primary}}>
                 <Link to="/">
                     <AiOutlineHome className={classes.home}/>
                 </Link>
-                <h1 style={{color: theme.secondary}}>Blogs</h1>
+                <h1 style={{color: theme.secondary}}>Publications</h1>
             </div>
             <div className="blogPage--container">
                 <div className="blog--search">
-                    <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Seach blog..." className={classes.search}/>
+                    <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Seach publications..." className={classes.search}/>
                 </div>
                 <div className="blogs--container">
                     <Grid className="blog-grid" container direction="row" alignItems="center" justifyContent="center">

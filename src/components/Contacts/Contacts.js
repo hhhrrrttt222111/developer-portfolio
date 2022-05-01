@@ -15,7 +15,7 @@ import {
     FaCodepen,
     FaInstagram,
     FaGitlab,
-    FaMediumM,
+    FaMediumM
 } from 'react-icons/fa';
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
 import { FiPhone, FiAtSign } from 'react-icons/fi';
@@ -176,7 +176,7 @@ function Contacts() {
                                     Name
                                 </label>
                                 <input
-                                    placeholder='John Doe'
+                                    placeholder='Vinod Kumar'
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
                                     type='text'
@@ -192,7 +192,7 @@ function Contacts() {
                                     Email
                                 </label>
                                 <input
-                                    placeholder='John@doe.com'
+                                    placeholder='vinodkumar9576@gmail.com'
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     type='email'
