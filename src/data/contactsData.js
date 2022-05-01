@@ -3,5 +3,5 @@ export const contactsData = {
     phone: '+91 8210478225',
     address: 'Marathahalli, Bengaluru, Karnataka, India - 560037 ',
 
-    sheetAPI: ''
+    sheetAPI: 'https://sheetdb.io/api/v1/0de1lw2cggy8l'
 }
