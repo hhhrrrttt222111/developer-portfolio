@@ -1,11 +1,10 @@
 import resume from "../assets/pdf/resume.pdf";
+import profilePic from "../assets/profileImage/IMG.jpeg";
 
 export const headerData = {
   name: "Komal Kaur",
   title: "Web Developer",
-  desciption:
-    "There wasn't a bird in the sky, but that was not what caught her attention. It was the clouds. The deep green that isn't the color of clouds, but came with these. She knew what was coming and she hoped she was prepared. ",
-  image:
-    "https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/landingImg.png",
+  desciption: `"We must accept finite disappointment, but never lose infinite hope." - Martin Luther King`,
+  image: profilePic,
   resumePdf: resume,
 };
