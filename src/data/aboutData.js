@@ -1,6 +1,8 @@
 export const aboutData = {
-    title: "Who I am",
-    description1: "My name's Jane. I'm a web designer and developer based in Southampton, UK.",
-    description2: "During the day I work as a lead developer at a local agency and in the evening I  work on freelance projects and utilize the time to built my own products. I spent my leisure hours writing articles and poetry. Right now I'm also trying a hand at machine learning and AI. I love to learn and explore new arenas.",
-    image: 2
-}
+  title: "Who I am",
+  description1:
+    "My name's Ben Lalor. I'm a full stack web developer based in Denver, CO with a background in building energy efficiency and building energy codes. I have a passion for automation and creating clean, intuitive, and dynamic user experiences.",
+  description2:
+    "During the day I work to develop and maintain Californias preferred Energy Code Complaince tool and also develop a database to provide insight on Californias building data. In the evening I develop web applications primarily usng React and Python. In my free time I can be found ourdoors with family or cheering on the SF Giants or 49ers. Right now I am focusing on developing my React and DJango skills.",
+  image: 2,
+};
