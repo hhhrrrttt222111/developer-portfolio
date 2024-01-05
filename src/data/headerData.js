@@ -1,9 +1,11 @@
-import resume from '../assets/pdf/resume.pdf'
+import BenLalor_Resume from "../assets/pdf/BenLalor_Resume.pdf";
+import profilePic from "../assets/png/profilepic.jpeg";
 
 export const headerData = {
-    name: 'Jane Doe',
-    title: "Web Developer",
-    desciption:"There wasn't a bird in the sky, but that was not what caught her attention. It was the clouds. The deep green that isn't the color of clouds, but came with these. She knew what was coming and she hoped she was prepared. ",
-    image: 'https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/landingImg.png',
-    resumePdf: resume
-}
+  name: "Ben Lalor",
+  title: "Full Stack Web Developer",
+  desciption:
+    "My name's Ben Lalor. I'm a full stack web developer based in Denver, CO with a background in building energy efficiency and building energy codes. I have a passion for automation and creating clean, intuitive, and dynamic user experiences.",
+  image: profilePic,
+  resumePdf: BenLalor_Resume,
+};
