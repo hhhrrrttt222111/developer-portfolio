@@ -11,40 +11,41 @@ import eight from '../assets/svg/projects/eight.svg'
 export const projectsData = [
     {
         id: 1,
-        projectName: 'Employee Management',
-        projectDesc: 'This project aims to build an employee management system that consolidates all information of a company',
-        tags: ['React', 'CSS', 'Material Ui'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        projectName: 'Job Portal Website',
+        projectDesc: 'A job portal is a website where people who need jobs can find jobs and companies looking for job seekers can find the perfect employees.',
+        tags: ['Django', 'CSS', 'HTML', 'JS'],
+        code: 'https://github.com/MUMTAHINA-766/Job-Portal-Based-On-Django',
+        demo: 'https://github.com/MUMTAHINA-766/Job-Portal-Based-On-Django',
         image: one
     },
     {
         id: 2,
-        projectName: 'Railway Tracking',
-        projectDesc: 'This project is a railway tracking system that allows users to obtain relevant information about train timing.',
-        tags: ['Django', 'Tailwind CSS'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        projectName: 'Heart Disease Prediction Website',
+        projectDesc: ' It is a web application that predicts the probability of heart disease via a machine learning model.',
+        tags: ['Flask', 'Python','Machine Learning'],
+        code: 'https://github.com/MUMTAHINA-766/Heart-Disease-Prediction-using-ML-flask-mpa',
+        demo: 'https://github.com/MUMTAHINA-766/Heart-Disease-Prediction-using-ML-flask-mpa',
         image: two
     },
     {
         id: 3,
-        projectName: 'Weather App',
-        projectDesc: 'Weather forecast systems and applications predict weather conditions based on multiple parameters.',
-        tags: ['Django', 'CSS', 'Material Ui'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        projectName: 'Coffee and Tea Shop Website',
+        projectDesc: 'Tea-and-Coffee.com is an online tea and coffee shop that offers coffee for all types of espresso, cafetiere.',
+        tags: ['Flask', 'CSS', 'HTML', 'JS'],
+        code: 'https://github.com/MUMTAHINA-766/JAST-DRINK-Flask-web-app',
+        demo: 'https://github.com/MUMTAHINA-766/JAST-DRINK-Flask-web-app',
         image: three
     },
     {
         id: 4,
-        projectName: 'Android Patient Tracker',
-        projectDesc: 'This project involves the development of an Android application for viewing and managing patient data.',
-        tags: ['Flutter', 'Firebase'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        projectName: 'University Course Selection System',
+        projectDesc: 'This project involves the development University System and helps students to select their courses according to their department.',
+        tags: ['Springboot', 'Vuejs', 'HTML', 'CSS'],
+        code: 'https://github.com/MUMTAHINA-766/University-Course-Selection-System',
+        demo: 'https://github.com/MUMTAHINA-766/University-Course-Selection-System',
         image: four
     },
+    /*
     {
         id: 5,
         projectName: 'E-Commerce App',
@@ -81,6 +82,7 @@ export const projectsData = [
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         image: eight
     },
+    */
 ]
 
 

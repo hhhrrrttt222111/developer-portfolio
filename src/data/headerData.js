@@ -1,9 +1,9 @@
 import resume from '../assets/pdf/resume.pdf'
 
 export const headerData = {
-    name: 'Jane Doe',
-    title: "Web Developer",
-    desciption:"There wasn't a bird in the sky, but that was not what caught her attention. It was the clouds. The deep green that isn't the color of clouds, but came with these. She knew what was coming and she hoped she was prepared. ",
-    image: 'https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/landingImg.png',
+    name: 'Mumtahina Parvin',
+    title: "Software Test Engineer",
+    desciption:"“I am aspiring after a dynamic and progressive software firm where I can continue my career as a Software Quality Assurance Engineer and can contribute my analytical skills with my team and knowledge to bring out the maximum outputs.” ",
+    image: 'https://avatars.githubusercontent.com/u/64628178?s=400&u=b329533744c92a6f27799e9995347baa8fb98ea9&v=4',
     resumePdf: resume
 }

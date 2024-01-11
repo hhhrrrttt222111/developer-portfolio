@@ -1,23 +1,23 @@
 export const experienceData = [
     {
         id: 1,
-        company: 'Globex Corporation',
-        jobtitle: 'Frontend Developer',
-        startYear: '2018',
-        endYear: '2019'
+        company: 'MD Infotech',
+        jobtitle: 'SQA Technical Executive',
+        startYear: '2024',
+        endYear: 'Present'
     },
     {
         id: 2,
-        company: 'Vehement Capital Partners',
-        jobtitle: 'Backend Developer',
-        startYear: '2019',
-        endYear: '2020'
+        company: 'a1qa',
+        jobtitle: 'Software Functional Test Engineer',
+        startYear: '2022',
+        endYear: '2023'
     },
     {
         id: 3,
-        company: 'Wonka Industries',
-        jobtitle: 'Marketing',
-        startYear: '2020',
-        endYear: 'Present'
+        company: 'IT Training BD',
+        jobtitle: 'Softwared Quality Assurance',
+        startYear: '2021',
+        endYear: '2022'
     },
 ]

@@ -1,23 +1,23 @@
 export const educationData = [
     {
         id: 1,
-        institution: 'Marble Hills Middle School',
-        course: 'Higher Secondary Education',
-        startYear: '2007',
-        endYear: '2015'
+        institution: 'Masjid Mission Academy School, Rajshahi',
+        course: 'Secondary School Certificate',
+        startYear: '2012',
+        endYear: '2014'
     },
     {
         id: 2,
-        institution: 'Somerset School of Science',
-        course: 'Bachelor of Technology',
-        startYear: '2015',
-        endYear: '2019'
+        institution: 'New Goverment Degree College, Rajshahi',
+        course: 'Higher Secondary Education',
+        startYear: '2014',
+        endYear: '2016'
     },
     {
         id: 3,
-        institution: 'Hawking University, Cambridge',
-        course: 'Master of Technology',
+        institution: 'Yunnan University, Kunming, China',
+        course: 'Bachelor of Science',
         startYear: '2019',
-        endYear: 'Present'
+        endYear: '2023'
     },
 ]
