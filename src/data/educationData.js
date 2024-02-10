@@ -16,9 +16,10 @@ export const educationData = [
   },
   {
     id: 3,
-    institution: "Hawking University, Cambridge",
-    course: "Master of Technology",
-    startYear: "2019",
-    endYear: "Present",
+    institution: "Expernet Campus - Le Port Réunion",
+    course:
+      "Titre professionnel de niveau II Concepteur Développeur Informatique",
+    startYear: "2017",
+    endYear: "2019",
   },
 ];
