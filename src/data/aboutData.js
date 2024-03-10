@@ -1,6 +1,0 @@
-export const aboutData = {
-    title: "Who I am",
-    description1: "My name's Mumtahina. I'm a web developer and Tester based in Rajshahi, Bangladesh.",
-    description2: "As a professional in the field of software testing, I have amassed extensive experience in various aspects of the testing process. With a background as a functional tester for one year, I have developed a keen eye for identifying software defects and providing targeted solutions. I have experience working with Postman API testing, Jmeter Parformance testing and automation testing tools like Selenium, TestNg, Cypress and Playright. I also have a deep understanding of the Jira bug tracking and TestRail test tracking system, which enables me to create and manage test cases effectively.Furthermore, I have developed additional skills as a web app developer using Django, Flask, HTML, CSS, and JS and have hands-on experience in machine learning.Overall, my skills makes me an ideal candidate for any organization looking to create high-quality software products while fostering a collaborative work environment.",
-    image: 2
-}
