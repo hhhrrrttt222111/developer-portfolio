@@ -1,37 +1,44 @@
 /* eslint-disable */
-import { BiShoppingBag, BiPencil } from "react-icons/bi";
+import { FaMagnifyingGlassLocation } from "react-icons/fa6";
 import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
-import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
-import { FaInternetExplorer,  FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaRegNewspaper } from "react-icons/fa";
+import { VscSettingsGear } from "react-icons/vsc";
+import { LuFileSearch2 } from "react-icons/lu";
+import { VscBug } from "react-icons/vsc";
+import { FaTasks } from "react-icons/fa";
+import { RiPagesLine } from "react-icons/ri";
+import { IoSpeedometerOutline } from "react-icons/io5";
+import { FaRecycle } from "react-icons/fa";
+import { FaDatabase } from "react-icons/fa";
+import { FaInternetExplorer, FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaRegNewspaper } from "react-icons/fa";
 
  
 
 export const servicesData = [
-    // {
-    //     id: 1,
-    //     title: 'Marketing',
-    //     icon: <BiShoppingBag/>
-    // },
+    {
+        id: 1,
+        title: 'Test Automation',
+        icon: <VscSettingsGear />
+    },
     {
         id: 2,
-        title: 'Content Writing',
-        icon: <BiPencil /> 
+        title: 'API Testing',
+        icon: <FaMagnifyingGlassLocation /> 
     },
     {
         id: 3,
-        title: 'Email Marketing',
-        icon: <AiOutlineMail />
+        title: 'Web Testing',
+        icon: <LuFileSearch2 />
     },
-    // {
-    //     id: 4,
-    //     title: 'Internet Research',
-    //     icon: <FaInternetExplorer />
-    // },
-    // {
-    //     id: 5,
-    //     title: 'Tutoring',
-    //     icon: <FaChalkboardTeacher />
-    // },
+    {
+        id: 4,
+        title: 'Bug Report',
+        icon: <VscBug />
+    },
+    {
+        id: 5,
+        title: 'Test Plan',
+        icon: <FaTasks />
+    },
 
     {
         id: 6,
@@ -40,39 +47,39 @@ export const servicesData = [
     },
     {
         id: 7,
-        title: 'Photography',
-        icon: <FaCameraRetro />
+        title: 'User Interface Testing',
+        icon: <RiPagesLine />
     },
-    // {
-    //     id: 8,
-    //     title: 'Pinterest Virtual Assistant',
-    //     icon: <FaPinterest />
-    // }, 
+    {
+        id: 8,
+        title: 'Load & Stress Testing',
+        icon: <IoSpeedometerOutline />
+    }, 
     {
         id: 9,
-        title: 'Video Editing',
-        icon: <FaVideo />
+        title: 'SDLC & STLC',
+        icon: <FaRecycle />
+    },
+    {
+        id: 10,
+        title: 'Database Testing', 
+        icon: <FaDatabase />
     },
     // {
-    //     id: 10,
-    //     title: 'Data Entry', 
-    //     icon: <BsClipboardData />
+    //     id: 11,
+    //     title: 'Ebook Writing',
+    //     icon: <FaTabletAlt />
     // },
-    {
-        id: 11,
-        title: 'Ebook Writing',
-        icon: <FaTabletAlt />
-    },
     // {
     //     id: 12,
     //     title: 'Audio Transcription',
     //     icon: <AiFillAudio />
     // },
-    {
-        id: 13,
-        title: 'Blog Posting',
-        icon: <FaRegNewspaper />
-    },
+    // {
+    //     id: 13,
+    //     title: 'Blog Posting',
+    //     icon: <FaRegNewspaper />
+    // },
 
 ]
 

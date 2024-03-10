@@ -13,7 +13,7 @@ import {
     FaLinkedin,
     FaGithub,
     FaYoutube,
-    FaBlogger,
+    //FaBlogger,
 } from 'react-icons/fa';
 
 function Landing() {
@@ -127,7 +127,7 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {socialsData.blogger && (
+                        {/* {socialsData.blogger && (
                             <a
                                 href={socialsData.blogger}
                                 target='_blank'
@@ -139,7 +139,7 @@ function Landing() {
                                     aria-label='Blogger'
                                 />
                             </a>
-                        )}
+                        )} */}
                     </div>
                 </div>
                 <img

@@ -11,45 +11,45 @@ import boy3 from '../assets/svg/testimonials/boy3.svg'
 export const testimonialsData = [
     {
         id: 1,
-        name: 'Chandler Bing',
-        title: 'Transponster',
-        text: "Building my own portfolio could've never been easier than this. The only areas I'm good at are Math, Jokes and Dance.",
+        name: 'Mustafijur Rahman',
+        title: 'Digital Creator, MD Infotech',
+        text: "Working with Mumtahina on our software project was an absolute pleasure.Mumtahina meticulously identified and documented bugs, ensuring our software met the highest standards of quality. Her proactive communication to collaborate effectively with our development team made the entire process seamless.",
         image: boy2
     },
     {
         id: 2,
         name: 'Monica Geller',
-        title: 'Head Chef',
-        text: "This is the only thing that I didn't have to spend time to sort out. It's tidy all by itself.",
+        title: 'Client',
+        text: "I had the privilege of partnering with Mumtahina for a load testing project. Mumtahina demonstrated a deep understanding of load testing methodologies and executed comprehensive test scenarios to evaluate our system's performance under various conditions. ",
         image: girl2
     },
     {
         id: 3,
         name: 'Phoebe Buffay',
-        title: 'Massuese',
-        text: "Heard of the song 'Smelly Cat!!' ? This website made it viral. Plus portfolio is the only thing that Ursula doesn't have :)",
+        title: 'Client',
+        text: "Mumtahina approached the project with a meticulous eye for detail, meticulously identifying and documenting every issue to ensure our software functioned flawlessly.",
         image: girl1
     },
     {
         id: 4,
         name: 'Joey Tribbiani',
-        title: 'Actor',
-        text: "Making my portfolio with this helped me get my role as 'Dr. Drake Ramoray' in 'Days Of Our Lives'. You guys are the best !",
+        title: 'Client',
+        text: "Mumtahina demonstrated a deep understanding of load testing principles and utilized advanced techniques to assess our system's performance under heavy loads.",
         image: boy1
     },
     {
         id: 5,
         name: 'Rachel Green',
-        title: 'Sales Executive',
-        text: 'Ralph Lauren was one of the best things that ever happened to me. My portfolio made that dream happen. I owe you guys.',
+        title: 'Client',
+        text: 'Mumtahina brought a wealth of experience and expertise to the table, meticulously testing every aspect of our software to ensure its functionality met our requirements.',
         image: girl3
     },
-    {
-        id: 6,
-        name: 'Ross Geller',
-        title: 'Paleontologist',
-        text: "Be it 'Rocks' or 'Bones', you need a website to display it. This is it. Great work guys !",
-        image: boy3
-    }
+    // {
+    //     id: 6,
+    //     name: 'Ross Geller',
+    //     title: 'Paleontologist',
+    //     text: "Be it 'Rocks' or 'Bones', you need a website to display it. This is it. Great work guys !",
+    //     image: boy3
+    // }
 ]
 

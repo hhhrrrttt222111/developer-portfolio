@@ -3,27 +3,35 @@ export const achievementData = {
     achievements : [
         {
             id : 1,
-            title : 'Google Cloud certification',
-            details : 'Google Cloud certifications validate your expertise and showcase your ability to transform businesses with Google Cloud technology.',
-            date : 'Aug 20, 2019',
-            field : 'Automation',
-            image : 'https://images.unsplash.com/photo-1573141597928-403fcee0e056?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80'
+            title : 'Responsive Web Design Certification',
+            details : 'This is a Frontent Web Development certification from freeCodeCamp',
+            date : 'Feb, 2022',
+            field : 'Development',
+            image : 'https://th.bing.com/th/id/R.76402c243368f9352267ad81d6aef1e7?rik=ssFd3yIIkfYZYw&pid=ImgRaw&r=0'
         },
         {
             id : 2,
-            title : 'AWS Certification',
-            details : 'Validate technical skills and cloud expertise to grow your career and business.',
-            date : 'Aug 20, 2019',
-            field : 'Automation',
-            image : 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+            title : 'SQA Certification',
+            details : 'IT Training BD',
+            date : 'June, 2023',
+            field : 'Testing',
+            image : 'https://media-exp1.licdn.com/dms/image/C560BAQH2fsvxPY4W5g/company-logo_200_200/0/1624185432069?e=2147483647&v=beta&t=I6d8ljMll-UujJyZN9H6mHUUjG2d81NianuMZzECJ_Q'
         },
         {
             id : 3,
-            title : 'Professional Data Engineer Certification',
-            details : 'Professional Data Engineers enable data-driven decision making by collecting, transforming, and publishing data.',
-            date : 'Aug 20, 2019',
-            field : 'Automation',
-            image : 'https://images.unsplash.com/photo-1489389944381-3471b5b30f04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+            title : 'Fundamentals of Deep Learning',
+            details : 'NVDIA Certification',
+            date : 'June, 2022',
+            field : 'Deep Learning',
+            image : 'https://th.bing.com/th/id/OIP.VDjRmvfcZB4-Jm5iE3ScOgHaHa?w=154&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7'
+        },
+        {
+            id : 4,
+            title : 'Intermediate SQL',
+            details : 'DataCamp Certification',
+            date : 'April, 2021',
+            field : 'Database',
+            image : 'https://th.bing.com/th/id/OIP.9tbMO9alyOnDaRLEDEn1xgAAAA?w=146&h=150&c=7&r=0&o=5&dpr=1.4&pid=1.7'
         }
 
     ]

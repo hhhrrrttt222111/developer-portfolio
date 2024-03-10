@@ -9,13 +9,13 @@ import {
     FaLinkedinIn,
     FaGithub,
     FaYoutube,
-    FaBloggerB,
+    //FaBloggerB,
     FaRedditAlien,
     FaStackOverflow,
     FaCodepen,
-    FaInstagram,
+    //FaInstagram,
     FaGitlab,
-    FaMediumM,
+    //FaMediumM,
 } from 'react-icons/fa';
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
 import { FiPhone, FiAtSign } from 'react-icons/fi';
@@ -343,7 +343,7 @@ function Contacts() {
                                     <FaLinkedinIn aria-label='LinkedIn' />
                                 </a>
                             )}
-                            {socialsData.instagram && (
+                            {/* {socialsData.instagram && (
                                 <a
                                     href={socialsData.instagram}
                                     target='_blank'
@@ -352,8 +352,8 @@ function Contacts() {
                                 >
                                     <FaInstagram aria-label='Instagram' />
                                 </a>
-                            )}
-                            {socialsData.medium && (
+                            )} */}
+                            {/* {socialsData.medium && (
                                 <a
                                     href={socialsData.medium}
                                     target='_blank'
@@ -362,8 +362,8 @@ function Contacts() {
                                 >
                                     <FaMediumM aria-label='Medium' />
                                 </a>
-                            )}
-                            {socialsData.blogger && (
+                            )} */}
+                            {/* {socialsData.blogger && (
                                 <a
                                     href={socialsData.blogger}
                                     target='_blank'
@@ -372,7 +372,7 @@ function Contacts() {
                                 >
                                     <FaBloggerB aria-label='Blogger' />
                                 </a>
-                            )}
+                            )} */}
                             {socialsData.youtube && (
                                 <a
                                     href={socialsData.youtube}
