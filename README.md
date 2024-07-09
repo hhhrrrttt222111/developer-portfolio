@@ -497,6 +497,26 @@ export const educationData = [
 
 <br />
 
+# Dockerized Developer Portfolio DeveloperPortafolio
+
+
+`sudo docker build -f Dockerfile -t developerportafolio --no-cache .`
+
+`sudo docker run -di -p 3000:3000  -p 5173:5173 -v $(pwd)/:/app/ -h 127.0.0.1 --name developerportafolio -d developerportafolio`
+
+`sudo docker rm -f developerportafolio; sudo docker rmi developerportafolio`
+
+## Commands secondary
+
+`docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' developerportafolio`
+
+`docker exec -ti developerportafolio bash`
+
+`sudo rm -rf /app/node_modules`
+
+
+
+
 # Contributors :man_technologist::woman_technologist:
 
 <div>
