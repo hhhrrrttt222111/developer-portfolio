@@ -72,6 +72,9 @@ import picsart from '../assets/svg/skills/picsart.svg'
 import sketch from '../assets/svg/skills/sketch.svg'
 import unity from '../assets/svg/skills/unity.svg'
 import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
+import node from '../assets/svg/skills/nodejs.svg'
+import nest from '../assets/svg/skills/nestjs.svg'
+import dotnet from '../assets/svg/skills/dotnet.svg'
 
 import canva from '../assets/svg/skills/canva.svg'
 
@@ -227,6 +230,12 @@ export const skillsImage = (skill) => {
             return wolframalpha;
         case 'canva':
             return canva;
+         case 'node':
+            return node;
+         case 'nest':
+            return nest;
+         case 'dotnet':
+            return dotnet;
         default:
             break;
     }
