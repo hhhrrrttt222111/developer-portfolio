@@ -11,29 +11,29 @@ import eight from '../assets/svg/projects/eight.svg'
 export const projectsData = [
     {
         id: 1,
-        projectName: 'Employee Management',
-        projectDesc: 'This project aims to build an employee management system that consolidates all information of a company',
-        tags: ['React', 'CSS', 'Material Ui'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        projectName: 'Online Car Rental System',
+        projectDesc: 'A Car Rental Web Platform which allows car owners to lend their cars and customers to book and rent the cars.',
+        tags: ['JavaScript', 'HTML', 'Bootstrap'],
+        code: 'https://github.com/miqdad242/Online-Car-Rental.git',
+        demo: 'https://ocrental.000webhostapp.com',
         image: one
     },
     {
         id: 2,
-        projectName: 'Railway Tracking',
-        projectDesc: 'This project is a railway tracking system that allows users to obtain relevant information about train timing.',
-        tags: ['Django', 'Tailwind CSS'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        projectName: 'Travel App',
+        projectDesc: 'Build real time tour and travel website using react js project from scratch. In this course, we will build responsive beginner react js website. We will learn react basic to advance concepts while building this react project..',
+        tags: ['React', 'HTML', 'CSS'],
+        code: 'https://github.com/it20276614/Travel-App.git',
+        demo: 'https://travel-app-0038f1.netlify.app',
         image: two
     },
     {
         id: 3,
-        projectName: 'Weather App',
-        projectDesc: 'Weather forecast systems and applications predict weather conditions based on multiple parameters.',
+        projectName: 'Restaurant-App',
+        projectDesc: 'Creating a fully responsive restaurant website with a modern design using ReactJS involves implementing a sleek user interface, dynamic features like menu displays, reservation systems, and contact forms. ReactJS is omponent-based architecture ensures efficient development and a seamless user experience across all devices, making the restaurant is online presence inviting and functional.',
         tags: ['Django', 'CSS', 'Material Ui'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        code: 'https://github.com/miqdad242/Modern-Restaurant-Application-React-.git',
+        demo: 'https://strong-kataifi-40b9ec.netlify.app',
         image: three
     },
     {
