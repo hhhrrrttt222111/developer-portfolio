@@ -223,11 +223,13 @@ function Navbar() {
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                        Resume
+                                    Education
                                     </span>
                                 </div>
                             </NavLink>
                         </Fade>
+
+                        
 
                         <Fade left>
                             <NavLink

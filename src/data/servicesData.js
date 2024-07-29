@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { BiShoppingBag, BiPencil } from "react-icons/bi";
+import { BiShoppingBag, BiPencil, BiCode, BiWindow, BiServer } from "react-icons/bi";
 import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
 import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
 import { FaInternetExplorer,  FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaRegNewspaper } from "react-icons/fa";
@@ -16,18 +16,18 @@ export const servicesData = [
     {
         id: 2,
         title: 'Content Writing',
-        icon: <BiPencil /> 
+        icon: <BiCode /> 
     },
     {
         id: 3,
-        title: 'Email Marketing',
-        icon: <AiOutlineMail />
+        title: 'Frontend Project',
+        icon: <BiWindow />
     },
-    // {
-    //     id: 4,
-    //     title: 'Internet Research',
-    //     icon: <FaInternetExplorer />
-    // },
+    {
+        id: 4,
+        title: 'Backend',
+        icon: <BiServer />
+    },
     // {
     //     id: 5,
     //     title: 'Tutoring',
