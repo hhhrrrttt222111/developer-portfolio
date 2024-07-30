@@ -5,6 +5,6 @@ export const headerData = {
     name: 'Miqdad Ali Riza',
     title: "Full Stack Developer ",
     desciption:"A quality-driven, forward-looking Software Engineer Intern with around 6 months of experience in front-end and back-end with a passion for building innovative software. Skilled in problem-solving and dedicated to delivering high-quality software solutions ",
-    image: 'https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/landingImg.png',
+    image: 'https://raw.githubusercontent.com/miqdad242/Miqdad/main/Miqdad.jpg',
     resumePdf: resume
 }

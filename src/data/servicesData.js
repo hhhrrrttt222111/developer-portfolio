@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { BiShoppingBag, BiPencil, BiCode, BiWindow, BiServer } from "react-icons/bi";
+import { BiShoppingBag, BiPencil, BiCode, BiWindow, BiServer, BiMobile } from "react-icons/bi";
 import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
 import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
 import { FaInternetExplorer,  FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaRegNewspaper } from "react-icons/fa";
@@ -15,7 +15,7 @@ export const servicesData = [
     // },
     {
         id: 2,
-        title: 'Content Writing',
+        title: 'Full Stack Project',
         icon: <BiCode /> 
     },
     {
@@ -25,7 +25,7 @@ export const servicesData = [
     },
     {
         id: 4,
-        title: 'Backend',
+        title: 'Backend Project',
         icon: <BiServer />
     },
     // {
@@ -41,19 +41,25 @@ export const servicesData = [
     },
     {
         id: 7,
-        title: 'Photography',
-        icon: <FaCameraRetro />
+        title: 'Mobile App Project',
+        icon: <BiMobile />
+    },
+
+     {
+        id: 1,
+        title: 'Marketing',
+        icon: <BiShoppingBag/>
     },
     // {
     //     id: 8,
     //     title: 'Pinterest Virtual Assistant',
     //     icon: <FaPinterest />
     // }, 
-    {
-        id: 9,
-        title: 'Video Editing',
-        icon: <FaVideo />
-    },
+    // {
+    //     id: 9,
+    //     title: 'Video Editing',
+    //     icon: <FaVideo />
+    // },
     // {
     //     id: 10,
     //     title: 'Data Entry', 
