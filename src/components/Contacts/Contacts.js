@@ -28,6 +28,8 @@ import { contactsData } from '../../data/contactsData';
 import './Contacts.css';
 
 function Contacts() {
+
+    
     const [open, setOpen] = useState(false);
 
     const [name, setName] = useState('');
