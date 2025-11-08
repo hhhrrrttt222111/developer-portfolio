@@ -1,7 +1,7 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
 import { FaPlay, FaCode } from 'react-icons/fa';
-import Fade from 'react-reveal/Fade';
+;
 
 import placeholder from '../../../assets/png/placeholder.png';
 import './SingleProject.css';
@@ -35,7 +35,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
     const classes = useStyles();
 
     return (
-        <Fade bottom>
+        <div bottom>
             <div
                 key={id}
                 className='singleProject'
@@ -111,7 +111,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                     ))}
                 </div>
             </div>
-        </Fade>
+        </div>
     );
 }
 

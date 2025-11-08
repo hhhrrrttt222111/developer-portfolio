@@ -11,22 +11,22 @@ import boy3 from '../assets/svg/testimonials/boy3.svg'
 export const testimonialsData = [
     {
         id: 1,
-        name: 'Chandler Bing',
-        title: 'Transponster',
-        text: "Building my own portfolio could've never been easier than this. The only areas I'm good at are Math, Jokes and Dance.",
+        name: 'Shivam Kapoor',
+        title: 'Penetration Tester & Synack Red Team Member',
+        text: "Ahad is incredibly talented, always willing to assist me, and a fantastic team player.",
         image: boy2
     },
     {
         id: 2,
-        name: 'Monica Geller',
-        title: 'Head Chef',
-        text: "This is the only thing that I didn't have to spend time to sort out. It's tidy all by itself.",
+        name: 'Hafiz M. Attaullah',
+        title: 'CISO/CEO Nanotechx',
+        text: "Ahad is one of the most dedicated professionals I’ve worked with and is willing to put that extra help whenever you need it. His expertise as a PenTester is considerable, and it helped our team come up with more efficient solutions at different stages. I highly recommend him and appreciate his services for our company NANOTECHX.",
         image: girl2
     },
     {
         id: 3,
-        name: 'Phoebe Buffay',
-        title: 'Massuese',
+        name: 'Hafiz M. Attaullah',
+        title: 'CEO/CISO Nanotechx',
         text: "Heard of the song 'Smelly Cat!!' ? This website made it viral. Plus portfolio is the only thing that Ursula doesn't have :)",
         image: girl1
     },

@@ -1,11 +1,11 @@
 export const blogData = [
     {
         id: 1,
-        title: 'SCRAPING BILLBOARD AND IMDB USING PYTHON SELENIUM',
-        description: 'Here we will use Selenium to navigate between web pages, and try to scrape data from them.',
-        date: 'Aug 7, 2020',
-        image: 'https://1.bp.blogspot.com/-6vZQoWcIZeo/Xvw5ZD5Y53I/AAAAAAAABgI/GH2b5OuMaXAKuigK4diBbeYDW6dD3qVvgCK4BGAsYHg/w400-h225/selenium.jpg',
-        url: 'https://hackzism.blogspot.com/2020/07/scraping-billboard-and-imdb-using.html'
+        title: 'Computer Security & Best Practices',
+        description: 'Here we talked about Computer Security and General Cyber Security and its Concepts.',
+        date: 'Aug 15, 2022',
+        image: 'https://res.cloudinary.com/practicaldev/image/fetch/s--z6zLzmvP--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oo7xmjtayw72fg1nzwn8.png',
+        url: 'https://dev.to/aliahad002/computer-security-best-practices-50j2'
     },
     {
         id: 2,

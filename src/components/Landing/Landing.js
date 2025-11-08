@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { Button } from '@material-ui/core';
+import { Button } from '@mui/material';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
 
 import './Landing.css';
 import { ThemeContext } from '../../contexts/ThemeContext';

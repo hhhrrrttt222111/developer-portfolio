@@ -1,14 +1,14 @@
 import React, { useContext, useState } from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
-import Fade from 'react-reveal/Fade';
+;
 import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
 import { HiDocumentText } from 'react-icons/hi';
 import { BsFillGearFill } from 'react-icons/bs';
 import { MdPhone } from 'react-icons/md';
 import { FaUser, FaFolderOpen } from 'react-icons/fa';
-import { makeStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
-import CloseIcon from '@material-ui/icons/Close';
+import { makeStyles } from '@mui/styles';
+import Drawer from '@mui/material/Drawer';
+import CloseIcon from '@mui/icons-material/Close';
 
 import './Navbar.css';
 import { headerData } from '../../data/headerData';
@@ -177,7 +177,7 @@ function Navbar() {
 
                 <div onClick={handleDrawerClose}>
                     <div className='navLink--container'>
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/'
                                 smooth={true}
@@ -193,9 +193,9 @@ function Navbar() {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
 
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/#about'
                                 smooth={true}
@@ -209,9 +209,9 @@ function Navbar() {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
 
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/#resume'
                                 smooth={true}
@@ -227,9 +227,9 @@ function Navbar() {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
 
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/#services'
                                 smooth={true}
@@ -245,9 +245,9 @@ function Navbar() {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
 
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/#blog'
                                 smooth={true}
@@ -263,9 +263,9 @@ function Navbar() {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
 
-                        <Fade left>
+                        <div left>
                             <NavLink
                                 to='/#contacts'
                                 smooth={true}
@@ -279,7 +279,7 @@ function Navbar() {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </div>
                     </div>
                 </div>
             </Drawer>

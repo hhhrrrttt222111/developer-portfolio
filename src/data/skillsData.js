@@ -1,12 +1,67 @@
  export const skillsData = [
+    // Programming & Development
+    'Python',
+    'C++',
+    'C',
+    'PHP',
+    'JS',
+    'Typescript',
+    'Go',
+    'Ruby',
+    'Bash',
+
+    // Web Technologies
     'HTML',
-    'Fastify',
-    'Blender',
-    'Figma',
-    'Javascript',
     'CSS',
     'React',
+    'Node JS',
     'Django',
+    'Next JS',
+    'Tailwind',
+    'Bootstrap',
+    'Wordpress',
+
+    // Cybersecurity Tools & Frameworks
+    'Kali Linux',
+    'Ubuntu',
+    'Burp Suite',
+    'Metasploit',
+    'Nmap',
+    'Wireshark',
+    'OWASP',
+
+    // Cloud & Infrastructure
+    'AWS',
+    'Azure',
+    'Docker',
+    'Kubernetes',
+    'Git',
+    'GitHub Actions',
+    'Terraform',
+
+    // Databases
+    'MySQL',
+    'PostgreSQL',
+    'MongoDB',
+    'Redis',
+
+    // Security Specializations
+    'Penetration Testing',
+    'Web Application Security',
+    'Network Security',
+    'OSINT',
+    'Vulnerability Assessment',
+    'Red Teaming',
+    'Bug Bounty',
+    'CTF',
+
+    // Additional Tools
+    'Graphql',
+    'Firebase',
+    'Nginx',
+    'Selenium',
+    'Figma',
+    'Canva',
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.

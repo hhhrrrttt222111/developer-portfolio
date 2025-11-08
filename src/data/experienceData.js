@@ -1,22 +1,29 @@
 export const experienceData = [
     {
         id: 1,
-        company: 'Globex Corporation',
-        jobtitle: 'Frontend Developer',
-        startYear: '2018',
-        endYear: '2019'
+        company: 'Nanotechx',
+        jobtitle: 'Penetration Tester & Cybersecurity Consultant',
+        startYear: '2022',
+        endYear: 'Present'
     },
     {
         id: 2,
-        company: 'Vehement Capital Partners',
-        jobtitle: 'Backend Developer',
-        startYear: '2019',
-        endYear: '2020'
+        company: 'Synack Red Team',
+        jobtitle: 'Security Researcher & Bug Bounty Hunter',
+        startYear: '2021',
+        endYear: 'Present'
     },
     {
         id: 3,
-        company: 'Wonka Industries',
-        jobtitle: 'Marketing',
+        company: 'HackerOne',
+        jobtitle: 'Independent Security Researcher',
+        startYear: '2020',
+        endYear: 'Present'
+    },
+    {
+        id: 4,
+        company: 'Freelance',
+        jobtitle: 'Security Consultant & Web Developer',
         startYear: '2020',
         endYear: 'Present'
     },

@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { IoIosArrowDropupCircle } from 'react-icons/io';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 import './BackToTop.css';
