@@ -3,27 +3,35 @@ export const achievementData = {
     achievements : [
         {
             id : 1,
-            title : 'Google Cloud certification',
-            details : 'Google Cloud certifications validate your expertise and showcase your ability to transform businesses with Google Cloud technology.',
-            date : 'Aug 20, 2019',
-            field : 'Automation',
-            image : 'https://images.unsplash.com/photo-1573141597928-403fcee0e056?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80'
+            title : 'Offensive Security Certified Professional (OSCP)',
+            details : 'Offensive Security Certified Professional (OSCP) is an ethical hacking certification offered by Offensive Security. The OSCP is a hands-on penetration testing certification, requiring holders to successfully attack and penetrate various machines. It is considered more technical than other ethical hacking certifications.',
+            date : 'Dec 7, 2021',
+            field : 'Cybersecurity',
+            image : 'https://images.credly.com/size/340x340/images/ec81134d-e80b-4eb5-ae07-0eb8e1a60fcd/image.png'
         },
         {
             id : 2,
-            title : 'AWS Certification',
-            details : 'Validate technical skills and cloud expertise to grow your career and business.',
-            date : 'Aug 20, 2019',
-            field : 'Automation',
-            image : 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+            title : 'PentesterLab\'s Unix Badge ',
+            details : 'This exercise is one of our challenges to help you learn more about Unix/Linux.',
+            date : 'May 16, 2022',
+            field : 'Cybersecurity',
+            image : 'https://i.ibb.co/NjDvRXF/2022-05-19-12-40-05-PTLU9932-pdf-and-1-more-page-Profile-1-Microsoft-Edge.png'
         },
         {
             id : 3,
-            title : 'Professional Data Engineer Certification',
-            details : 'Professional Data Engineers enable data-driven decision making by collecting, transforming, and publishing data.',
-            date : 'Aug 20, 2019',
-            field : 'Automation',
-            image : 'https://images.unsplash.com/photo-1489389944381-3471b5b30f04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+            title : 'Practical Ethical Hacking - The complete Course PEH',
+            details : 'Learn how to hack like a pro by a pro. 25 hours of up to date practical hacking techniques with absolutely no filler.',
+            date : 'Sep 11, 2020',
+            field : 'Cybersecurity',
+            image : 'https://i.ibb.co/Jrf7Mbq/Capture.png'
+        },
+        {
+            id : 4,
+            title : 'Introduction to Cybersecurity',
+            details : 'Discover the world of cybersecurity and its impact, as you uncover the most common threats, attacks and vulnerabilities. By Cisco Networking Academy.',
+            date : 'june 30, 2022',
+            field : 'Cybersecurity',
+            image : 'https://images.credly.com/size/340x340/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png'
         }
 
     ]

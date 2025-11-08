@@ -1,6 +1,7 @@
 export const aboutData = {
-    title: "Who I am",
-    description1: "My name's Jane. I'm a web designer and developer based in Southampton, UK.",
-    description2: "During the day I work as a lead developer at a local agency and in the evening I  work on freelance projects and utilize the time to built my own products. I spent my leisure hours writing articles and poetry. Right now I'm also trying a hand at machine learning and AI. I love to learn and explore new arenas.",
+    title: "Who Am I",
+    description1: "My name is Muhammad Ahad. I'm an IT professional. I am always been passionate about Cybersecurity, A quick learner. I keep pace with the growing world. Keep myself up to date. I’ve done my BS in Information Technology, Learning about cybersecurity, Bug Bounty, freelancing, and playing CTFs are the things I love to do.",
+    description2: "I am an Offensive Security Certified Professional (OSCP), with more than 3000+ hours of experience, I'm an IT professional having a keen interest in ethical hacking, penetration testing, vulnerability analysis, web security and very much enthusiastic to learn ahead of time. A hardworking, energetic individual, owning a technical mindset with a strong ability to multitask with bringing modern day tech solutions onto the table are some of my many talents.",
     image: 2
 }
+

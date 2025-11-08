@@ -1,20 +1,26 @@
 .landing {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .landing--container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
   position: relative;
+  z-index: 1;
 }
 
 .landing--img {
-  --img-size: 400px;
+  --img-size: 450px;
   position: absolute;
   left: 35%;
   transform: translateX(-50%);
@@ -22,8 +28,15 @@
   height: var(--img-size);
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.3s;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3),
+              0 0 100px rgba(255, 255, 255, 0.1) inset;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 4px solid rgba(255, 255, 255, 0.1);
+}
+
+.landing--img:hover {
+  transform: translateX(-50%) scale(1.05);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
 }
 
 .landing--container-left {
@@ -32,6 +45,18 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
+  position: relative;
+}
+
+.landing--container-left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 100%);
+  pointer-events: none;
 }
 
 .lcl--content {
@@ -40,75 +65,160 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  gap: 1.5rem;
 }
 
 .landing--social {
   font-size: 35px;
-  margin: 0 1rem;
-  transition: transform 0.5s;
+  margin: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  cursor: pointer;
+}
+
+.landing--social::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  background: transparent;
+  transition: all 0.3s ease;
+  z-index: -1;
 }
 
 .landing--social:hover {
-  transform: scale(1.2);
+  transform: translateY(-5px);
+}
+
+.landing--social:hover::before {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .landing--container-right {
   flex: 65%;
   height: 100%;
-  background-color: #eaeaea;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  position: relative;
+}
+
+.landing--container-right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.08) 100%);
+  border-radius: 30px 0 0 30px;
+  backdrop-filter: blur(10px);
 }
 
 .lcr--content {
-  width: 45%;
+  width: 55%;
   margin-right: 7rem;
   font-family: var(--primaryFont);
   font-style: normal;
+  position: relative;
+  z-index: 1;
 }
 
 .lcr--content h6 {
-  font-weight: 500;
-  font-size: 1.25rem;
-  margin-bottom: -0.85rem;
-  opacity: 0.8;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: fadeInUp 0.6s ease-out;
 }
 
 .lcr--content h1 {
-  font-weight: 600;
-  font-size: 3.25rem;
-  line-height: 110%;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.1;
   margin: 1rem 0;
+  background: linear-gradient(135deg, currentColor 0%, currentColor 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: fadeInUp 0.6s ease-out 0.2s backwards;
+  letter-spacing: -2px;
 }
 
 .lcr--content p {
-  margin-top: 1.45rem;
-  font-weight: 500;
-  font-size: 1.15rem;
-  opacity: 0.7;
+  margin-top: 1.5rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  opacity: 0.85;
+  line-height: 1.8;
+  animation: fadeInUp 0.6s ease-out 0.4s backwards;
 }
 
 .lcr-buttonContainer {
-  margin-top: 2rem;
-  width: 350px;
+  margin-top: 2.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  font-family: "var(--primaryFont)", sans-serif;
+  gap: 1.5rem;
+  font-family: var(--primaryFont), sans-serif;
+  animation: fadeInUp 0.6s ease-out 0.6s backwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 1100px) {
   .landing--img {
-    --img-size: 350px;
+    --img-size: 380px;
   }
   .lcl--content {
     margin: 2rem;
   }
 
+  .lcr--content {
+    width: 60%;
+  }
+
   .lcr--content h6 {
+    font-size: 1rem;
+  }
+
+  .lcr--content h1 {
+    font-size: 3.5rem;
+  }
+
+  .lcr--content p {
     font-size: 1.1rem;
+    margin-top: 1.2rem;
+  }
+
+  .lcr-buttonContainer {
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .landing--img {
+    --img-size: 320px;
+  }
+
+  .landing--social {
+    font-size: 32px;
+  }
+
+  .lcr--content {
+    width: 65%;
+    margin-right: 5%;
   }
 
   .lcr--content h1 {
@@ -116,127 +226,123 @@
   }
 
   .lcr--content p {
-    margin-top: 0.3rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
     font-size: 1rem;
   }
 
   .lcr-buttonContainer {
-    margin-top: 1rem;
-    flex-direction: column;
-    width: 200px;
-    height: 120px;
-    align-items: flex-start;
-  }
-}
-
-@media (max-width: 900px) {
-  .landing--img {
-    --img-size: 300px;
-  }
-
-  .landing--social {
-    font-size: 30px;
-  }
-  .lcr--content {
-    width: 60%;
-    margin-top: 10%;
-    margin-right: 6%;
-  }
-
-  .lcr-buttonContainer {
-    margin-top: 1rem;
-    flex-direction: column;
-    width: 200px;
-    height: 120px;
-    align-items: flex-start;
-  }
-  .lcr-buttonContainer button:nth-child(2) {
-    display: none;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
   }
 }
 
 @media (max-width: 600px) {
+  .landing {
+    min-height: 100vh;
+  }
+
   .landing--container {
     flex-direction: column;
-    justify-content: space-between;
+    padding: 1rem;
   }
+
   .landing--img {
-    --img-size: 200px;
-    left: 50%;
-    top: 30%;
-    border: 8px solid #eaeaea;
-    transform: translate(-50%, -50%);
+    --img-size: 220px;
+    position: static;
+    transform: none;
+    margin: 2rem auto;
+    border: 6px solid rgba(255, 255, 255, 0.15);
   }
+
+  .landing--img:hover {
+    transform: scale(1.05);
+  }
+
   .landing--container-left {
-    flex: initial;
     width: 100%;
-    height: 30%;
-  }
-  .landing--social {
-    display: none;
-  }
-  .landing--container-right {
-    box-sizing: border-box;
-    padding: 0 2rem;
-    flex: initial;
-    height: 70%;
-    width: 100%;
-    background-color: #eaeaea;
-    align-items: center;
+    height: auto;
     justify-content: center;
-    padding: 0 2rem;
+    margin-bottom: 1rem;
   }
-  .lcr--content {
-    margin-top: 20%;
-    margin-right: initial;
+
+  .lcl--content {
+    margin: 1rem;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  .landing--social {
+    font-size: 28px;
+  }
+
+  .landing--container-right {
     width: 100%;
+    height: auto;
+    align-items: center;
+    padding: 2rem 1rem;
   }
-  .lcr--content h6 {
-    font-size: 1rem;
+
+  .landing--container-right::before {
+    border-radius: 20px;
+  }
+
+  .lcr--content {
+    width: 100%;
+    margin: 0;
     text-align: center;
   }
+
+  .lcr--content h6 {
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+  }
+
   .lcr--content h1 {
     font-size: 2.5rem;
-    text-align: center;
+    letter-spacing: -1px;
   }
+
   .lcr--content p {
-    font-size: 0.95rem;
-    text-align: center;
-    margin: 0 auto;
-    width: 90%;
+    font-size: 1rem;
+    margin-top: 1rem;
   }
+
   .lcr-buttonContainer {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
+    margin: 2rem auto 0;
     justify-content: center;
-  }
-  .lcr-buttonContainer button {
-    margin-top: -20%;
+    flex-wrap: wrap;
   }
 }
 
 @media (max-width: 500px) {
-  .lcr--content {
-    margin-top: 35%;
-  }
-}
-@media (max-width: 370px) {
-  .lcr--content {
-    margin-top: 60%;
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
-  .landing {
-    height: 100%;
-  }
-
   .landing--img {
-    --img-size: 150px;
-    left: 50%;
-    top: 20%;
+    --img-size: 200px;
+  }
+
+  .lcr--content h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .landing--img {
+    --img-size: 180px;
+  }
+
+  .lcr--content h1 {
+    font-size: 2rem;
+  }
+
+  .lcr--content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .landing--img {
+    --img-size: 190px;
+  }
+
+  .landing--social {
+    font-size: 26px;
   }
 }

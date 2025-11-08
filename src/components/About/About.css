@@ -1,113 +1,199 @@
 .about {
     min-height: 100vh;
     position: relative;
+    padding: 5rem 2rem;
+    display: flex;
+    align-items: center;
 }
 
-.about .line-styling{
+.about .line-styling {
   position: absolute;
-  top: 50px;
+  top: 3rem;
   left: 50%;
   transform: translateX(-50%);
   height: 50px;
-  width: 85%;
-
+  width: 90%;
+  max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.about .line-styling .style-circle{
-  width: 10px;
-  height: 10px;
+.about .line-styling .style-circle {
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
+  box-shadow: 0 0 20px currentColor;
+  animation: pulse 2s ease-in-out infinite;
 }
-.about .line-styling .style-line{
+
+.about .line-styling .style-line {
   width: 95%;
-  height: 5px;
+  height: 4px;
   border-radius: 10px;
+  background: linear-gradient(90deg, currentColor 0%, transparent 50%, currentColor 100%);
+  opacity: 0.6;
 }
 
 .about-body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding-top: 8rem;
-    height: fit-content;
+    justify-content: space-between;
+    gap: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .about-description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
-    flex: 0.5;
-    width: 100%;
-    height: fit-content;
+    justify-content: center;
+    flex: 1;
+    max-width: 600px;
 }
 
-.about-description >h2 {
-    margin-bottom: 40px;
-    font-size: 3.5rem;
+.about-description > h2 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
     font-family: var(--primaryFont);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    position: relative;
+    display: inline-block;
+}
+
+.about-description > h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 6px;
+    background: currentColor;
+    border-radius: 3px;
 }
 
 .about-description > p {
     font-size: 1.25rem;
-    color: #e0d9d9;
+    line-height: 1.8;
+    color: inherit;
+    opacity: 0.9;
     font-family: var(--primaryFont);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.about-description > p:last-of-type {
+    margin-bottom: 0;
 }
 
 .about-img {
-    margin-top: 40px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     pointer-events: none;
+    position: relative;
 }
 
 .about-img > img {
-    width: 380px;
-    flex: 0.5;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1380px) {
+    .about {
+        padding: 4rem 2rem;
+    }
 
     .about-description > h2 {
-      font-size: 3.3rem;
-      margin-bottom: 30px;
-    }
-    .about-description > p {
-      font-size: 1.15rem;
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
     }
 
-    .about-img>img {
-        width: 300px;
-    } 
+    .about-description > p {
+        font-size: 1.15rem;
+    }
+
+    .about-img > img {
+        max-width: 380px;
+    }
 }
 
-@media screen and (max-width: 992px){
-
-  .about .line-styling{
-    top: 20px;
-  }
-
-    .about-body {
-        padding-top: 2rem;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: space-evenly;
+@media screen and (max-width: 992px) {
+    .about {
+        padding: 3rem 2rem;
     }
 
-    .about-description{
-        flex: 0.6;
-        box-sizing: border-box;
-        /* padding: 5% 10%; */
-        padding: 20px;
+    .about .line-styling {
+        top: 2rem;
+    }
 
+    .about-body {
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+
+    .about-description {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-description > h2 {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-description > h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-description > p {
+        font-size: 1.15rem;
+    }
+
+    .about-img > img {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about .line-styling .style-circle {
+        width: 10px;
+        height: 10px;
     }
 
     .about-description > h2 {
         font-size: 3rem;
-        margin-bottom: 20px;
     }
 
     .about-description > p {
@@ -115,46 +201,45 @@
     }
 
     .about-img > img {
-        width: 250px;
-        flex: 0.4;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+        padding: 2rem 1.5rem;
     }
 
-}
+    .about .line-styling {
+        width: 95%;
+    }
 
-@media screen and (max-width: 800px){
-  .about .line-styling .style-circle{
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-  }
-  .about-description > h2{
-    align-self: center;
-  }
+    .about .line-styling .style-circle {
+        width: 8px;
+        height: 8px;
+    }
 
-}
+    .about .line-styling .style-line {
+        width: 93%;
+        height: 3px;
+    }
 
-@media screen and (max-width: 600px){
+    .about-description > h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.2rem;
+    }
 
-  .about .line-styling .style-circle{
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-  }
-  .about .line-styling .style-line{
-    width: 93%;
-    height: 3px;
-    border-radius: 10px;
-  }
+    .about-description > h2::after {
+        width: 80px;
+        height: 5px;
+    }
 
-  .about-description > h2 {
-    font-size: 2.5rem;
-  }
-
-    .about-description > p{
-      font-size: 0.95rem;
+    .about-description > p {
+        font-size: 1rem;
+        line-height: 1.6;
     }
 
     .about-img > img {
-        width: 200px;
+        max-width: 250px;
     }
 }

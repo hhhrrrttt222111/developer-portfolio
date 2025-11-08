@@ -14,12 +14,12 @@ export const servicesData = [
     // },
     {
         id: 2,
-        title: 'Content Writing',
+        title: 'Cyber Security',
         icon: <BiPencil /> 
     },
     {
         id: 3,
-        title: 'Email Marketing',
+        title: 'Penetration Testing',
         icon: <AiOutlineMail />
     },
     // {
@@ -40,7 +40,7 @@ export const servicesData = [
     },
     {
         id: 7,
-        title: 'Photography',
+        title: 'Incident Response',
         icon: <FaCameraRetro />
     },
     // {
@@ -50,7 +50,7 @@ export const servicesData = [
     // }, 
     {
         id: 9,
-        title: 'Video Editing',
+        title: 'Digital Marketing',
         icon: <FaVideo />
     },
     // {

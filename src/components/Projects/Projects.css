@@ -5,27 +5,41 @@
     justify-content: flex-start;
     min-height: 100vh;
     overflow-x: hidden;
-    padding: 2rem;
+    padding: 5rem 2rem;
 }
-
 
 .projects--header {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 1rem;
+    margin-bottom: 3rem;
 }
 
-
 .projects--header h1 {
-    margin-bottom: 40px;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-family: var(--primaryFont);
+    font-weight: 700;
+    letter-spacing: -2px;
+    position: relative;
+    text-align: center;
+}
+
+.projects--header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 6px;
+    background: currentColor;
+    border-radius: 3px;
 }
 
 .projects--body {
     width: 100%;
+    max-width: 1400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,14 +48,16 @@
 
 .projects--bodyContainer {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    gap: 4.5rem;
+    gap: 2.5rem;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .projects--viewAll {
     width: 100%;
+    max-width: 1400px;
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -52,18 +68,24 @@
 .projects--viewAll a button {
     outline: none;
     border: none;
-    width: 150px;
-    height: 48px;
+    width: 170px;
+    height: 52px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-transform: inherit;
-    border-radius: 45px;
+    border-radius: 26px;
     font-size: 1.05rem;
     font-family: var(--primaryFont);
-    font-weight: 500;
-    padding-left: 1.5rem;
+    font-weight: 600;
     cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.projects--viewAll a button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -74,48 +96,59 @@
 
 
 @media screen and (max-width: 992px) {
+    .projects {
+        padding: 3rem 1.5rem;
+    }
+
+    .projects--header h1 {
+        font-size: 3.5rem;
+    }
+
+    .projects--header h1::after {
+        width: 100px;
+        height: 5px;
+    }
+
     .projects--bodyContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        gap: 2rem;
     }
 }
 
 @media screen and (max-width: 800px) {
+    .projects {
+        padding: 3rem 1rem;
+    }
+
+    .projects--header {
+        margin-bottom: 2.5rem;
+    }
+
     .projects--header h1 {
         font-size: 3rem;
-        margin-bottom: 30px;
     }
 }
 
 @media screen and (max-width: 600px) {
+    .projects {
+        padding: 2rem 1rem;
+    }
+
     .projects--header h1 {
         font-size: 2.5rem;
-        margin-bottom: 20px;
     }
+
+    .projects--header h1::after {
+        width: 80px;
+        height: 5px;
+    }
+
+    .projects--bodyContainer {
+        gap: 1.5rem;
+    }
+
     .projects--viewAll {
-        position: relative;
-        margin-top: 4rem;
+        justify-content: center;
+        padding: 1rem;
+        margin-top: 2rem;
     }
-    .projects--viewAll a {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);  
-    }
-}
-
-@media screen and (max-width: 400px) {
-
-}
-  
-@media only screen and (min-device-width: 320px) and (max-device-width: 
-  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
-
-}
-
-
-@media only screen and (device-width: 768px) {
-
 }

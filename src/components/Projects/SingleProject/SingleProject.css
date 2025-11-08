@@ -1,16 +1,44 @@
 .singleProject {
-    box-shadow: 4px 4px 8px rgba(36, 3, 3, 0.2);
-    width: 304px;
-    height: 360px;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    width: 340px;
+    height: 420px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1.4rem 2rem;
+    padding: 2rem;
     position: relative;
     cursor: pointer;
     overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.singleProject::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.singleProject:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.singleProject:hover::before {
+    opacity: 1;
 }
 
 .projectContent {
@@ -20,25 +48,31 @@
     justify-content: space-between;
     width: 100%;
     height: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .projectContent > h2 {
     font-family: var(--primaryFont);
     font-style: normal;
-    font-weight: 600;
-    font-size: 1.525rem;
-    line-height: 110%;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.3;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .projectContent > img {
     width: 100%;
-    height: 60%;
-    transition: opacity 0.7s 0.3s;
+    height: 65%;
+    object-fit: contain;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 12px;
 }
 
-.singleProject:hover img{
+.singleProject:hover img {
     opacity: 0;
+    transform: scale(0.9);
 }
 
 .project--showcaseBtn {
@@ -46,63 +80,93 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    gap: 1rem;
 }
 
 .project--showcaseBtn > a {
     cursor: pointer;
     text-decoration: none;
-    transition: transform 0.5s 0.3s;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0.8;
+}
+
+.project--showcaseBtn > a:hover {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 .singleProject:hover .project--showcaseBtn a:nth-child(2) {
     transform: translateX(-140px) scale(1.1) !important;
 }
 
-
-.singleProject .project--desc{
+.singleProject .project--desc {
     position: absolute;
-    width: 95%;
-    height: 160px;
+    width: 90%;
+    max-height: 180px;
     left: 0;
-    top: 0;
-    transform: translate(-110%,40%);
-    padding: 15px;
-    border-radius: 0 20px 20px 0;
-    transition: transform 0.9s;
-    line-height: 110%;
+    top: 50%;
+    transform: translate(-110%, -50%);
+    padding: 1.2rem;
+    border-radius: 0 16px 16px 0;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 1.5;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--primaryFont);
+    font-size: 0.95rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
 }
-  
-.singleProject:hover .project--desc{
-    transform: translate(-2%,40%);
+
+.singleProject:hover .project--desc {
+    transform: translate(5%, -50%);
 }
-  
-.singleProject .project--lang{
+
+.singleProject .project--lang {
     position: absolute;
     bottom: 20px;
     right: 0;
-    width: 140px;
-    font-size: 0.8rem;
+    min-width: 140px;
+    font-size: 0.85rem;
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.6rem;
     flex-direction: column;
-    border-radius: 10px 0 0 10px;
+    border-radius: 12px 0 0 12px;
     transform: translateX(100%);
-    transition: transform 0.5s 0.3s;
-    padding: 0.825rem;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
 }
-  
-.singleProject:hover .project--lang{
+
+.singleProject:hover .project--lang {
     transform: translateX(0);
 }
 
 .project--lang > span {
     font-family: var(--primaryFont);
-    font-weight: 500;
-    word-break: break-word; 
-    line-height: 100%;
+    font-weight: 600;
+    word-break: break-word;
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+    .singleProject {
+        width: 320px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .singleProject {
+        width: 300px;
+        height: 380px;
+        padding: 1.5rem;
+    }
+
+    .projectContent > h2 {
+        font-size: 1.4rem;
+    }
 }
