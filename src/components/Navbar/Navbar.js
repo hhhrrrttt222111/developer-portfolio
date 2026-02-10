@@ -4,8 +4,8 @@ import Fade from 'react-reveal/Fade';
 import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
 import { HiDocumentText } from 'react-icons/hi';
 import { BsFillGearFill } from 'react-icons/bs';
-import { MdPhone } from 'react-icons/md';
-import { FaUser, FaFolderOpen } from 'react-icons/fa';
+import { MdPhone, MdWork } from 'react-icons/md';
+import { FaProjectDiagram } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
@@ -87,8 +87,9 @@ function Navbar() {
             height: '60px',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'space-evenly',
-            padding: '0 30px',
+            justifyContent: 'flex-start',
+            padding: '0 25px',
+            gap: '20px',
             boxSizing: 'border-box',
             border: '2px solid',
             borderColor: theme.primary,
@@ -99,8 +100,8 @@ function Navbar() {
             },
             [t.breakpoints.down('sm')]: {
                 width: '100%',
-                padding: '0 25px',
-                height: '55px',
+                padding: '0 20px',
+                gap: '15px',
             },
         },
         drawerLinks: {
@@ -122,19 +123,11 @@ function Navbar() {
 
     const classes = useStyles();
 
-    const shortname = (name) => {
-        if (name.length > 12) {
-            return name.split(' ')[0];
-        } else {
-            return name;
-        }
-    };
-
     return (
         <div className='navbar'>
             <div className='navbar--container'>
                 <h1 style={{ color: theme.secondary }}>
-                    {shortname(headerData.name)}
+                    {headerData.name}
                 </h1>
 
                 <IoMenuSharp
@@ -195,7 +188,7 @@ function Navbar() {
                             </NavLink>
                         </Fade>
 
-                        <Fade left>
+                        {/* <Fade left>
                             <NavLink
                                 to='/#about'
                                 smooth={true}
@@ -206,6 +199,60 @@ function Navbar() {
                                     <FaUser className={classes.drawerIcon} />
                                     <span className={classes.drawerLinks}>
                                         About
+                                    </span>
+                                </div>
+                            </NavLink>
+                        </Fade> */}
+
+                        <Fade left>
+                            <NavLink
+                                to='/#skills'
+                                smooth={true}
+                                spy={true}
+                                duration={500}
+                                exact='true'
+                                offset={-70}
+                            >
+                                <div className={classes.drawerItem}>
+                                    <BsFillGearFill className={classes.drawerIcon} />
+                                    <span className={classes.drawerLinks}>
+                                        Skills
+                                    </span>
+                                </div>
+                            </NavLink>
+                        </Fade>
+
+                        <Fade left>
+                            <NavLink
+                                to='/#experience'
+                                smooth={true}
+                                spy={true}
+                                duration={500}
+                                exact='true'
+                                offset={-70}
+                            >
+                                <div className={classes.drawerItem}>
+                                    <MdWork className={classes.drawerIcon} />
+                                    <span className={classes.drawerLinks}>
+                                        Experience
+                                    </span>
+                                </div>
+                            </NavLink>
+                        </Fade>
+
+                        <Fade left>
+                            <NavLink
+                                to='/#projects'
+                                smooth={true}
+                                spy={true}
+                                duration={500}
+                                exact='true'
+                                offset={-70}
+                            >
+                                <div className={classes.drawerItem}>
+                                    <FaProjectDiagram className={classes.drawerIcon} />
+                                    <span className={classes.drawerLinks}>
+                                        Projects
                                     </span>
                                 </div>
                             </NavLink>
@@ -223,13 +270,13 @@ function Navbar() {
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                        Resume
+                                        Education
                                     </span>
                                 </div>
                             </NavLink>
                         </Fade>
 
-                        <Fade left>
+                        {/* <Fade left>
                             <NavLink
                                 to='/#services'
                                 smooth={true}
@@ -245,9 +292,9 @@ function Navbar() {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </Fade> */}
 
-                        <Fade left>
+                        {/* <Fade left>
                             <NavLink
                                 to='/#blog'
                                 smooth={true}
@@ -263,7 +310,7 @@ function Navbar() {
                                     </span>
                                 </div>
                             </NavLink>
-                        </Fade>
+                        </Fade> */}
 
                         <Fade left>
                             <NavLink

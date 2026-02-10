@@ -34,6 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .project-container {
@@ -42,15 +43,24 @@
 }
 
 .project-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 4rem; 
 }
 
-@media (min-width: 992px) and (max-width: 1380px) {
-
+@media (min-width: 992px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1380px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 702px) {
     .projectPage-header {
         height: 25vh;
         width: 100%;
@@ -58,14 +68,11 @@
         align-items: center;
         justify-content: center;
     }
-
-    .project-grid {
-        gap: 3rem;
-    }
 }
 
 @media screen and (max-width: 702px) {
     .project-grid {
+        grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 }

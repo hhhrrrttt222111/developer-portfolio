@@ -1,89 +1,127 @@
-import React, { useContext, useState } from 'react'
-import { Helmet } from 'react-helmet'
-import { Grid } from '@material-ui/core'
-import { Link } from 'react-router-dom'
+import React, { useContext, useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
+import { Grid, Box, Typography, InputBase } from '@material-ui/core';
+import { Link, useLocation } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
-import { AiOutlineHome } from "react-icons/ai";
+import { AiOutlineHome, AiOutlineClose } from "react-icons/ai";
 
-import './ProjectPage.css'
+import './ProjectPage.css';
 import { SingleProject } from '../../components';
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { projectsData } from '../../data/projectsData'
-import { headerData } from '../../data/headerData'
+import { projectsData } from '../../data/projectsData';
+import { headerData } from '../../data/headerData';
+
+const useStyles = makeStyles((theme) => ({
+    searchContainer: {
+        position: 'relative',
+        width: '100%',
+        maxWidth: '400px',
+        margin: '0 auto',
+        border: `1px solid ${theme.tertiary}`, // Add border
+        borderRadius: '20px',
+        backgroundColor:theme.secondary, // Ensure background color
+    },
+    searchInput: {
+        padding: theme.spacing(1, 4, 1, 2),
+        width: '100%',
+        borderRadius: '30px',
+        border: `4px solid #E9AD35cc`, // ${theme.primary80}
+        color: '#eaeaea', // theme.tertiary
+        outline: 'none',
+        backgroundColor: theme.primary,
+        fontFamily: "'Noto Sans TC', sans-serif",
+        fontWeight: 500,
+        fontSize: '0.9rem',
+        '&::placeholder': {
+            color: 'rgb(193, 145, 49)',//theme.primary600,
+        },
+    },
+    clearButton: {
+        position: 'absolute',
+        top: '50%',
+        right: theme.spacing(3),
+        transform: 'translateY(-50%)',
+        cursor: 'pointer',
+        color: '#eaeaea', //theme.tertiary
+    },
+    home: {
+        color: theme.secondary,
+        position: 'absolute',
+        top: 25,
+        left: 25,
+        padding: '7px',
+        borderRadius: '50%',
+        boxSizing: 'content-box',
+        fontSize: '2rem',
+        cursor: 'pointer',
+        boxShadow:
+            theme.type === 'dark'
+                ? '3px 3px 6px #ffffff40, -3px -3px 6px #00000050'
+                : '3px 3px 6px #ffffff40, -3px -3px 6px #00000050',
+        transition: 'all 0.3s ease-in-out',
+        '&:hover': {
+            color: theme.tertiary,
+            transform: 'scale(1.1)',
+        },
+    },
+}));
 
 function ProjectPage() {
-
-    const [search, setSearch] = useState('')
+    const classes = useStyles();
     const { theme } = useContext(ThemeContext);
+    const location = useLocation();
+    const [search, setSearch] = useState('');
+
+    useEffect(() => {
+        const skill = new URLSearchParams(location.search).get('skill');
+        if (skill) {
+            // For some reason 'C++' skill i srepalced with 'C  '. Use this workaround to fix this.
+            if (skill === 'C  ') {
+                setSearch(skill.replace(/\s+/g, '++'));  
+            } else {
+                setSearch(skill);
+            }
+        }
+    }, [location]);
 
     const filteredArticles = projectsData.filter((project) => {
-        const content = project.projectName + project.projectDesc + project.tags
-        return content.toLowerCase().includes(search.toLowerCase())
-    })
+        const content = project.projectName + project.projectDesc + project.tags;
+        const additionalTagsString = project.additional_tags ? project.additional_tags.join(" ") : "";
+        return (content.toLowerCase().includes(search.toLowerCase()) ||
+            additionalTagsString.toLowerCase().includes(search.toLowerCase()));
+    });
 
-    const useStyles = makeStyles((t) => ({
-        search : {
-            color: theme.tertiary, 
-            width: '40%',
-            height: '2.75rem',
-            outline: 'none',
-            border: 'none',
-            borderRadius: '20px',
-            padding: '0.95rem 1rem',
-            fontFamily: "'Noto Sans TC', sans-serif",
-            fontWeight: 500,
-            fontSize: '0.9rem',  
-            backgroundColor: theme.secondary, 
-            boxShadow: theme.type === 'dark' ? 'inset 3px 3px 6px #ffffff10, inset -3px -3px 6px #00000060' : 'inset 3px 3px 6px #ffffffbd, inset -3px -3px 6px #00000030',
-            "&::placeholder": {
-                color: theme.tertiary80, 
-            },
-            [t.breakpoints.down('sm')]: {
-                width:'350px',
-            },
-        },
-        home: {
-            color: theme.secondary,
-            position: 'absolute',
-            top: 25,
-            left: 25,
-            padding: '7px',
-            borderRadius: '50%',
-            boxSizing: 'content-box',
-            fontSize: '2rem',
-            cursor: 'pointer',
-            boxShadow: theme.type === 'dark' ? '3px 3px 6px #ffffff40, -3px -3px 6px #00000050' : '3px 3px 6px #ffffff40, -3px -3px 6px #00000050',
-            transition: 'all 0.3s ease-in-out',
-            "&:hover": 
-            {
-                color: theme.tertiary,
-                transform: 'scale(1.1)',
-            },
-            [t.breakpoints.down('sm')]: {
-                fontSize: '1.8rem',
-            },
-        },
-    }));
-
-    const classes = useStyles();
+    const handleClear = () => {
+        setSearch('');
+    };
 
     return (
-        <div className="projectPage" style={{backgroundColor: theme.secondary}}>
+        <div className="projectPage" style={{ backgroundColor: theme.secondary }}>
             <Helmet>
                 <title>{headerData.name} | Projects</title>
             </Helmet>
-            <div className="projectPage-header" style={{backgroundColor:theme.primary}}>
+            <div className="projectPage-header" style={{ backgroundColor: theme.primary }}>
                 <Link to="/">
-                        <AiOutlineHome className={classes.home}/>
+                    <AiOutlineHome className={classes.home} />
                 </Link>
-                <h1 style={{color: theme.secondary}}>Projects</h1>
+                <h1 style={{ color: theme.secondary }}>Projects</h1>
             </div>
-           <div className="projectPage-container">
-               <div className="projectPage-search">
-                   <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search project..." className={classes.search} />
-               </div>
-               <div className="project-container">
-                   <Grid className="project-grid" container direction="row" alignItems="center" justifyContent="center">
+            <div className="projectPage-container">
+                <Box className={classes.searchContainer}>
+                    <InputBase
+                        placeholder="Search project or tag..."
+                        className={classes.searchInput}
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                    />
+                    {search && (
+                        <span style={{ fontSize: '1.8rem', fontWeight: 'bold' }}>
+                            <AiOutlineClose className={classes.clearButton} onClick={handleClear} />
+                        </span>
+                    )}
+                </Box>
+                <div className="project-container">
+                    <div className="project-grid">
                         {filteredArticles.map(project => (
                             <SingleProject
                                 theme={theme}
@@ -94,14 +132,16 @@ function ProjectPage() {
                                 tags={project.tags}
                                 code={project.code}
                                 demo={project.demo}
-                                image={project.image} 
+                                image={project.image}
+                                imgWidth={project.imgWidth}
+                                imgHeight={project.imgHeight}
                             />
                         ))}
-                   </Grid>
-               </div>
-           </div>    
+                    </div>
+                </div>
+            </div>
         </div>
-    )
+    );
 }
 
-export default ProjectPage
+export default ProjectPage;

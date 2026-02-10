@@ -23,6 +23,7 @@
     color: var(--primary-2);
     font-size: 2.5rem;
     user-select: none;
+    white-space: nowrap;
 }
 
 .navLink--container {

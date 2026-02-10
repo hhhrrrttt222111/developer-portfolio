@@ -1,10 +1,10 @@
 # Developer Portfolio 
 
-<p align="center">
+<!-- <p align="center">
 <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/b26b0ebaaa13bec7fac796ee0b8296676df6ee0b/developer-portfolio/website.svg" alt="" width="450px"/>
 </p>
 
-## Want to create a professional portfolio but cannot figure out how to? Use Developer Portfolio and create your own personalised portfolio today! With multiple themes to choose from, our easily customisable, user friendly website is designed to cater to developers and freelancers alike.
+## Want to create a professional portfolio but cannot figure out how to? Use Developer Portfolio and create your own personalised portfolio today! With multiple themes to choose from, our easily customisable, user friendly website is designed to cater to developers and freelancers alike. -->
 
 <br />
 
@@ -34,22 +34,22 @@
     - EDUCATION
     - SKILLS
     - EXPERIENCE
-    - PROJECTS 
-    - Achievements <br />
-- SERVICES 
+    - PROJECTS
+    - ACHIEVEMENTS <br />
+<!-- - SERVICES -->
     - TESTIMONIALS <br />
-- BLOG
-- CONTACTS 
+<!-- - BLOG -->
+- CONTACTS
 
 <br /><br />
 
 # Demo :movie_camera:
-![](https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/demo.gif)
-## View live demo [here](https://dev-portfolio-template.netlify.app/).
+![](https://raw.githubusercontent.com/vengin/developer-portfolio/master/public/images/developer-portfolio.gif)
+## View live demo [here](https://vengin.github.io/developer-portfolio).
 
 <br />
 
-# Themes :art:
+<!-- # Themes :art:
 ### Green :green_circle:
 
 <div style="display: flex; justify-content: space-between;">
@@ -118,7 +118,7 @@
     <img src="https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/themes/yellowThemeDark.png" width="48%" alt="">
 </div>
 
-<br /> <br />
+<br /> <br /> -->
 
 # Installation :arrow_down:
 ### You will need to download Git and Node to run this project
@@ -143,7 +143,7 @@ git --version
 #### To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
 
 ```
-git clone hhttps://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
+git clone https://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
 cd developer-portfolio
 ```
 ### Install packages from the root directory

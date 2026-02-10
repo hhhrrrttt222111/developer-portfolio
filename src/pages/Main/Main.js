@@ -8,20 +8,20 @@ function Main() {
     return (
         <div>
             <Helmet>
-                <title>{headerData.name} - Porfolio</title>
+                <title>{headerData.name} - Portfolio</title>
             </Helmet>
 
-            <Navbar />        
+            <Navbar />
             <Landing />
-            <About />
-            <Education />
-            <Skills />
+            {/* <About /> */}
+            <Skills id="skills"/>
             <Experience />
             <Projects />
-            <Achievement />
-            <Services />
+            <Education />
+            {/* <Achievement /> */}
+            {/* <Services /> */}
             <Testimonials />
-            <Blog />
+            {/* <Blog /> */}
             <Contacts />
             <Footer />
         </div>

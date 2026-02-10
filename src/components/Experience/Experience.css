@@ -57,6 +57,8 @@
 
 .experience-details {
     margin-left: 0.6rem;
+    flex: 1;
+    overflow: hidden;
 }
 
 .experience-details > h6 {
@@ -70,12 +72,15 @@
     font-family: var(--primaryFont);
     font-size: 1.225rem;
     font-weight: 600;
+    margin-bottom: 0.5rem;
+    word-wrap: break-word;
 }
 
 .experience-details > h5 {
     font-family: var(--primaryFont);
     font-size: 1.15rem;
     font-weight: 600;
+    word-wrap: break-word;
 }
 
 .experience-image {
@@ -90,6 +95,11 @@
 .experience-image > img {
     width: 100%;
     pointer-events: none;
+}
+
+.experience-card.dimmed {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
 }
 
 

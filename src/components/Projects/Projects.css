@@ -33,7 +33,8 @@
 }
 
 .projects--bodyContainer {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     justify-content: center;
     gap: 4.5rem;
@@ -68,15 +69,15 @@
 
 
 
-@media (min-width: 992px) and (max-width: 1380px) {
+/* @media (min-width: 992px) and (max-width: 1380px) {
 
-}
+} */
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1380px) {
     .projects--bodyContainer {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
         align-items: center;
         justify-content: center;
         width: 100%;
@@ -103,6 +104,9 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);  
+    }
+    .projects--bodyContainer {
+        grid-template-columns: 1fr;
     }
 }
 

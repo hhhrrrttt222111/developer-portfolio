@@ -63,9 +63,11 @@ function Projects() {
                                     code={project.code}
                                     demo={project.demo}
                                     image={project.image}
+                                    imgWidth={project.imgWidth || '60%'}
+                                    imgHeight={project.imgHeight || '100%'}
                                 />
                             ))}
-                        </div> 
+                        </div>
 
                         {projectsData.length > 3 && (
                             <div className="projects--viewAll">
